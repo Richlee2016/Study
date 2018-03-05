@@ -1,4 +1,5 @@
 import { isObject } from "./utils";
+const myObserver = Symbol("myObserver")
 // 监听数据
 class Observer {
   constructor(data, vm) {
@@ -11,11 +12,11 @@ class Observer {
     if (!isObject(this.data)) return;
     for (let [key, val] of Object.entries(this.data)) {
       observer(val);
-      this._initObserver(this.data, key, val);
+      this[myObserver](this.data, key, val);
     }
   }
 
-  _initObserver(obj, key, val) {
+  [myObserver](obj, key, val) {
     Object.defineProperty(obj, key, {
       enumerable: true,
       defineProperty: false,
@@ -30,7 +31,7 @@ class Observer {
         if (isObject(newVal)) {
           observer(val);
         }
-        // 触发 已经监听的值
+        //通知 event 触发 已经监听的值
         this.eve.trigger("notify");
       }
     });
