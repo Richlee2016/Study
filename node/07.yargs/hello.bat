@@ -1,0 +1,1 @@
+node 1.hello.js %1 %2

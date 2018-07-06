@@ -1,0 +1,20 @@
+{
+  "name": "08.static",
+  "version": "1.0.0",
+  "description": "可以在任意目录下启动一个静态文件服务器，并且把首目录作为文件根目录\r ```\r rich-server -d 制定静态文件根目录 -p 自定端口号 -o 自定监听的主机\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "rich-server": "bin/www"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "mime": "^2.3.1",
+    "nunjucks": "^3.1.3"
+  }
+}
