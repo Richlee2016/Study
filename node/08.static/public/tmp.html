@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    {{data}}
+    <ul>
+        {% for item in data %}
+        <li>
+            <a href="{{item.path}}">{{item.name}}</a>
+        </li>
+        {% endfor %}
+    </ul>
 </body>
 </html>

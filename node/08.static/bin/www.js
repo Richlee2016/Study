@@ -1,11 +1,12 @@
 // -d --root 静态文件目录 -o --host 主机 -p --port 端口号
 //npm link   将本文件 中的bin 之下的命令添加到  npm 的环境变量中  会指向到
 const yargs = require('yargs');
+const Server = require('../src/app.js');
 const argv = yargs.options('d',{
     alias:'root',
     demand:'false',
     type:'string',
-    default:process.cwd(),
+    default:process.cwd(), 
     description:'静态文件目录'
 }).options('o',{
     alias:'host',
@@ -27,3 +28,5 @@ const argv = yargs.options('d',{
 )
 .help('h')
 .argv;
+
+const server = new Server(argv);
