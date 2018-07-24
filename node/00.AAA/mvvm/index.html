@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        {{b.c}}
+        <div>{{a}}</div>
+        <div>{{a}}</div>
+        <input type="text" v-model="a" />
+        <button v-on:click="gogo">aa</button>
+    </div>
+</body>
+</html>
+<script src="./src/index.js"></script>
+<script>
+    const data ={a:1,b:{c:2,d:3}}
+    let mvvm =new Mvvm({
+        el:"#app",
+        data:data,
+        methods:{
+            gogo(){
+                console.log(1);
+            },
+            _test(){
+                console.log(2);
+            }
+        }
+    })
+    console.log(mvvm);
+</script>
