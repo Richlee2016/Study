@@ -1,6 +1,11 @@
-function createState(reducer) {
-  let state;
+function createState(reducer, preloadedState, enchancer) {
+  let state = preloadedState;
   let listeners = [];
+
+  if (enchancer && typeof enchancer == "function") {
+    return enchancer(createState)(reducer, preloadedState);
+  }
+
   function getState() {
     return JSON.parse(JSON.stringify(state));
   }
@@ -15,7 +20,7 @@ function createState(reducer) {
     };
   }
   //初始化  防止 action 为undefind
-  dispatch({type:"@/INIT"});
+  dispatch({ type: "@/INIT" });
   return {
     getState,
     dispatch,
@@ -25,5 +30,12 @@ function createState(reducer) {
 
 import bindActionCreators from "./bindActionCreators";
 import combineReducers from "./combineReducers";
-
-export default { bindActionCreators, combineReducers, createState };
+import applyMiddleware from "./applyMiddleware";
+import compose from "./compose";
+export default {
+  bindActionCreators,
+  combineReducers,
+  createState,
+  applyMiddleware,
+  compose
+};

@@ -1,18 +1,27 @@
 import React from 'react'
-import ReactDom from 'react-dom'
-import Count from '@/r/components/Count'
-class Page extends React.Component{
-    constructor(props){
-        super(props);
+import ReactDOM from 'react-dom'
+import Counter from '@/components/Counter'
+import Todos from '@/components/Todos'
+import {Provider} from "@/react-redux"
+import store from "@/store"
+class Page extends React.Component {
+    constructor(){
+        super();
     }
 
     render(){
-        return (
-            <div>
-                <Count />
-            </div>
+        return(
+            <Provider store={store}>
+                <React.Fragment>
+                    <Counter />
+                    <br />
+                    <Todos />
+                </React.Fragment>
+            </Provider>
         )
-    }
+    };
 }
 
-ReactDom.render(<Page />,document.querySelector("#app"));
+
+ReactDOM.render(<Page />,document.querySelector("#app"))
+

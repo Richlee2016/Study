@@ -5,7 +5,7 @@ export default function (state = { num: 0 }, action) {
         case types.ADD:
             return { num: state.num + 1 }
         case types.MINUS:
-            return { num: state.num + 1 }
+            return { num: state.num - 1 }
         default:
             return state
     }

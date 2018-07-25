@@ -7,7 +7,6 @@ function createStore(reducer){
 
     function dispatch(action){
         state = reducer(state,action);
-        console.log(state);
         listeners.forEach(sub => sub());
     }
 
@@ -26,9 +25,20 @@ function createStore(reducer){
         subscribe
     }
 }
-
-function createActions(){
-
+/**
+ * {add:function(return {type:ADD},minus:function(return {type:MINUS})
+ * ||
+ * ||
+ * ||
+ * {add:() => dispatch({type:ADD}),minus:() => dispatch({type:MINUS})
+ */
+function createActions(actions,dispatch){
+    let newActions = {};
+    for(let key in actions){
+        let action = actions[key];
+        newActions[key] = () => dispatch(action.apply(newActions,arguments));
+    }
+    return newActions;
 }
 /**
  * {count:{num:0}}

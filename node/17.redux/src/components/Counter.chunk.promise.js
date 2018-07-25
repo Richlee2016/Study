@@ -14,7 +14,8 @@ class Counter extends React.Component {
         <button onClick={this.props.incerment}>+</button>
         <span>{this.props.num}</span>
         <button onClick={this.props.decerment}>-</button>
-        <button onClick={this.props.asyncAdd}>过一秒</button>
+        <button onClick={this.props.timeAdd}>过一秒</button>
+        <button onClick={this.props.promiseAdd}>Promise+1</button>
       </div>
     );
   }

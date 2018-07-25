@@ -1,14 +1,24 @@
 import React from 'react'
-import ReactDom from 'react-dom'
-
-export default class Todos extends React.Component {
-    constructor(){
-        super();
+import actions from '@/store/actions/todos'
+import {connect} from '@/react-redux'
+class Todos extends React.Component {
+    constructor(props){
+        super(props);
     }
 
     render(){
+        const {items} = this.props;
+        let mapLi = items.map(item => {
+            return <li></li>
+        })
         return (
             <ul></ul>
         )
     }
 }
+
+
+export default connect(
+    state => state.todos,
+    dispatch => ({})
+)(Todos);
