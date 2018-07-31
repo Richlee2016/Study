@@ -1,5 +1,4 @@
-//loader 另一种写法
-// require("style-loader!css-loader!./css/index.css")
-
-require("./css/index.css")
-console.log(6);
+import React from 'react'
+import ReactDOM from 'react-dom'
+console.log(ReactDOM);
+ReactDOM.render(<div>321</div>,document.getElementById("root"));

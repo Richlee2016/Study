@@ -32,14 +32,14 @@ file-loader是解析图片地址，把图片从源位置拷贝到目标位置
 }
 
 
-#webpack-withimg-loader
-webpack-withimg-loader 处理html中img src的图片引用地址
+#html-withimg-loader
+html-withimg-loader 处理html中img src的图片引用地址
 --------------
 3.html img src
 ==============
 {
     test:/\.(html|htm)/,
-    loader:'webpack-withimg-loader'
+    loader:'html-withimg-loader'
 }
 
 #url-loader
