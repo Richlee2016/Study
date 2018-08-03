@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "react13":"webpack --config ./13.react/webpack.config.js",
+    "react13": "webpack --config ./13.react/webpack.config.js",
     "dev": "webpack --mode development",
-    "build": "webpack --mode production" 
+    "build": "webpack --mode production"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +22,6 @@
     "yargs": "^12.0.1"
   },
   "devDependencies": {
-
+    "html-webpack-plugin": "^3.2.0"
   }
 }
