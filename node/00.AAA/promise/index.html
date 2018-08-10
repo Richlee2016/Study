@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./RPromise.js"></script>
+    <script src="./Promise.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+let my = new RPromise((resolve,reject) => {
+    setTimeout(() => {
+        resolve(1);
+    },1000)
+})
+
+// 2.1
+// const go = my.then(res => {
+//     console.log("2++" +res);
+// },err => {
+//     console.log(err);
+// })
+
+
+// 2.2
+// const go = my.then(res =>{
+//     throw Error("fuck")
+// },err => {
+
+// })
+// go.then(res => {
+//     console.log(res);
+// },err => {
+//     console.log(err);
+// })
+
+// 2.3
+/*
+2.3.1
+promise2 === x 的情况
+let p2 = p2.then(data => p2);
+*/
+
+//2.3.2 
+//x instanceof RPromise 
+// let p232 = my.then(res => {
+//     return new RPromise((resolve,reject) => {
+//         resolve(1000);
+//     })
+// })
+
+// let me = new RPromise((resolve,reject) => {
+//         setTimeout(() => {
+//             resolve("time 3")
+//         },3000)
+//     });
+
+//2.3.3
+let p233 = my.then(res => {
+    console.log(res);
+    throw Error("fuck")
+    return 1;
+}).then(res => {
+    console.log(res);
+}).catch(err => {
+    console.log(err);
+})
+
+
+
+console.log(p233);
+
+
+
+
+</script>
