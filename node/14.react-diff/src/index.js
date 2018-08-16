@@ -48,7 +48,7 @@ let newChildren = [
 ];
 
 let patches = diff(oldChildren, newChildren);
-console.log(patches);
+console.log("patches:",patches);
 patch(ul, patches);
 // [{type:REMOVE,index:0},{type:INSERT,index:3,{key:"E"}}]
 function diff(oldChildren, newChildren) {
@@ -59,12 +59,14 @@ function diff(oldChildren, newChildren) {
     newIndex = 0;
   while (oldIndex < oldChildren.length) {
     let oldKey = oldChildren[oldIndex].key;
+    console.log(oldKey);
     if (!newKeys.includes(oldKey)) {
       remove(oldIndex);
       oldChildren.splice(oldIndex, 1);
     } else {
       oldIndex++;
     }
+    console.log(oldIndex);
   }
   // 第二步  插入
   oldIndex = 0;
