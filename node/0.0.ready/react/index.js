@@ -1,5 +1,5 @@
 import createElement from "./createElement";
-import diff from "./diff";
+import {diff,patch} from "./diff";
 
 class Element {
   constructor(tagName, key, children) {
@@ -25,16 +25,23 @@ const app1 = [
   el("li", "A", "A"),
   el("li", "B", "B"),
   el("li", "C", "C"),
-  el("li", "E", "D")
-];
-
-const app2 = [
-  el("li", "A", "A"),
-  el("li", "R", "B"),
-  el("li", "C", "C"),
   el("li", "D", "D")
 ];
 
-const patchs = diff(app1, app2);
+const app2 = [
+  el("li", "D", "D"),
+  el("li", "B", "B"),
+  el("li", "R", "6"),
+  el("li", "A", "A")
+];
 
-console.log(patchs);
+let ul = document.createElement("ul");
+
+app1.forEach(item => {
+  ul.appendChild(item.render());
+});
+
+document.body.appendChild(ul);
+
+const patchs = diff(app1, app2);
+patch(ul,patchs)

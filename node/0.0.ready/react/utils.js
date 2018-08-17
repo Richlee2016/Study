@@ -21,9 +21,3 @@ export const setAttr = (el, attr, val) => {
   }
 };
 
-export const isString = str => (typeof str == "string" ? true : false);
-
-export const REMOVE = "REMOVE";
-export const ATTRS = "ATTRS";
-export const TEXT = "TEXT";
-export const REPLACE = 'REPLACE'

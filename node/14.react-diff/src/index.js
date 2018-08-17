@@ -42,13 +42,13 @@ document.body.appendChild(ul);
 
 let newChildren = [
   el("li", "D", "D"),
-  el("li", "C", "C"),
   el("li", "B", "B"),
-  el("li", "E", "E")
+  el("li", "R", "6"),
+  el("li", "A", "A")
 ];
 
 let patches = diff(oldChildren, newChildren);
-console.log("patches:",patches);
+console.log(patches);
 patch(ul, patches);
 // [{type:REMOVE,index:0},{type:INSERT,index:3,{key:"E"}}]
 function diff(oldChildren, newChildren) {
@@ -59,14 +59,14 @@ function diff(oldChildren, newChildren) {
     newIndex = 0;
   while (oldIndex < oldChildren.length) {
     let oldKey = oldChildren[oldIndex].key;
-    console.log(oldKey);
+    // console.log(oldKey);
     if (!newKeys.includes(oldKey)) {
       remove(oldIndex);
       oldChildren.splice(oldIndex, 1);
     } else {
       oldIndex++;
     }
-    console.log(oldIndex);
+    // console.log(oldIndex);
   }
   // 第二步  插入
   oldIndex = 0;
@@ -111,7 +111,7 @@ function patch(root, patches = []) {
   Array.from(root.childNodes).forEach(node => {
     nodeMap[node.getAttribute("key")] = node;
   });
-  console.log(nodeMap);
+  // console.log(nodeMap);
   patches.forEach(patch => {
     let oldNode;
     // console.log(root.childNodes[patch.index]);

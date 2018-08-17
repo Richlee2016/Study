@@ -5,13 +5,23 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 let ExtractTextWebpackPlugin = require("extract-text-webpack-plugin");
 let cssExtract = new ExtractTextWebpackPlugin("common.css");
 let lessExtract = new ExtractTextWebpackPlugin("main.css");
+function resolve (dir) {
+  return path.join(__dirname, dir)
+}
+
 module.exports = {
   entry: {
-    index: "./react/index.js"
+    index: "./redux/index.js"
   },
   output: {
     path: path.join(__dirname,"dist"),
     filename: "[name].js"
+  },
+  resolve: {
+    extensions: ['.js', '.json'],
+    alias: {
+      '@redux': resolve('/redux/redux'),
+    }
   },
   watch:true,
   watchOptions:{
@@ -27,7 +37,7 @@ module.exports = {
         loader: "babel-loader",
         exclude: path.resolve(__dirname, "node_modules"),
         query: {
-          presets: ["env", "es2015"]
+          presets: ["env", "es2015","stage-0","react"]
         }
       },
       {

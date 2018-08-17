@@ -20,6 +20,7 @@ export default function combineReducers(reducers){
              * ||
              * newState {count:{num:1},todos:{items:[]}}
              */
+            console.log(state[key]);
             newState[key] = reducers[key](state[key],action);
             return newState;
         },{})
