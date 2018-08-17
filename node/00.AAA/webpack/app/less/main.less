@@ -1,106 +1,261 @@
 @import "./mixin.less";
 .grim-box {
+  width: 100%;
+  height: 100vh;
+  > li {
+    float: left;
+  }
+  .box1 {
     width: 100%;
-    height: 100vh;
-    > li {
+    height: 100%;
+    position: relative;
+    // .outer{
+    //   width: 100%;
+    //   height: 100%;
+    //   position: absolute;
+    //   left: 0px;
+    //   top: 0px;
+    //   // background: rgba(255, 255, 255, 0.6);
+    //   transition: 0.4s ease-in-out;
+    // }
+    // .outer:hover{
+    //   background: rgba(255, 255, 255, 0.6);
+    // }
+  }
+  .tran {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .blur {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: inherit;
+      z-index: 2;
+    }
+    &:hover {
+      .blur {
+        filter: blur(2px);
+      }
+      .inner {
+        background: rgba(255, 255, 255, 0.4);
+        > p {
+          transform: translateY(0px);
+        }
+      }
+    }
+    > div {
+      z-index: 3;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: 0.4s ease-in-out;
+      > p {
+        font-weight: normal;
+        margin: 0;
+        font-size: 30px;
+        font-family: "Playfair Display", serif;
+        margin-top: 30px;
+        transform: translateY(-100px);
+        transition: 0.4s ease-in-out;
+        a {
+          color: @co-bu;
+        }
+      }
+    }
+  }
+  .box2 {
+    background: url("/public/images/boxlogo2.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .box3 {
+    background: url(/public/images/boxlogo4.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .box4 {
+    background: url(/public/images/grid01.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .box5 {
+    background: url(/public/images/boxlogo3.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .box6 {
+    background: url(/public/images/baobao.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .box10 {
+    background: url(/public/images/icon.ico) no-repeat center;
+    background-size: 90%;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.m-head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, 0.4);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  .m-header {
+    width: 1200px;
+    margin: auto;
+    li {
       float: left;
     }
-    .box1 {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        // .outer{
-        //   width: 100%;
-        //   height: 100%;
-        //   position: absolute;
-        //   left: 0px;
-        //   top: 0px;
-        //   // background: rgba(255, 255, 255, 0.6);
-        //   transition: 0.4s ease-in-out;
-        // }
-        // .outer:hover{
-        //   background: rgba(255, 255, 255, 0.6);
-        // }
+    .nav {
+      a {
+        padding: 0 20px;
+        line-height: 40px;
+        float: left;
+        color: #222;
       }
-      .tran {
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        .blur {
-          content: "";
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          left: 0;
-          top: 0;
-          background: inherit;
-          z-index: 2;
-        }
-        &:hover {
-          .blur {
-            filter: blur(2px);
-          }
-          .inner {
-            background: rgba(255, 255, 255, 0.4);
-            > p {
-              transform: translateY(0px);
-            }
-          }
-        }
-        > div {
-          z-index: 3;
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          text-align: center;
-          transition: 0.4s ease-in-out;
-          > p {
-            font-weight: normal;
-            margin: 0;
-            font-size: 30px;
-            font-family: "Playfair Display", serif;
-            margin-top: 30px;
-            transform: translateY(-100px);
-            transition: 0.4s ease-in-out;
-            a{
-              color: @co-bu;
-            }
-          }
-        }
-      }
-      .box2 {
-        background: url("/public/images/boxlogo2.jpg") no-repeat center;
-        background-size: cover;
-      }
-      .box3 {
-        background: url(/public/images/boxlogo4.jpg) no-repeat center;
-        background-size: cover;
-      }
-      .box4 {
-        background: url(/public/images/grid01.jpg) no-repeat center;
-        background-size: cover;
-      }
-      .box5 {
-        background: url(/public/images/boxlogo3.jpg) no-repeat center;
-        background-size: cover;
-      }
-      .box6 {
-        background: url(/public/images/baobao.jpg) no-repeat center;
-        background-size: cover;
-      }
-      
-      .box10 {
-        background: url(/public/images/icon.ico) no-repeat center;
-        background-size: 90%;
-        width: 100%;
-        height: 100%;
-      }
+    }
+    .login {
+      float: right;
+      width: 60px;
+      height: 40px;
+    }
   }
-  
-  .box1{
-      .video-box{
+}
+
+.m-hline {
+  width: 100%;
+  background: url("/public/images/line-bd.png") no-repeat center;
+  height: 180px;
+  .m-search {
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    height: 180px;
+    .left {
+      position: absolute;
+      width: 220px;
+      height: 105px;
+      left: 24px;
+      top: 55px;
+      background: transparent no-repeat 0;
+      z-index: 10;
+    }
+    .right {
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+      width: 300px;
+      height: 32px;
+      border-radius: 6px;
+      font-size: 12px;
+      z-index: 10;
+      > button {
+        float: left;
+        height: 32px;
+        line-height: 32px;
+        background-color: hsla(0, 0%, 100%, 0.88);
+        border-radius: 4px;
+        width: 68px;
+        transition: background-color 0.2s;
+        border: none;
+        color: #f25d8e;
       }
+      > div {
+        float: left;
+        margin-left: 10px;
+        width: 222px;
+        background-color: hsla(0, 0%, 100%, 0.88);
+        display: block;
+        height: 32px;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+        input {
+          float: left;
+          width: 160px;
+          color: #222;
+          font-size: 12px;
+          overflow: hidden;
+          height: 32px;
+          line-height: 32px;
+          padding: 0 10px;
+          border: 0;
+          box-shadow: none;
+          background-color: transparent;
+        }
+        button {
+          float: left;
+          display: block;
+          width: 40px;
+          min-width: 0;
+          cursor: pointer;
+          height: 32px;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          background: none;
+          color: #f25d8e;
+        }
+      }
+    }
   }
+}
+
+.m-outer {
+  width: 1200px;
+  margin: auto;
+}
+.m-menu {
+  width: 100%;
+  height: 40px;
+  margin-top: 30px;
+  li {
+    float: left;
+    a {
+      display: block;
+      padding: 0 20px;
+      line-height: 40px;
+    }
+  }
+}
+
+.m-home {
+  .m-one {
+    overflow: hidden;
+    .left {
+      float: left;
+      width: 628px;
+      height: 440px;
+      border-radius: 4px;
+      background: red;
+    }
+    .right {
+      float: right;
+      width: 562px;
+      height: 440px;
+      border-radius: 4px;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+          flex: 1;
+          max-width: 180px;
+          min-width: 180px;
+          height: 215px;
+          margin-bottom: 10px;
+          float: left;
+          border-radius: 4px;
+          background: yellowgreen;
+        }
+      }
+    }
+  }
+}
