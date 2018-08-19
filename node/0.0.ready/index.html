@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="root"></div>
+    <div id="root">
+        {{c}}
+        <div>
+            <span>{{a}}</span>
+            <label>{{b.c}}</label>
+        </div>
+        <span v-bind:class="c">{{b.c}}</span>
+        <input type="text" v-model="c">
+        <button v-on:click="test">go</button>
+    </div>
 </body>
 </html>

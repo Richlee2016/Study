@@ -11,7 +11,7 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
-    index: "./redux/index.js"
+    index: "./mvvm/index.js"
   },
   output: {
     path: path.join(__dirname,"dist"),
