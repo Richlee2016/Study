@@ -1,0 +1,204 @@
+.detail-box {
+  padding: 10px;
+  border-radius: 4px;
+  background: white;
+}
+.movie-main {
+  width: 760px;
+  overflow: hidden;
+  .box-left {
+    float: left;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 6px;
+    img {
+      width: 200px;
+      height: 300px;
+    }
+  }
+  .box-right {
+    width: 540px;
+    float: right;
+    overflow: hidden;
+    .name {
+      width: 100%;
+      line-height: 40px;
+      font-size: 24px;
+    }
+    li {
+      float: left;
+      width: 100%;
+      line-height: 26px;
+      font-size: 14px;
+      span,
+      label {
+        float: left;
+      }
+      span {
+        max-width: 480px;
+        margin-right: 6px;
+        a {
+          color: #f25d8e;
+        }
+      }
+      label {
+        color: #03a9dd;
+      }
+    }
+  }
+}
+
+.msg-text {
+  display: none;
+  position: fixed;
+  width: 1200px;
+  height: 600px;
+  left: 50%;
+  top: 50%;
+  margin-top: -300px;
+  margin-left: -600px;
+  padding: 10px;
+  border-radius: 4px;
+  padding: 10px 20px;
+  background: white;
+
+  p {
+    margin-top: 10px;
+    line-height: 22px;
+  }
+}
+
+.line-title {
+  width: 100%;
+  line-height: 40px;
+  font-size: 18px;
+  border-bottom: 2px solid #03a9dd;
+  color: #03a9dd;
+  padding-left: 10px;
+}
+
+.bili-block {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li {
+    // display: none;
+    flex: 1;
+    height: 240px;
+    max-width: 200px;
+    min-width: 200px;
+    position: relative;
+    border: 1px solid #e5e9ef;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    .bili-img {
+      width: 200px;
+      height: 120px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    a {
+      display: block;
+    }
+  }
+  .time {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    padding: 2px 4px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  .bili-info {
+    padding: 0 8px;
+    .title {
+      margin-top: 6px;
+      line-height: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    > div {
+      overflow: hidden;
+      line-height: 30px;
+      label {
+        float: left;
+      }
+      span {
+        float: right;
+      }
+    }
+    .up-zhu {
+      line-height: 30px;
+    }
+  }
+}
+.onbox-swiper {
+  position: relative;
+  .online-page {
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    span {
+      margin: 0 4px;
+    }
+  }
+  .online-prev {
+    z-index: 9999999999;
+  }
+  .online-next {
+    z-index: 999;
+  }
+}
+.online-box {
+  width: 100%;
+  margin-top: 40px;
+  .swiper-online {
+    margin-top: 20px;
+    overflow: hidden;
+    div {
+      float: left;
+      max-width: 183px;
+      height: 240px;
+      // background: @co-pin;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+  }
+}
+
+.down-url {
+  .url-box {
+    width: 100%;
+    li {
+      width: 100%;
+      height: 30px;
+      margin-top: 10px;
+      a {
+        float: left;
+        display: block;
+        width: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        line-height: 30px;
+        color: #222;
+      }
+      input {
+        float: left;
+        width: 800px;
+        margin-left: 10px;
+        border: @co-bu 1px solid;
+        padding-left:20px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}

@@ -34,7 +34,26 @@ module.exports = {
         loader: cssExtract.extract({
           use: ["css-loader"]
         })
+      },{
+        test: /\.(woff2?|eot|ttf|otf|svg|)(\?.*)?$/,
+        use:{
+          loader:"url-loader",
+          options: {
+            limit: 10000,
+            name: path.join(__dirname,"public/fonts/[name].[ext]",)
+          }
+        }
       },
+      {
+          test: /\.(png|jpg|gif|svg|bmp)/,
+          use: {
+            loader: "file-loader",
+            //规避路径
+            options: {
+              outputPath: "./images"
+            }
+          }
+        },
       {
         test: /\.less$/,
         loader: lessExtract.extract({
