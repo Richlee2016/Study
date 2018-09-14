@@ -1,0 +1,100 @@
+{% extends './Layout.html' %} {% block links %}{% endblock %} {% block body %}
+{% macro menu(name,href) %}
+<dd>
+    <a>{{name}}</a>
+</dd>
+{% endmacro %}
+<div class="mlist-box">
+    <div class="l-menu">
+    <dl data-type="catalog">
+        <dt>大分类</dt>
+        {{ menu('全部',"/") }}
+        {{ menu('电影',"/") }}
+        {{ menu('电视剧',"/") }}
+        {{ menu('动画片',"/") }}
+        {{ menu('综艺',"/") }}
+    </dl>
+    <dl data-type="classify">
+        <dt>题材</dt>
+        {{ menu('全部',"/") }}
+        {{ menu('动作',"/") }}
+        {{ menu('喜剧',"/") }}
+        {{ menu('爱情',"/") }}
+        {{ menu('武侠',"/") }}
+        {{ menu('科幻',"/") }}
+        {{ menu('战争',"/") }}
+        {{ menu('恐怖',"/") }}
+        {{ menu('犯罪',"/") }}
+        {{ menu('悬疑',"/") }}
+        {{ menu('惊悚',"/") }}
+        {{ menu('灾难',"/") }}
+        {{ menu('歌舞',"/") }}
+        {{ menu('冒险',"/") }}
+        {{ menu('奇幻',"/") }}
+        {{ menu('家庭',"/") }}
+        {{ menu('剧情',"/") }}
+    </dl>
+    <dl data-type="area">
+        <dt>地区</dt>
+        {{ menu('全部',"/") }}
+        {{ menu('大陆',"/") }}
+        {{ menu('香港',"/") }}
+        {{ menu('台湾',"/") }}
+        {{ menu('日本',"/") }}
+        {{ menu('韩国',"/") }}
+        {{ menu('欧美',"/") }}
+        {{ menu('其它',"/") }}
+    </dl>
+    <dl data-type="year">
+        <dt>年代</dt>
+        {{ menu('全部',"/") }}
+        {{ menu('2018',"/") }}
+        {{ menu('2017',"/") }}
+        {{ menu('2016',"/") }}
+        {{ menu('2015',"/") }}
+        {{ menu('2014',"/") }}
+        {{ menu('2013',"/") }}
+        {{ menu('2012',"/") }}
+        {{ menu('2011',"/") }}
+        {{ menu('2010',"/") }}
+        {{ menu('2009',"/") }}
+        {{ menu('2008',"/") }}
+        {{ menu('2007',"/") }}
+        {{ menu('2006',"/") }}
+        {{ menu('2005',"/") }}
+        {{ menu('2004',"/") }}
+        {{ menu('2003',"/") }}
+        {{ menu('2002',"/") }}
+        {{ menu('更早',"/") }}
+    </dl>
+    <!-- <dl>
+            <dt>级别:</dt>
+            {{ menu('按评分',"/") }}
+            {{ menu('按更新',"/") }}
+        </dl> -->
+    </div>
+    <ul class="l-list" id="GoTop">
+        {% for item in list %}
+        <li class="movie-box vivify animationObject popInTop">
+            <a href="/vod/{{item._id}}">
+                <img src="http://go.richfly.cn/{{item.cover}}" />
+                <span class="black-block">{{item.year}}</span>
+                <span class="black-block">9</span>
+                <p class="black-block">{{item.name}}</p>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    <div class="m-page-box">
+        <div class="M-box m-style">
+    
+        </div>
+    </div>
+</div>
+{% endblock %} {% block scripts %}
+<script src="/public/plugin/jquery.pagination.js"></script>
+<script>
+$.MovieType();
+var total = {{count}};
+$.ListPage(total);
+</script> {% endblock %}

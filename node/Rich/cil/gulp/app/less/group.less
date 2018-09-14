@@ -1,0 +1,29 @@
+@import "./mixin.less";
+.m-group{
+  li{
+    height: 250px;
+    overflow: hidden;
+    .swiper-online{
+      margin-top: 0px;
+    }
+    >section{
+      position: relative;
+      width: 380px;
+      height: 240px;
+      padding-right: 20px;
+      float: left;
+      img{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 380px;
+        height: 100%;
+      }
+    }
+    >div{
+      height: 100%;
+      width: 800px;
+      float: right;
+    }
+  }
+}

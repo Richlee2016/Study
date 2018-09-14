@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="/public/css/reset.css" />
+    <link rel="stylesheet" href="/public/css/main.css" /> {% block links %}{% endblock %}
+    <script type="text/javascript" src="/public/plugin/jquery-2.1.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</head>
+{% block styles %}{% endblock %}
+
+<body>
+    <div class="m-head">
+        <ul class="m-header">
+            <li class="logo">
+                <a class="iconfont icon-p1" href="/"></a>
+            </li>
+            <li class="nav">
+                <a href="/home">主站</a>
+                <a href="/group/movie">电影</a>
+                <a href="/group/tv">电视剧</a>
+                <a href="/list?catalog=动画片">动漫</a>
+                <a href="/list?catalog=综艺">综艺</a>
+                <a href="/topic">专题</a>
+                <a href="/group/news">咨询</a>
+            </li>
+            <li class="login">
+                <div id="UserBox" class="user-box">
+                    <a href="/center">
+                        <img src="" alt="">
+                        <p></p>
+                        <!-- <img src="http://thirdqq.qlogo.cn/qqapp/101435375/E71A6C17E7FAE3981C4F63CBE98A5F43/100" alt=""> -->
+                        <!-- <p>渐渐被你吸引</p> -->
+                        <!-- <button>退出</button> -->
+                    </a>
+                </div>
+                <i id="Login" class="iconfont icon-qq"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="m-hline">
+        <form action="/search">
+        <ul class="m-search">
+            <li class="left">
+
+            </li>
+            <li class="right">
+                <button>最新</button>
+                <div>
+                    <input type="text" name="w" placeholder="复仇者联盟">
+                    <button onclick="submit()">搜</button>
+                </div>
+            </li>
+        </ul>
+        </form>
+    </div>
+    <div class="m-outer">
+        <ul class="m-menu">
+            <li>
+                <a href="/list">最新</a>
+            </li>
+            <li>
+                <a href="/list?classify=动作">动作</a>
+            </li>
+            <li>
+                <a href="/list?classify=喜剧">喜剧</a>
+            </li>
+            <li>
+                <a href="/list?classify=爱情">爱情</a>
+            </li>
+            <li>
+                <a href="/list?classify=恐怖">恐怖</a>
+            </li>
+            <li>
+                <a href="/list?classify=剧情">剧情</a>
+            </li>
+            <li>
+                <a href="/list?classify=战争">战争</a>
+            </li>
+            <li>
+                <a href="/list?catalog=国产剧">国产</a>
+            </li>
+            <li>
+                <a href="/list?catalog=港台剧">TVB</a>
+            </li>
+            <li>
+                <a href="/list?catalog=欧美剧">欧美</a>
+            </li>
+            <li>
+                <a href="/list?catalog=日韩剧">日韩</a>
+            </li>
+        </ul>
+        <div class="m-container">
+            {% block body %}{% endblock %}
+        </div>
+    </div>
+    <div class="m-footer">
+        <ul class="m-fmenu">
+            <li>
+                <a href="/list">最新</a>
+            </li>
+            <li>
+                <a href="/list?classify=动作">动作</a>
+            </li>
+            <li>
+                <a href="/list?classify=喜剧">喜剧</a>
+            </li>
+            <li>
+                <a href="/list?classify=爱情">爱情</a>
+            </li>
+            <li>
+                <a href="/list?classify=恐怖">恐怖</a>
+            </li>
+            <li>
+                <a href="/list?classify=剧情">剧情</a>
+            </li>
+            <li>
+                <a href="/list?classify=战争">战争</a>
+            </li>
+            <li>
+                <a href="/list?catalog=国产剧">国产</a>
+            </li>
+            <li>
+                <a href="/list?catalog=港台剧">TVB</a>
+            </li>
+            <li>
+                <a href="/list?catalog=欧美剧">欧美</a>
+            </li>
+            <li>
+                <a href="/list?catalog=日韩剧">日韩</a>
+            </li>
+        </ul>
+        <div class="mark"></div>
+        <div class="warning">此网站数据全取自互联网，不做任何储存，不做任何商业用途，只做技术练习使用，如有侵权请联系qq:345642459，进行删除</div>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript" src="/public/js/common.js"></script> {% block scripts %}{% endblock %}

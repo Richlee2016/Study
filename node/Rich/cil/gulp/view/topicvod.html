@@ -1,0 +1,58 @@
+{% extends './Layout.html' %} {% block links %}
+{% endblock %} {% block body %}
+<ul class="m-topic-top" id="GoTop">
+    <li class="left">
+        <img src="{{data.cover}}" alt="">
+    </li>
+    <li class="right">
+        <h3>{{data.title}}</h3>
+        <p>{{data.intro}}</p>
+    </li>
+</ul>
+
+<dl class="m-topic-list">
+    <dt>
+        <h3>该专题包含的影片</h3>
+        <p>共有<font>{{data.group | length}}</font>个影片,当前第<font id="CuPage"> 1 </font>页</p>
+    </dt>
+    {% for item in data.group %}
+    <dd >
+        <div class="tl-img">
+            <img src="{{item.img}}" alt="">
+        </div>
+        <div class="tl-content">
+            {{item.content | safe}}
+        </div>
+    </dd>
+    {% endfor %}
+</dl>
+<div class="m-page-box">
+    <div class="M-box m-style">
+
+    </div>
+</div>
+{% endblock %} {% block scripts %}
+<script src="/public/plugin/jquery.pagination.js"></script>
+<script>
+    var DD = $(".m-topic-list dd");
+    var size = 6;
+    function showDD(page){
+        DD.hide();
+        page = page-1;
+        DD.each(function(i,o){
+            if(i>=size*page && i<size*(page+1)){
+                $(o).show();
+            };
+        })
+    }
+    showDD(1);
+    var total = DD.size();
+    console.log(total);
+    total = Math.ceil(total/size)
+    $.PageGo(1,total,function(page){
+        showDD(page);
+        var href = location.origin + location.pathname;
+        $("#CuPage").text(page);
+        location.href = href + "#GoTop";
+    });
+</script> {% endblock %}

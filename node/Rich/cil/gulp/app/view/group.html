@@ -1,0 +1,38 @@
+{% extends './Layout.html' %} {% block links %}
+<link rel="stylesheet" href="/public/css/swiper-4.3.3.min.css">{% endblock %} {% block body %}
+<ul class="m-group">
+    {% for group in list %}
+    <li class="online-box">
+        <section>
+            <a href="/vod/{{group[0]._id}}" target="view_window">
+                <img src="http://go.richfly.cn/{{group[0].cover}}" alt="">
+            </a>
+        </section>
+        <div class="onbox-swiper">
+            <div class="swiper-online s-group{{loop.index0}}">
+                <div class="swiper-wrapper">
+                    {% for vod in group %}
+                    {% if loop.index>1 and vod.cover %}
+                    <div class="swiper-slide movie-box">
+                        <a href="/vod/{{vod._id}}" target="view_window">
+                            <img src="http://go.richfly.cn/{{vod.cover}}" />
+                            <span class="black-block">{{vod.year}}</span>
+                            <span class="black-block">{{vod.area}}</span>
+                            <p class="black-block">{{vod.name}}</p>
+                        </a>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="swiper-button-prev online-prev{{loop.index0}}"></div>
+            <div class="swiper-button-next online-next{{loop.index0}}"></div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %} {% block scripts %}
+<script src="/public/plugin/swiper-4.3.3.min.js"></script>
+<script>
+    $.GroupSwiper();
+</script> {% endblock %}

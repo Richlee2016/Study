@@ -1,0 +1,52 @@
+@import "./mixin.less";
+.mlist-box {
+  width: 100%;
+  .l-menu {
+    width: 100%;
+    height: 128px;
+    // background: @co-bu;
+    padding: 20px;
+    dl{
+      line-height: 30px;
+      overflow: hidden;
+      dt{
+        float: left;
+        width: 60px;
+        font-size: 14px;
+      }
+      dd{
+        float: left;
+        .active{
+          background: @co-bu;
+          color: white;
+          transform: scale(0.9);
+        }
+        a{
+          padding: 0 10px;
+          display: block;
+          transition: 0.2s ease-out;
+          &:hover{
+            .active;
+          }
+        }
+      }
+    }
+  }
+  .l-list {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+    li {
+      float: left;
+      width: 183px;
+      height: 215px;
+      background: @co-pin;
+      margin-bottom: 20px;
+      margin-left:20px;
+      border-radius: 6px;
+      &:nth-of-type(6n + 1) {
+        margin-left: 0px;
+      }
+    }
+  }
+}

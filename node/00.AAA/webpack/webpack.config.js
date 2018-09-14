@@ -7,17 +7,17 @@ let lessExtract = new ExtractTextWebpackPlugin("main.css");
 module.exports = {
   entry: {
     common: "./app/js/common.js",
-    turn:"./app/js/turn.js"
+    turn: "./app/js/turn.js"
   },
   output: {
-    path: path.join(__dirname,"dist"),
+    path: path.join(__dirname, "dist"),
     filename: "[name].js"
   },
-  watch:true,
-  watchOptions:{
-    ignored:/node_modules/,
-    poll:1000,
-    aggregateTimeout:600
+  watch: true,
+  watchOptions: {
+    ignored: /node_modules/,
+    poll: 1000,
+    aggregateTimeout: 600
   },
   module: {
     rules: [
@@ -32,32 +32,51 @@ module.exports = {
       {
         test: /\.css$/,
         loader: cssExtract.extract({
-          use: ["css-loader"]
+          use: ["css-loader", "postcss-loader"]
         })
-      },{
+      },
+      {
         test: /\.(woff2?|eot|ttf|otf|svg|)(\?.*)?$/,
-        use:{
-          loader:"url-loader",
+        use: {
+          loader: "url-loader",
           options: {
             limit: 10000,
-            name: path.join(__dirname,"public/fonts/[name].[ext]",)
+            name: path.join(__dirname, "public/fonts/[name].[ext]")
           }
         }
       },
       {
-          test: /\.(png|jpg|gif|svg|bmp)/,
-          use: {
-            loader: "file-loader",
-            //规避路径
-            options: {
-              outputPath: "./images"
-            }
+        test: /\.(png|jpg|gif|svg|bmp)/,
+        use: {
+          loader: "file-loader",
+          //规避路径
+          options: {
+            outputPath: "./images"
           }
-        },
+        }
+      },
       {
         test: /\.less$/,
         loader: lessExtract.extract({
-          use: ["css-loader", "less-loader"]
+          use: [
+            {
+              loader: "css-loader"
+            },
+            {
+              loader: "postcss-loader",
+              options: {
+                sourceMap:true
+              }
+            },
+            {
+              loader: "less-loader",
+              options: {
+                strictMath: true,
+                noIeCompat: true,
+                sourceMap:true
+              }
+            }
+          ]
         })
       }
     ]
@@ -75,13 +94,13 @@ module.exports = {
         from: path.join(__dirname, "app/images"),
         to: path.join(__dirname, "dist/public/images")
       }
-    ]),
+    ])
   ],
   devServer: {
-    contentBase:path.join(__dirname),
+    contentBase: path.join(__dirname),
     host: "localhost",
     port: 8092,
-    inline:true,
+    inline: true,
     compress: true
   }
 };

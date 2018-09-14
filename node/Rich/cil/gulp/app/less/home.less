@@ -1,0 +1,225 @@
+@import "./mixin.less";
+.m-outer {
+  width: 1200px;
+  margin: auto;
+}
+.m-menu {
+  width: 100%;
+  height: 40px;
+  margin-top: 30px;
+  li {
+    float: left;
+    a {
+      display: block;
+      padding: 0 20px;
+      line-height: 40px;
+    }
+  }
+}
+
+.m-home {
+  .m-one {
+    overflow: hidden;
+    .left {
+      float: left;
+      width: 628px;
+      height: 440px;
+      border-radius: 4px;
+      background: @co-pin;
+      overflow: hidden;
+      > div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+      .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+        p {
+          position: absolute;
+          bottom: 0px;
+          color: @co-bu;
+          width: 100%;
+          font-size: 20px;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.4);
+          height: 80px;
+          line-height: 80px;
+        }
+      }
+    }
+    .right {
+      float: right;
+      width: 562px;
+      height: 440px;
+      border-radius: 4px;
+      ul {
+        .mboxo;
+        li {
+          .mbox;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            transform: scale(0.9);
+            z-index: 999;
+          }
+        }
+      }
+    }
+  }
+  .m-adv {
+    width: 100%;
+    height: 80px;
+    margin: 20px 0px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .m-block {
+    overflow: hidden;
+    margin-bottom: 30px;
+    .left {
+      width: 930px;
+      float: left;
+      .left-title {
+        overflow: hidden;
+        height: 60px;
+        width: 930px;
+        h3 {
+          width: 120px;
+          text-align: center;
+          float: left;
+          line-height: 60px;
+          font-size: 20px;
+        }
+        ul {
+          float: right;
+          height: 60px;
+          li {
+            float: left;
+            padding: 0 20px;
+            line-height: 60px;
+            color: #222;
+            font-size: 14px;
+            position: relative;
+          }
+          .active {
+            color: @co-bu;
+          }
+          font {
+            position: absolute;
+            left: 0px;
+            bottom: 10px;
+            width: 100%;
+            height: 10px;
+            display: none;
+            background: url("/public/images/nav_down.png") no-repeat bottom;
+          }
+        }
+      }
+      .left-block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+          .mbox;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            transform: scale(0.9);
+            z-index: 999;
+          }
+        }
+      }
+    }
+    .right {
+      width: 260px;
+      height: 440px;
+      float: right;
+      border-radius: 6px;
+      .r-head{
+        height: 60px;
+        width: 100%;
+        overflow: hidden;
+        h3{
+          font-size: 18px;
+          line-height: 60px;
+          float: left;
+        }
+        ul{
+          overflow: hidden;
+          float: right;
+          margin-top: 15px;
+          li {
+            float: left;
+            width: 60px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+          }
+          .active{
+            color: @co-bu;
+            background: @co-lbu;
+            border-radius: 4px;
+          }
+        }
+      }
+      .r-list {
+        li {
+          overflow: hidden;
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            transform: scale(1.2) translateX(30px);
+            a {
+              color: @co-pin;
+            }
+          }
+          * {
+            float: left;
+          }
+          font {
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 10px;
+            background: @co-bu;
+            color: white;
+            border-radius:2px; 
+          }
+          a {
+            color: @co-t;
+            line-height: 40px;
+            margin-left: 10px;
+            min-width: 200px;
+          }
+          span {
+            float: right;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.m-footer {
+  width: 100%;
+  .m-fmenu {
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    li {
+      float: left;
+      a {
+        line-height: 60px;
+        padding: 0 20px;
+      }
+    }
+  }
+  .warning {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+  }
+}

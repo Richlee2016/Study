@@ -1,0 +1,186 @@
+{% extends './Layout.html' %} {% block links %}
+<link rel="stylesheet" href="/public/css/swiper-4.3.3.min.css">
+<!-- <link rel="stylesheet" href="/public/css/vivify.min.css"> -->
+{% endblock %} {% block body %}
+<div class="m-home">
+    <div class="m-one">
+        <div class="left">
+            <div class="swiper-banner">
+                <div class="swiper-wrapper">
+                    {% for item in hot.Group %} {% if item.cover and loop.index
+                    <8 %} <a href="/vod/{{item._id}}" class="swiper-slide" style="background: url(http://go.richfly.cn/{{item.cover}}) no-repeat center;background-size: cover;">
+                        <!-- <img src="{{item.img}}" alt=""> -->
+                        <p>{{item.name}}</p>
+                        </a>
+                        {% endif %} {% endfor %}
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination banner-page"></div>
+
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev banner-prev"></div>
+                <div class="swiper-button-next banner-next"></div>
+            </div>
+        </div>
+        <div class="right">
+            <ul>
+                {% for item in hot.Group %} {% if item.img and loop.index>=7 %}
+                <li class="movie-box vivify animationObject popInTop">
+                    <a href="/vod/{{item._id}}">
+                        <div>
+                            <img src="http://go.richfly.cn/{{item.cover}}" />
+                            <span class="black-block">{{item.year}}</span>
+                            <span class="black-block">9</span>
+                            <p class="black-block">{{item.name}}</p>
+                        </div>
+                    </a>
+                </li>
+                {% endif %} {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="m-adv">book 广告</div>
+    <div class="m-block">
+        <div class="left">
+            <div class="left-title">
+                <h3>最新资源</h3>
+                <ul>
+                    {% for nav in HomeNav.newest %}
+                    <li>{{nav}}
+                        <font></font>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <ul class="left-block">
+                {% for item in newest.Group %} {% if loop.index
+                <=60 %} <li class="movie-box vivify animationObject popInTop">
+                    <a href="/vod/{{item._id}}">
+                        <div>
+                            <img src="http://go.richfly.cn/{{item.cover}}" />
+                            <span class="black-block">{{item.year}}</span>
+                            <span class="black-block">9</span>
+                            <p class="black-block">{{item.name}}</p>
+                        </div>
+                    </a>
+                    </li>
+                    {% endif %}{% endfor %}
+            </ul>
+        </div>
+        <div class="right">
+            <div class="r-head">
+                <h3>排行榜</h3>
+                <ul>
+                    <li>最热</li>
+                </ul>
+            </div>
+            <ul class="r-list">
+                {% for item in one %}
+                <li>
+                    <font>{{loop.index}}</font>
+                    <a href="/vod/{{item._id}}">{{item.name}}</a>
+                    <span></span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="m-block">
+        <div class="left">
+            <div class="left-title">
+                <h3>最新资源</h3>
+                <ul class="tv-title">
+                    {% for nav in HomeNav.tv %}
+                    <li>{{nav}}
+                        <font></font>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <ul class="left-block">
+                {% for item in tv.Group %} {% if loop.index
+                <=50 %} <li class="movie-box vivify animationObject popInTop">
+                    <a href="/vod/{{item._id}}">
+                        <div>
+                            <img src="http://go.richfly.cn/{{item.cover}}" />
+                            <span class="black-block">{{item.year}}</span>
+                            <span class="black-block">9</span>
+                            <p class="black-block">{{item.name}}</p>
+                        </div>
+                    </a>
+                    </li>
+                    {% endif %}{% endfor %}
+            </ul>
+        </div>
+        <div class="right">
+            <div class="r-head">
+                <h3>排行榜</h3>
+                <ul>
+                    <li>最新</li>
+                    <li>最热</li>
+                </ul>
+            </div>
+            <ul class="r-list">
+                {% for item in one %}
+                <li>
+                    <font>{{loop.index}}</font>
+                    <a href="/vod/{{item._id}}">{{item.name}}</a>
+                    <span></span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="m-block">
+        <div class="left">
+            <div class="left-title">
+                <h3>最新资源</h3>
+                <ul class="cartoon-title">
+                    {% for nav in HomeNav.catoon %}
+                    <li>{{nav}}
+                        <font></font>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <ul class="left-block">
+                {% for item in cartoon.Group %} {% if loop.index
+                <=20 %} <li class="movie-box vivify animationObject popInTop">
+                    <a href="/vod/{{item._id}}">
+                        <div>
+                            <img src="http://go.richfly.cn/{{item.cover}}" />
+                            <span class="black-block">{{item.year}}</span>
+                            <span class="black-block">9</span>
+                            <p class="black-block">{{item.name}}</p>
+                        </div>
+                    </a>
+                    </li>
+                    {% endif %}{% endfor %}
+            </ul>
+        </div>
+        <div class="right">
+            <div class="r-head">
+                <h3>排行榜</h3>
+                <ul>
+                    <li>最新</li>
+                    <li>最热</li>
+                </ul>
+            </div>
+            <ul class="r-list">
+                {% for item in one %}
+                <li>
+                    <font>{{loop.index}}</font>
+                    <a href="/vod/{{item._id}}">{{item.name}}</a>
+                    <span></span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %} {% block scripts %}
+<script src="/public/plugin/swiper-4.3.3.min.js"></script>
+<script>
+    $.Banner();
+    $.ChanBlock();
+</script> {% endblock %}

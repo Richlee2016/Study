@@ -6,12 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
-    "server": "webpack-dev-server --mode development"
+    "server": "webpack-dev-server --mode development",
+    "build":"webpack --mode production"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "array-includes": "^3.0.3",
+    "autoprefixer": "^9.1.5",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",

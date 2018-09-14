@@ -1,12 +1,52 @@
 import qs from "querystring";
-
 $(function() {
   $.Grid();
+  $.IsLogin();
+  $.Login();
+  $.LoginOut()
 });
 
 import { setGrim } from "../plugin/utils";
 
 $.extend($, {
+  IsLogin(){
+    const info = Cookies.getJSON("userInfo");
+    if(info&&Object.keys(info).length){
+      const {cover,name} = info;
+      $("#UserBox").show();
+      $("#UserBox img").attr("src",cover);
+      $("#UserBox p").html(name);
+      $("#Login").hide();
+    };
+  },
+  Login(){
+    $("#Login").click(function(){
+      const sendData = {
+        response_type: "code",
+        client_id: 101435375,
+        redirect_uri: encodeURI("http://173gg43187.iok.la/oauth/qq"),
+        state: 'http://localhost:8080/'
+      };
+      const href = `https://graph.qq.com/oauth2.0/authorize?${qs.stringify(
+        sendData
+      )}`;
+      location.href = href;
+      // window.open(href,null, 'height=600, width=600, top=100, left=100');
+    });
+  },
+  LoginOut(){
+    $("#UserBox button").click(function(){
+      console.log(321);
+      $.get("/oauth/logout",function(data){
+        console.log(data);
+        if(data.status == 1){
+          Cookies.remove('userInfo');
+          location.reload();
+        }
+      })
+
+    });
+  },
   Grid() {
     $("#Grim>li").each(function(i, o) {
       $(o).css(setGrim(i + 1));
@@ -66,6 +106,10 @@ $.extend($, {
   _ChanBlock(nav, block) {
     let num;
     const showBlock = i => {
+      nav.find("li font").hide();
+      nav.find("li font").eq(i).show();
+      nav.find("li").removeClass("active");
+      nav.find("li").eq(i).addClass("active");
       num = i;
       let start = i * 10;
       let end = (i + 1) * 10;
@@ -87,10 +131,10 @@ $.extend($, {
   },
   //   切换
   ChanBlock() {
-    const nav = $(".m-block .title >ul");
-    const block = $(".m-block .left >ul");
+    const nav = $(".m-block .left-title >ul");
+    const block = $(".m-block .left-block");
 
-    const rNav = $(".m-block .right .r-title");
+    const rNav = $(".m-block .right .r-head");
     const rBlock = $(".m-block .right .r-list");
 
     const goChan = (nav, block) => {
@@ -105,8 +149,8 @@ $.extend($, {
   MovieType() {
     let types = [];
     let query = /\?(.+)/.test(location.search) ? qs.parse(RegExp.$1) : {};
-    if(query.w) delete query.w;
-    delete query.w
+    if (query.w) delete query.w;
+    delete query.w;
     const aDl = $(".l-menu dl");
     // $(".m-menu").hide();
     aDl.each((n, dl) => {
@@ -157,7 +201,56 @@ $.extend($, {
       });
     });
   },
+  // 分页封装
+  PageGo(current,pageCount,cb) {
+    $(".M-box").pagination({
+      current,
+      pageCount,
+      coping: true,
+      isHide: true,
+      count: 1,
+      jump: true,
+      homePage: "首页",
+      prevContent: "上一页",
+      nextContent: "下一页",
+      callback: function(api) {
+        let page = api.getCurrent();
+        cb&&cb(page);
+      }
+    });
+  },
+  ListPage(total){
+    let all = Math.ceil(total/24);
+    let query = $.utils.hrefParse();
+    $.PageGo(1,all,function(page){
+        query.page = page;
+        query.size = 24;
+        var goHref = $.utils.qs.stringify(query);
+        $.get("/Movie/GetMovieList?"+ goHref,function(data){
+            var list = data.movies.list;
+            let html = list.reduce((h,item) => {
+              h = h + `
+              <li class="movie-box vivify animationObject popInTop">
+                  <a href="/vod/${item._id}">
+                      <img src="http://go.richfly.cn/${item.cover}" />
+                      <span class="black-block">${item.year}</span>
+                      <span class="black-block">9</span>
+                      <p class="black-block">${item.name}</p>
+                  </a>
+              </li>
+              `
+              return h
+            },"")
+            $(".l-list").html(html);
+        })
+    });
+  },
   utils: {
-    qs
+    qs,
+    hrefParse(){
+      let href = location.href;
+      let str = /\?(.+)#/.test(href)?RegExp.$1 : {};
+      return qs.parse(str);
+    }
   }
 });
