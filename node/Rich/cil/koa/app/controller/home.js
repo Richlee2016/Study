@@ -8,7 +8,7 @@ import { IndexDto } from '../dto/home.dto'
 class Index {
   @Get('', [IndexDto])
   async Index (ctx, next) {
-    ctx.body = ctx.query
+    await ctx.render('index')
   }
   @Get('a')
   async Box (ctx, next) {

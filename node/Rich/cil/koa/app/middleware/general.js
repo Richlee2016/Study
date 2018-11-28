@@ -1,6 +1,9 @@
 import bodyparser from 'koa-bodyparser'
 import session from 'koa-session'
 import json from 'koa-json'
+import koaStatic from 'koa-static'
+import koaViews from 'koa-views'
+import {resolve} from 'path'
 import defaultConfig from '../../config/config.default'
 
 module.exports = app => {
@@ -15,6 +18,19 @@ module.exports = app => {
   // 数据json
   app.use(json())
 
+  // 静态文件目录
+  app.use(koaStatic(resolve(__dirname, '../public')))
+
+  // 模版引擎
+  app.use(
+    koaViews(
+      resolve(__dirname, '../views'),
+      {
+        map:{html:'nunjucks'}
+      }
+    )
+  )
+  
   // 请求时间
   app.use(async (ctx, next) => {
     const start = new Date()
