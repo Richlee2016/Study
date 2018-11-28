@@ -1,0 +1,16 @@
+{
+  "name": "three",
+  "version": "1.0.0",
+  "description": "[toc]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^10.12.0",
+    "@types/three": "^0.93.4",
+    "three": "^0.97.0"
+  }
+}

@@ -70,24 +70,24 @@
     }
 
 
-    class Web extends Programmer implements Person{
+    // class Web extends Programmer implements Person{
         
-        constructor(name:string){
-           super(name)
-        }
-        eat(){
+    //     constructor(name:string){
+    //        super(name)
+    //     }
+    //     eat(){
 
-            console.log(this.name+'喜欢吃馒头')
-        }
-        work(){
+    //         console.log(this.name+'喜欢吃馒头')
+    //     }
+    //     work(){
 
-            console.log(this.name+'写代码');
-        }
+    //         console.log(this.name+'写代码');
+    //     }
         
-    }
+    // }
 
-    var w=new Web('小李');
+    // var w=new Web('小李');
 
-    // w.eat();
+    // // w.eat();
 
-    w.coding('写ts代码');
+    // w.coding('写ts代码');

@@ -1,0 +1,20 @@
+page-home {
+    .preview-box{
+        overflow: hidden;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li{
+            list-style: none;
+            max-width: 49%;
+            min-width: 49%;
+            height: 200px;
+            border-radius: 4px;
+            background: black;
+            margin:0px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+    }
+}

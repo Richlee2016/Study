@@ -83,11 +83,12 @@
             this.name=name;
 
         }
-        eat(food:string){
-
-            console.log(this.name+'吃'+food);
+        eat():void{
+            console.log(this.name+'吃');
         }
     }
 
     var c=new Cat('小花');
-    c.eat('老鼠');
+    // c.eat('老鼠');
+
+    

@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>热映预告</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ul class="preview-box">
+    <li *ngFor="let item of List" (click)="GoVod(item)">
+      <img [src]="item.images.large" alt="">
+    </li>
+  </ul>
+</ion-content>
