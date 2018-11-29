@@ -4,8 +4,8 @@ import json from 'koa-json'
 import koaStatic from 'koa-static'
 import koaViews from 'koa-views'
 import { resolve } from 'path'
-import defaultConfig from '../../config/config.default'
-
+import defaultConfig from '../../../config/config.default'
+import { reqLoggerMiddlewares } from './logger'
 module.exports = app => {
   // config 挂载
   app.config = defaultConfig
@@ -17,29 +17,24 @@ module.exports = app => {
     })
   )
 
+  // 请求日志
+  app.use(reqLoggerMiddlewares())
+
   // 数据json
   app.use(json())
 
   // 静态文件目录
-  app.use(koaStatic(resolve(__dirname, '../public')))
+  app.use(koaStatic(resolve(__dirname, '../../../public')))
 
   // 模版引擎 nunjucks
   app.use(
     koaViews(
-      resolve(__dirname, '../views'),
+      resolve(__dirname, '../../../views'),
       {
         map: { html: 'nunjucks' }
       }
     )
   )
-
-  // 请求时间
-  app.use(async (ctx, next) => {
-    const start = new Date()
-    await next()
-    const ms = new Date() - start
-    console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
-  })
 
   // session配置
   const CONFIG = {

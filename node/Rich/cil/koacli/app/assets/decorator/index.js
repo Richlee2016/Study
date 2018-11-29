@@ -4,16 +4,16 @@ import { resolve } from 'path'
 import _ from 'lodash'
 import bug from 'debug'
 import chalk from 'chalk'
+import { logger } from '../middlewares/logger'
 const debug = bug('路由路径错误:*')
 const miDeBug = bug('中间格式错误:*')
 let routerMap = new Map()
 const symbolController = Symbol('controller')
 const symbolMiddleware = Symbol('middleware')
 
-export class MyRoute {
-  constructor (app, pathes) {
+export class Route {
+  constructor (app) {
     this.app = app
-    this.pathes = pathes
     this.router = new Router()
   }
 
@@ -43,7 +43,16 @@ export class MyRoute {
   }
 
   init () {
-    glob.sync(resolve(this.pathes, './*.js')).forEach(require)
+    this.setRouter()
+  }
+
+  setRouter () {
+    const appPath = resolve(__dirname, '../../')
+    glob.sync(resolve(appPath, './*/*.controller.js')).forEach(controller => {
+      if (controller.includes('controller')) {
+        require(controller)
+      }
+    })
     for (const [opt, controller] of routerMap) {
       const { method, path, target, middlewares } = opt
 
@@ -53,11 +62,18 @@ export class MyRoute {
       this._notMiddlewares(middlewares || [])
       this._notMiddlewares(cMiddlewares || [])
       const controllers = (cMiddlewares || []).concat((middlewares || []), [controller])
-
       this.router[method](this._getPath(cPath, path), ...controllers)
     }
     this.app.use(this.router.routes())
     this.app.use(this.router.allowedMethods())
+  }
+  setServer () {
+    const appPath = resolve(__dirname, '../../')
+    glob.sync(resolve(appPath, './*/*.service.js')).forEach(service => {
+      if (service.includes('service')) {
+        require(service)
+      }
+    })
   }
 }
 
@@ -75,3 +91,12 @@ const setRouter = opt => (target, name, descriptor) => routerMap.set({ target, .
 
 export const Get = (path, middlewares) => setRouter({ method: 'get', path, middlewares })
 export const Post = (path, middlewares) => setRouter({ method: 'post', path, middlewares })
+
+/**
+ * server 注入 logger
+ */
+export const Injectable = () => (target) => {
+  target.prototype.ctx = {}
+  target.prototype.ctx.sayInfo = logger
+  target.prototype.ctx.sayError = err => logger('error').error(err)
+}

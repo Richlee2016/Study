@@ -1,6 +1,6 @@
 import Joi from 'joi'
-import { setNum } from '../common/utils'
-
+import { setNum } from '../utils'
+/** 基于 joi 的验证 */
 export const validator = ({ type, valid, handle }) => (ctx, next) => {
   let validData = {}
   let ty = type || 'body'
