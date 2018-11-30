@@ -6,7 +6,7 @@ import koaViews from 'koa-views'
 import { resolve } from 'path'
 import defaultConfig from '../../../config/config.default'
 import { reqLoggerMiddlewares } from './logger'
-module.exports = app => {
+export default app => {
   // config 挂载
   app.config = defaultConfig
 

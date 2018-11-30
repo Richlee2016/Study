@@ -59,7 +59,7 @@ export const reqLoggerMiddlewares = () => async (ctx, next) => {
       break
   }
   let resData = {}
-  if (ctx.type === 'application/json' || 'text/plain') {
+  if (ctx.type === ('application/json' || 'text/plain')) {
     resData = ctx.body
   }
   logger('req').debug({

@@ -7,6 +7,7 @@ class Home {
   }
   async sayName (name) {
     this.ctx.sayInfo('这是我的名字').info(name)
+    this.ctx.redisClient.set('i am', 'good')
     return name
   }
 }

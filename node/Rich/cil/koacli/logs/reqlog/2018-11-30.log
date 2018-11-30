@@ -1,0 +1,202 @@
+[2018-11-30T09:55:33.071] [DEBUG] req - { method: 'GET', url: '/', ms: 14, data: {}, res: 'rich' }
+[2018-11-30T09:55:33.201] [DEBUG] req - { method: 'GET',
+  url: '/favicon.ico',
+  ms: 5,
+  data: {},
+  res: undefined }
+[2018-11-30T09:55:58.545] [DEBUG] req - { method: 'GET',
+  url: '/markdown/MyCli.md',
+  ms: 2,
+  data: {},
+  res: 
+   ReadStream {
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 65536,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: null,
+        ended: false,
+        endEmitted: false,
+        reading: false,
+        sync: true,
+        needReadable: false,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        destroyed: false,
+        defaultEncoding: 'utf8',
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: { end: [Function], error: [Function] },
+     _eventsCount: 2,
+     _maxListeners: undefined,
+     path: 'E:\\AAA2018\\Study\\Study\\node\\Rich\\cil\\koacli\\public\\markdown\\MyCli.md',
+     fd: null,
+     flags: 'r',
+     mode: 438,
+     start: undefined,
+     end: Infinity,
+     autoClose: true,
+     pos: undefined,
+     bytesRead: 0 } }
+[2018-11-30T09:56:22.919] [DEBUG] req - { method: 'GET',
+  url: '/markdown/MyCli.md',
+  ms: 0,
+  data: {},
+  res: 
+   ReadStream {
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 65536,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: null,
+        ended: false,
+        endEmitted: false,
+        reading: false,
+        sync: true,
+        needReadable: false,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        destroyed: false,
+        defaultEncoding: 'utf8',
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: { end: [Function], error: [Function] },
+     _eventsCount: 2,
+     _maxListeners: undefined,
+     path: 'E:\\AAA2018\\Study\\Study\\node\\Rich\\cil\\koacli\\public\\markdown\\MyCli.md',
+     fd: null,
+     flags: 'r',
+     mode: 438,
+     start: undefined,
+     end: Infinity,
+     autoClose: true,
+     pos: undefined,
+     bytesRead: 0 } }
+[2018-11-30T09:56:44.056] [DEBUG] req - { method: 'GET',
+  url: '/markdown',
+  ms: 1,
+  data: {},
+  res: undefined }
+[2018-11-30T09:56:48.460] [DEBUG] req - { method: 'GET',
+  url: '/markdown/MyCli.md',
+  ms: 2,
+  data: {},
+  res: 
+   ReadStream {
+     _readableState: 
+      ReadableState {
+        objectMode: false,
+        highWaterMark: 65536,
+        buffer: [Object],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: null,
+        ended: false,
+        endEmitted: false,
+        reading: false,
+        sync: true,
+        needReadable: false,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        destroyed: false,
+        defaultEncoding: 'utf8',
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null },
+     readable: true,
+     domain: null,
+     _events: { end: [Function], error: [Function] },
+     _eventsCount: 2,
+     _maxListeners: undefined,
+     path: 'E:\\AAA2018\\Study\\Study\\node\\Rich\\cil\\koacli\\public\\markdown\\MyCli.md',
+     fd: null,
+     flags: 'r',
+     mode: 438,
+     start: undefined,
+     end: Infinity,
+     autoClose: true,
+     pos: undefined,
+     bytesRead: 0 } }
+[2018-11-30T10:05:08.863] [DEBUG] req - { method: 'GET', url: '/', ms: 13, data: {}, res: {} }
+[2018-11-30T10:05:16.047] [DEBUG] req - { method: 'GET',
+  url: '/markdown/MyCli.md',
+  ms: 1,
+  data: {},
+  res: {} }
+[2018-11-30T10:49:31.643] [DEBUG] req - { method: 'GET',
+  url: '/markdown/MyCli.md',
+  ms: 6,
+  data: {},
+  res: {} }
+[2018-11-30T10:49:44.196] [DEBUG] req - { method: 'GET',
+  url: '/markdown/MyCli.md',
+  ms: 7,
+  data: {},
+  res: {} }
+[2018-11-30T10:49:48.069] [DEBUG] req - { method: 'GET', url: '/', ms: 8, data: {}, res: {} }
+[2018-11-30T10:49:53.447] [DEBUG] req - { method: 'GET', url: '/', ms: 4, data: {}, res: {} }
+[2018-11-30T10:52:57.191] [DEBUG] req - { method: 'GET', url: '/', ms: 10, data: {}, res: {} }
+[2018-11-30T10:52:58.000] [DEBUG] req - { method: 'GET', url: '/', ms: 3, data: {}, res: {} }
+[2018-11-30T10:54:36.244] [DEBUG] req - { method: 'GET', url: '/', ms: 4, data: {}, res: {} }
+[2018-11-30T10:55:51.203] [DEBUG] req - { method: 'GET', url: '/', ms: 4, data: {}, res: {} }
+[2018-11-30T10:56:45.754] [DEBUG] req - { method: 'GET', url: '/', ms: 5, data: {}, res: {} }
+[2018-11-30T10:56:52.653] [DEBUG] req - { method: 'GET', url: '/', ms: 1, data: {}, res: {} }
+[2018-11-30T10:57:28.307] [DEBUG] req - { method: 'GET', url: '/', ms: 14, data: {}, res: '1' }
+[2018-11-30T10:57:47.247] [DEBUG] req - { method: 'GET', url: '/', ms: 8, data: {}, res: '1' }
+[2018-11-30T11:22:54.422] [DEBUG] req - { method: 'GET', url: '/', ms: 17, data: {}, res: {} }
+[2018-11-30T11:24:55.081] [DEBUG] req - { method: 'GET', url: '/', ms: 11, data: {}, res: {} }
+[2018-11-30T11:25:18.472] [DEBUG] req - { method: 'GET', url: '/', ms: 16, data: {}, res: {} }
+[2018-11-30T13:46:54.697] [DEBUG] req - { method: 'GET', url: '/', ms: 11, data: {}, res: {} }
+[2018-11-30T13:48:01.709] [DEBUG] req - { method: 'GET', url: '/', ms: 11, data: {}, res: {} }
+[2018-11-30T13:48:05.789] [DEBUG] req - { method: 'GET', url: '/', ms: 1, data: {}, res: {} }
+[2018-11-30T13:48:17.386] [DEBUG] req - { method: 'GET', url: '/', ms: 16, data: {}, res: '1' }
+[2018-11-30T13:49:11.734] [DEBUG] req - { method: 'GET', url: '/', ms: 8, data: {}, res: '1' }
+[2018-11-30T13:49:15.248] [DEBUG] req - { method: 'GET', url: '/', ms: 1, data: {}, res: '1' }
+[2018-11-30T13:49:28.242] [DEBUG] req - { method: 'GET', url: '/', ms: 10, data: {}, res: '1' }
+[2018-11-30T13:51:04.744] [DEBUG] req - { method: 'GET', url: '/', ms: 9, data: {}, res: '1' }
+[2018-11-30T13:52:37.599] [DEBUG] req - { method: 'GET', url: '/', ms: 9, data: {}, res: '1' }
+[2018-11-30T13:57:47.898] [DEBUG] req - { method: 'GET', url: '/', ms: 10, data: {}, res: '1' }
+[2018-11-30T13:58:16.954] [DEBUG] req - { method: 'GET', url: '/', ms: 8, data: {}, res: '1' }
+[2018-11-30T13:58:31.139] [DEBUG] req - { method: 'GET', url: '/', ms: 8, data: {}, res: '1' }
+[2018-11-30T13:58:42.421] [DEBUG] req - { method: 'GET', url: '/', ms: 9, data: {}, res: '1' }
+[2018-11-30T14:03:38.148] [DEBUG] req - { method: 'GET', url: '/', ms: 11, data: {}, res: '1' }
+[2018-11-30T14:04:18.229] [DEBUG] req - { method: 'GET', url: '/', ms: 11, data: {}, res: '1' }
+[2018-11-30T14:05:45.918] [DEBUG] req - { method: 'GET', url: '/', ms: 11, data: {}, res: '1' }
+[2018-11-30T14:34:04.564] [DEBUG] req - { method: 'POST', url: '/Menu/FileMenu', ms: 1, data: {}, res: {} }
+[2018-11-30T14:34:38.213] [DEBUG] req - { method: 'POST', url: '/Menu/FileMenu', ms: 1, data: {}, res: {} }
+[2018-11-30T14:34:51.062] [DEBUG] req - { method: 'POST',
+  url: '/Menu/FileMenu',
+  ms: 8,
+  data: {},
+  res: '[\n  "E:/AAA2018/Study/Study/node/Rich/cil/koacli/public/markdown",\n  "E:/AAA2018/Study/Study/node/Rich/cil/koacli/public/pdf"\n]' }
+[2018-11-30T14:43:35.474] [DEBUG] req - { method: 'POST',
+  url: '/Menu/FileMenu',
+  ms: 5,
+  data: {},
+  res: '{\n  "dev": 2633307412,\n  "mode": 16822,\n  "nlink": 1,\n  "uid": 0,\n  "gid": 0,\n  "rdev": 0,\n  "ino": 1125899911165395,\n  "size": 0,\n  "atimeMs": 1543542874764.6023,\n  "mtimeMs": 1543542874764.6023,\n  "ctimeMs": 1543542876717.6023,\n  "birthtimeMs": 1543542874764.6023,\n  "atime": "2018-11-30T01:54:34.765Z",\n  "mtime": "2018-11-30T01:54:34.765Z",\n  "ctime": "2018-11-30T01:54:36.718Z",\n  "birthtime": "2018-11-30T01:54:34.765Z"\n}' }
+[2018-11-30T14:51:52.445] [DEBUG] req - { method: 'POST',
+  url: '/Menu/FileMenu',
+  ms: 4,
+  data: {},
+  res: '[\n  {\n    "path": "E:/AAA2018/Study/Study/node/Rich/cil/koacli/public/markdown",\n    "name": "markdown"\n  },\n  {\n    "path": "E:/AAA2018/Study/Study/node/Rich/cil/koacli/public/pdf",\n    "name": "pdf"\n  }\n]' }

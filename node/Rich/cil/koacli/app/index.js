@@ -1,10 +1,11 @@
 import Koa from 'koa'
 import chalk from 'chalk'
 import bug from 'debug'
+import { Promise } from 'mongoose'
 
 const debug = bug('static:*')
 
-const MIDDLEWARES = ['general', 'database', 'router']
+const MIDDLEWARES = ['general', 'database', 'redis', 'router']
 
 const host = process.env.HOST || 'localhost'
 const port = process.env.PORT || 8086
@@ -17,10 +18,12 @@ class App {
   }
 
   useMiddleware (app) {
-    return m => {
-      m.forEach(o => {
-        require(`./assets/middlewares/${o}.js`)(app)
+    return async m => {
+      const midMap = m.map(o => {
+        return import(`./assets/middlewares/${o}.js`)
       })
+      const mids = await Promise.all(midMap)
+      mids.forEach(mid => mid.default(app))
     }
   }
 

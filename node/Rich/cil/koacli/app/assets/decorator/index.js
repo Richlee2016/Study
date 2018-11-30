@@ -4,7 +4,7 @@ import { resolve } from 'path'
 import _ from 'lodash'
 import bug from 'debug'
 import chalk from 'chalk'
-import { logger } from '../middlewares/logger'
+import { serverInjectable } from './server.injectable'
 const debug = bug('路由路径错误:*')
 const miDeBug = bug('中间格式错误:*')
 let routerMap = new Map()
@@ -93,10 +93,8 @@ export const Get = (path, middlewares) => setRouter({ method: 'get', path, middl
 export const Post = (path, middlewares) => setRouter({ method: 'post', path, middlewares })
 
 /**
- * server 注入 logger
+ * server 注入 logger redis
  */
 export const Injectable = () => (target) => {
-  target.prototype.ctx = {}
-  target.prototype.ctx.sayInfo = logger
-  target.prototype.ctx.sayError = err => logger('error').error(err)
+  target.prototype.ctx = serverInjectable
 }

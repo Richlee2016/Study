@@ -16,7 +16,7 @@ glob.sync(resolve(appPath, './*/schemas/*.js')).forEach(schema => {
   }
 })
 
-module.exports = app => {
+export default app => {
   mongoose.set('debug', true)
   mongoose.Promise = global.Promise
   mongoose.connect(app.config.db, {

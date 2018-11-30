@@ -9,8 +9,8 @@ import HomeService from './home.service'
 class Home {
   @Get('', [IndexDto])
   async Index (ctx, next) {
-    const res = await HomeService.sayName('rich')
-    ctx.body = res
+    // const res = await HomeService.sayName('rich')
+    ctx.body = 1
   }
   @Get('a')
   async Box (ctx, next) {

@@ -1,6 +1,6 @@
 import { Route } from '../decorator'
 
-module.exports = app => {
+export default app => {
   const myroutes = new Route(app)
   myroutes.init()
 }
