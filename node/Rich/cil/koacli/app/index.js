@@ -4,8 +4,8 @@ import bug from 'debug'
 import { Promise } from 'mongoose'
 
 const debug = bug('static:*')
-
-const MIDDLEWARES = ['general', 'database', 'redis', 'router']
+/*, 'redis' */
+const MIDDLEWARES = ['general', 'database', 'router']
 
 const host = process.env.HOST || 'localhost'
 const port = process.env.PORT || 8086

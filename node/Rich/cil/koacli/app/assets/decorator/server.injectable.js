@@ -1,5 +1,5 @@
 import { logger } from '../middlewares/logger'
-import { client } from '../middlewares/redis'
+// import { client } from '../middlewares/redis'
 /**
  * server ctx 注入
  * <--- 方法 --->
@@ -9,6 +9,6 @@ import { client } from '../middlewares/redis'
  * */
 export const serverInjectable = {
   sayInfo: logger,
-  sayError: err => logger('error').error(err),
-  redisClient: client
+  sayError: err => logger('error').error(err)
+  // redisClient: client
 }

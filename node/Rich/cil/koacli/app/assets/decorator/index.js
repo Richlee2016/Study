@@ -5,6 +5,7 @@ import _ from 'lodash'
 import bug from 'debug'
 import chalk from 'chalk'
 import { serverInjectable } from './server.injectable'
+import { initMiddleware } from './init.middlewares'
 const debug = bug('路由路径错误:*')
 const miDeBug = bug('中间格式错误:*')
 let routerMap = new Map()
@@ -54,14 +55,14 @@ export class Route {
       }
     })
     for (const [opt, controller] of routerMap) {
-      const { method, path, target, middlewares } = opt
+      const { method, path, target, middlewares = [] } = opt
 
       let cPath = target[symbolController]
-
       let cMiddlewares = target[symbolMiddleware] || []
-      this._notMiddlewares(middlewares || [])
-      this._notMiddlewares(cMiddlewares || [])
-      const controllers = (cMiddlewares || []).concat((middlewares || []), [controller])
+      this._notMiddlewares(middlewares)
+      this._notMiddlewares(cMiddlewares)
+
+      const controllers = initMiddleware(cMiddlewares || []).concat(initMiddleware(middlewares || []), [controller])
       this.router[method](this._getPath(cPath, path), ...controllers)
     }
     this.app.use(this.router.routes())

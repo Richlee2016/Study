@@ -4,8 +4,9 @@ import json from 'koa-json'
 import koaStatic from 'koa-static'
 import koaViews from 'koa-views'
 import { resolve } from 'path'
+import { loggerMount } from './logger'
 import defaultConfig from '../../../config/config.default'
-import { reqLoggerMiddlewares } from './logger'
+// import { reqLoggerMiddlewares } from './logger'
 export default app => {
   // config 挂载
   app.config = defaultConfig
@@ -18,7 +19,7 @@ export default app => {
   )
 
   // 请求日志
-  app.use(reqLoggerMiddlewares())
+  app.use(loggerMount)
 
   // 数据json
   app.use(json())

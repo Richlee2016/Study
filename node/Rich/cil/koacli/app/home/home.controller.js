@@ -1,20 +1,23 @@
 
 import { Controller, Get } from '../assets/decorator'
-import { IndexDto } from './dto/home.dto'
-import HomeService from './home.service'
 /**
  * 页面渲染
  */
 @Controller('')
 class Home {
-  @Get('', [IndexDto])
+  @Get('')
   async Index (ctx, next) {
-    // const res = await HomeService.sayName('rich')
-    ctx.body = 1
+    ctx.redirect('/home')
   }
-  @Get('a')
-  async Box (ctx, next) {
-    ctx.body = 321
+  @Get('home')
+  async Home (ctx, next) {
+    await ctx.render('/home.html')
+  }
+  /** error */
+  // 暂无资源页
+  @Get('nosorce')
+  async NoSorce (ctx, next) {
+    await ctx.render('error/nosorce.html', {})
   }
 }
 

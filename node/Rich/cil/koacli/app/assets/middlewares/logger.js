@@ -37,11 +37,15 @@ log4js.configure({
 
 export const logger = name => log4js.getLogger(name || 'default')
 
-export const reqLoggerMiddlewares = () => async (ctx, next) => {
-  // 挂载 controller logger
+// 挂载 controller logger
+export const loggerMount = (ctx, next) => {
   ctx.sayInfo = logger
   ctx.sayError = err => logger('error').error(err)
-  // 记录请求日志
+  return next()
+}
+
+// 记录请求日志
+export const reqLoggerMiddleware = async (ctx, next) => {
   const { method, url } = ctx
   const start = new Date()
   await next()

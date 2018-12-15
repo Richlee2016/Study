@@ -3,7 +3,6 @@ import bug from 'debug'
 import chalk from 'chalk'
 import config from '../../../config/config.default'
 const debug = bug('static:*')
-
 export const client = redis.createClient(config.redis.port, config.redis.host)
 
 export default app => {

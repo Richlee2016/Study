@@ -1,0 +1,26 @@
+[2018-12-14T15:39:00.185] [DEBUG] req - { method: 'GET', url: '/', ms: 1, data: {}, res: 1 }
+[2018-12-14T15:39:03.467] [DEBUG] req - { method: 'GET', url: '/', ms: 1, data: {}, res: 1 }
+[2018-12-14T15:39:34.948] [DEBUG] req - { method: 'GET', url: '/', ms: 1, data: {}, res: 1 }
+[2018-12-14T15:42:44.290] [DEBUG] req - { method: 'GET', url: '/', ms: 1, data: {}, res: 1 }
+[2018-12-14T15:42:47.314] [DEBUG] req - { method: 'GET', url: '/', ms: 0, data: {}, res: 1 }
+[2018-12-14T15:43:11.168] [DEBUG] req - { method: 'GET', url: '/', ms: 1, data: {}, res: 1 }
+[2018-12-14T15:44:01.521] [DEBUG] req - { method: 'GET', url: '/', ms: 1, data: {}, res: 1 }
+[2018-12-14T15:44:17.233] [DEBUG] req - { method: 'GET', url: '/', ms: 2, data: {}, res: 1 }
+[2018-12-14T15:44:21.326] [DEBUG] req - { method: 'GET', url: '/a', ms: 0, data: {}, res: 321 }
+[2018-12-14T15:51:15.717] [DEBUG] req - { method: 'GET',
+  url: '/Movie/GetMovies?page=123',
+  ms: 1533,
+  data: { page: 123, size: 10 },
+  res: 
+   { list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ],
+     count: 23565 } }
