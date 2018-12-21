@@ -2,7 +2,9 @@ import bodyparser from 'koa-bodyparser'
 import session from 'koa-session'
 import json from 'koa-json'
 import koaStatic from 'koa-static'
-import koaViews from 'koa-views'
+import conditional from 'koa-conditional-get'
+import etag from 'koa-etag'
+import koaNunjucks from 'koa-nunjucks-2'
 import { resolve } from 'path'
 import { loggerMount } from './logger'
 import defaultConfig from '../../../config/config.default'
@@ -25,25 +27,33 @@ export default app => {
   app.use(json())
 
   // 静态文件目录
-  app.use(koaStatic(resolve(__dirname, '../../../public')))
+  app.use(koaStatic(resolve(__dirname, '../../..')))
+
+  // 缓存
+  app.use(conditional())
+  app.use(etag())
 
   // 模版引擎 nunjucks
-  app.use(
-    koaViews(
-      resolve(__dirname, '../../../views'),
-      {
-        map: { html: 'nunjucks' }
-      }
-    )
-  )
+  app.use(koaNunjucks({
+    ext: 'html',
+    path: resolve(__dirname, '../../../views'),
+    nunjucksConfig: {
+      trimBlocks: true
+    }
+  }))
+
+  app.keys = ['richlee345642459']
 
   // session配置
   const CONFIG = {
     key: 'koa:sess',
     maxAge: 86400000,
+    autoCommit: true,
     overwrite: true,
+    httpOnly: true,
     signed: true,
-    rolling: false
+    rolling: false,
+    renew: false
   }
   app.use(session(CONFIG, app))
 }

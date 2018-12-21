@@ -5,8 +5,9 @@ class Home {
   constructor () {
     this.Movie = mongoose.model('t_movie_home')
     this.Group = mongoose.model('t_movie_group')
+    this.Page = mongoose.model('t_movie_page')
   }
-  /*
+  /**
    * 根据url参数 筛选电影
    * @param {Object} q:{page,size,year,director,actor,classify,catalog} 筛选参数
    * @return {Object} 筛选结果
@@ -88,19 +89,14 @@ class Home {
       console.log(error)
     }
   }
-  /*
+  /**
    * 获取分组数据
    * @param {Array} types 编号集合
    * @return {Object} 分组电影数据
    */
   async GetGroup ({ types, page = 1, size = 10 }) {
-    let query = {}
     let skip = (page - 1) * size
-    if (!types) {
-      query = {}
-    } else {
-      query = { Type: { $in: types } }
-    }
+    let query = types ? { Type: { $in: types } } : {}
     try {
       const res = await this.Group.find(query)
         .populate('Group', { name: 1, area: 1, year: 1, img: 1, cover: 1 })
@@ -163,6 +159,7 @@ class Home {
    * 获取专题列表
    * @param {Number} page 页数
    * @param {Number} size 条数
+   * @return {count:Number,list:Object} 数量和专题列表
    */
   async GetTopics ({ page = 1, size = 10 }) {
     let skip = (page - 1) * size
@@ -177,11 +174,12 @@ class Home {
   }
   /**
    * 获取单个专题
-   * @param {string} id
-   * @return {object}
+   * @param {String} id 专题id
+   * @return {Object} 专题数据
    */
   async GetTopic (id) {
-    const vod = await this.Page.findOne({ type: id }).exec()
+    const type = 2000 + (!isNaN(id) ? Number(id) : 0)
+    const vod = await this.Page.findOne({ type }).exec()
     return vod
   }
 }

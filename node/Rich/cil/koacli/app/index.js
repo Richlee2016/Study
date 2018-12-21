@@ -1,12 +1,10 @@
 import Koa from 'koa'
 import chalk from 'chalk'
 import bug from 'debug'
-import { Promise } from 'mongoose'
-
+import { MyProcess } from './assets/worker/index'
 const debug = bug('static:*')
 /*, 'redis' */
 const MIDDLEWARES = ['general', 'database', 'router']
-
 const host = process.env.HOST || 'localhost'
 const port = process.env.PORT || 8086
 
@@ -19,6 +17,7 @@ class App {
 
   useMiddleware (app) {
     return async m => {
+      console.log(1)
       const midMap = m.map(o => {
         return import(`./assets/middlewares/${o}.js`)
       })

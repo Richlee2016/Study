@@ -3,7 +3,6 @@ import { resolve } from 'path'
 import glob from 'glob'
 import bug from 'debug'
 import chalk from 'chalk'
-
 const debug = bug('static:*')
 
 // 读取schema 文件

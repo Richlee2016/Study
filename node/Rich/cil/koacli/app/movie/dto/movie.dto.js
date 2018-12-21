@@ -12,3 +12,14 @@ export const MovieDtoList = validator({
     catalog: J.string()
   })
 })
+
+// 电影分组字段
+export const MovieDtoGroup = validator({
+  type: 'body',
+  valid: J => J.object.keys({
+    Type: J.number(),
+    Name: J.string(),
+    Describe: J.string(),
+    Group: J.array()
+  })
+})
