@@ -1,11 +1,13 @@
 import mongoose from 'mongoose'
 import { Injectable } from '../assets/decorator'
+import CrawlerServer from '../crawler/crawker.service'
 @Injectable()
 class Home {
   constructor () {
     this.Movie = mongoose.model('t_movie_home')
     this.Group = mongoose.model('t_movie_group')
     this.Page = mongoose.model('t_movie_page')
+    this.CrawlerServer = CrawlerServer
   }
   /**
    * 根据url参数 筛选电影
@@ -161,7 +163,7 @@ class Home {
    * @param {Number} size 条数
    * @return {count:Number,list:Object} 数量和专题列表
    */
-  async GetTopics ({ page = 1, size = 10 }) {
+  async GetTopics ({ page = 1, size = 12 }) {
     let skip = (page - 1) * size
     let query = { name: { $regex: /topic/ } }
     const count = await this.Page.find(query).count().exec()
@@ -178,8 +180,8 @@ class Home {
    * @return {Object} 专题数据
    */
   async GetTopic (id) {
-    const type = 2000 + (!isNaN(id) ? Number(id) : 0)
-    const vod = await this.Page.findOne({ type }).exec()
+    const vod = await this.Page.findOne({ type: id }).exec()
+    console.log(vod)
     return vod
   }
 }

@@ -15,5 +15,11 @@ export default {
     newest: ['更新', '动作片', '喜剧片', '科幻片', '恐怖片', '剧情片'],
     tv: ['最新', '国产剧', '港台剧', '欧美剧', '日韩剧'],
     catoon: ['最新', '热门']
+  },
+  // qq auth
+  QQauth: {
+    prefix: 'https://graph.qq.com',
+    appID: 101435375,
+    appKey: '91c323460e027125cdeef61365ca86f3'
   }
 }

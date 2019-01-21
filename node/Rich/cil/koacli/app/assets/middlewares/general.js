@@ -6,12 +6,25 @@ import conditional from 'koa-conditional-get'
 import etag from 'koa-etag'
 import koaNunjucks from 'koa-nunjucks-2'
 import { resolve } from 'path'
+import request from 'request-promise-native'
 import { loggerMount } from './logger'
 import defaultConfig from '../../../config/config.default'
 // import { reqLoggerMiddlewares } from './logger'
 export default app => {
-  // config 挂载
+  // ctx挂载
   app.config = defaultConfig
+  // app.use((ctx, next) => {
+  // console.log('add gen')
+  // if (!ctx.config) {
+  //   ctx.config = defaultConfig
+  // }
+  // if (!ctx.axios) {
+  //   ctx.axios = request
+  // }
+  // return next()
+  // })
+  // 请求日志
+  app.use(loggerMount)
 
   // 数据格式化中间件
   app.use(
@@ -19,9 +32,6 @@ export default app => {
       enableTypes: ['json', 'form', 'text']
     })
   )
-
-  // 请求日志
-  app.use(loggerMount)
 
   // 数据json
   app.use(json())

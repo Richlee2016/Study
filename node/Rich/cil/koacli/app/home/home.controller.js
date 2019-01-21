@@ -40,7 +40,7 @@ class Home {
   async vod (ctx, next) {
     const { id } = ctx.params
     const res = await MovieServer.GetMovie(id)
-    await this.ctx.render('vod.html', { data: res })
+    await ctx.render('vod', { data: res })
   }
   /** 列表 */
   @Get('list')
@@ -49,7 +49,7 @@ class Home {
     querys.size = 24
     querys.page = querys.page ? Number(querys.page) : 1
     const res = await MovieServer.GetMovies(querys)
-    await this.ctx.render('list.html', { list: res.list, count: res.count })
+    await ctx.render('list', { list: res.list, count: res.count })
   }
   /** 分组 */
   @Get('group/:type')
@@ -73,20 +73,20 @@ class Home {
       arr.push(box.Group)
       return arr
     }, [])
-    await this.ctx.render('group.html', { list })
+    await ctx.render('group', { list })
   }
   /** 搜索 */
   @Get('search')
   async search (ctx, next) {
     const res = await MovieServer.Search(ctx.query)
-    await this.ctx.render('list.html', { list: res.list, counts: res.counts })
+    await ctx.render('list', { list: res.list, counts: res.counts })
   }
   /** 专题 */
   @Get('topic')
   async topic (ctx, next) {
     let { page, size } = ctx.query
     const res = await MovieServer.GetTopics({ page, size })
-    await ctx.render('topic.html', { data: res.list, count: res.count })
+    await ctx.render('topic', { data: res.list, count: res.count })
   }
   /** 专题详情 */
   @Get('topicvod/:id')
@@ -94,19 +94,19 @@ class Home {
     let { id } = ctx.params
     id = isNaN(Number(id)) ? 1 : Number(id)
     const res = await MovieServer.GetTopic(id)
-    await ctx.render('topicvod.html', { data: res.list })
+    await ctx.render('topicvod', { data: res.list })
   }
   /** 个人中心 */
   @Get('center')
   async center (ctx) {
-    await ctx.render('center.html')
+    await ctx.render('center')
   }
 
   /** error */
   // 暂无资源页
   @Get('nosorce')
   async NoSorce (ctx, next) {
-    await ctx.render('error/nosorce.html', {})
+    await ctx.render('error/nosorce', {})
   }
 }
 

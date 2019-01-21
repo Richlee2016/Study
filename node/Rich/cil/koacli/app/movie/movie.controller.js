@@ -1,7 +1,10 @@
 
 import { Controller, Get, Post } from '../assets/decorator'
 import MovieService from './movie.service'
+import CrawlerService from '../crawler/crawker.service'
+import QiNiuService from '../qiniu/qiniu.service'
 import { MovieDtoList, MovieDtoGroup } from './dto/movie.dto'
+
 @Controller('Movie')
 class Movie {
   /** 电影列表 */
@@ -56,6 +59,31 @@ class Movie {
     const res = await MovieService.GetTopic(id)
     ctx.body = res
     ctx.status = 200
+  }
+
+  /** 抓取电影 */
+  @Get('CrawlerMovie')
+  async CrawlerMovie (ctx, next) {
+    await CrawlerService.updateMovieHome()
+    ctx.body = 123
+  }
+
+  @Get('cralwerOnline')
+  async cralwerOnline (ctx) {
+    const res = await CrawlerService.uploadOnline()
+    ctx.body = res
+  }
+
+  @Get('qiniuhome')
+  async qiniuhome (ctx) {
+    await QiNiuService.HomeCoverUpdate()
+    ctx.body = 1
+  }
+  @Get('qiniulist')
+  async qiniulist (ctx) {
+    console.log(321)
+    const del = await QiNiuService.FindPrefix()
+    ctx.body = del
   }
 }
 

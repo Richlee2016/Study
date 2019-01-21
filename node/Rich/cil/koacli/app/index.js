@@ -5,7 +5,7 @@ import { MyProcess } from './assets/worker/index'
 const debug = bug('static:*')
 /*, 'redis' */
 const MIDDLEWARES = ['general', 'database', 'router']
-const host = process.env.HOST || 'localhost'
+const host = process.env.HOST || '192.168.15.32'
 const port = process.env.PORT || 8086
 
 class App {

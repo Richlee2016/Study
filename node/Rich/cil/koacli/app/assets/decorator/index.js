@@ -11,13 +11,11 @@ const miDeBug = bug('中间格式错误:*')
 let routerMap = new Map()
 const symbolController = Symbol('controller')
 const symbolMiddleware = Symbol('middleware')
-
 export class Route {
   constructor (app) {
     this.app = app
     this.router = new Router()
   }
-
   /** 获取路径 */
   _getPath (c, p) {
     const isPath = path => /^\//.test(path)
@@ -45,6 +43,7 @@ export class Route {
 
   init () {
     this.setRouter()
+    this.setServer()
   }
 
   setRouter () {

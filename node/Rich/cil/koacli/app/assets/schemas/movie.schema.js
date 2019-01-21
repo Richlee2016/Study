@@ -9,6 +9,7 @@ const MovieSchema = new Schema({
   othername: String,
   year: Number,
   img: String,
+  cover: String,
   isFinish: String,
   imdb: String,
   catalog: [String],
@@ -44,13 +45,14 @@ MovieSchema.statics = {
     let _movie
     if (isExist) {
       console.log(`${movie.id}已经存在`)
-      return
+      return isExist
     } else {
-      _movie = new Movie(movie)
+      _movie = new Movie(Object.assign(movie, { _id: movie.id }))
     }
     try {
       await _movie.save()
       console.log(`${movie.id}储存成功`)
+      return _movie
     } catch (e) {
       console.log(`${movie.id}储存失败`)
       console.log(e)

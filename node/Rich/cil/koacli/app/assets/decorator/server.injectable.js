@@ -1,4 +1,6 @@
 import { logger } from '../middlewares/logger'
+import config from '../../../config/config.default'
+import request from 'request-promise-native'
 // import { client } from '../middlewares/redis'
 /**
  * server ctx 注入
@@ -8,6 +10,8 @@ import { logger } from '../middlewares/logger'
  * redis reids操作
  * */
 export const serverInjectable = {
+  config,
+  axios: request,
   sayInfo: logger,
   sayError: err => logger('error').error(err)
   // redisClient: client

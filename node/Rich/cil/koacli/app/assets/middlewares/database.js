@@ -6,17 +6,13 @@ import chalk from 'chalk'
 const debug = bug('static:*')
 
 // 读取schema 文件
-const appPath = resolve(__dirname, '../../')
+// const appPath = resolve(__dirname, '../schemas/')
 
 // 加载 schemas
-glob.sync(resolve(appPath, './*/schemas/*.js')).forEach(schema => {
-  if (schema.includes('schema')) {
-    require(schema)
-  }
-})
+glob.sync(resolve(__dirname, '../schemas/*.js')).forEach(schema => require(schema))
 
 export default app => {
-  mongoose.set('debug', true)
+  // mongoose.set('debug', true)
   mongoose.Promise = global.Promise
   mongoose.connect(app.config.db, {
     useNewUrlParser: true
