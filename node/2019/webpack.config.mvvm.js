@@ -2,7 +2,7 @@ const path = require('path')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 console.log(31)
 module.exports = {
-  entry: './react/router/index.js',
+  entry: './mvvm/base.js',
   output: {
     path: path.join(__dirname, 'src/base')
   },
@@ -13,18 +13,18 @@ module.exports = {
         loader: 'babel-loader',
         exclude: path.resolve(__dirname, 'node_modules'),
         query: {
-          presets: ['env', 'es2015', 'react']
+          presets: ['es2015']
         }
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'react/router/index.html',
+      template: 'mvvm/index.html',
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      template: 'react/router/index.html',
+      template: 'mvvm/index.html',
       filename: 'index.html',
       // 是否压缩
       minify: {
