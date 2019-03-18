@@ -5,19 +5,18 @@
  */
 export const setAttr = (el, attr, val) => {
   switch (attr) {
-    case "style":
-      el.style.cssText = val;
-      break;
+    case 'style':
+      el.style.cssText = val
+      break
 
-    case "value":
-      const tagName = el.tagName.toLoverCase();
-      if (tagName == "input" || tagName == "textarea") {
-        el.value = val;
+    case 'value':
+      const tagName = el.tagName.toLoverCase()
+      if (tagName == 'input' || tagName == 'textarea') {
+        el.value = val
       }
-      break;
+      break
     default:
-      el.setAttribute(attr, val);
-      break;
+      el.setAttribute(attr, val)
+      break
   }
-};
-
+}

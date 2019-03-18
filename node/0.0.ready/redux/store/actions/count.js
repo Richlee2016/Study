@@ -1,8 +1,8 @@
 export default {
-    add(){
-        return {type:'ADD'}
-    },
-    minus(){
-        return {type:'MINUS'}
-    }
+  add () {
+    return { type: 'ADD' }
+  },
+  minus () {
+    return { type: 'MINUS' }
+  }
 }

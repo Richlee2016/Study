@@ -1,5 +1,2 @@
-declare namespace a {
-    function call(who: string): void;
-}
-
-export default a;
+export const a:string
+export function bfun(a:number):number

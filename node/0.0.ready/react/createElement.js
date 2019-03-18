@@ -12,27 +12,27 @@
  * el.appendChild()
  */
 import * as utils from './utils'
-class Element{
-    constructor(tagName,attrs,children){
-        this.tagName = tagName;
-        this.attrs = attrs;
-        this.children = children;
+class Element {
+  constructor (tagName, attrs, children) {
+    this.tagName = tagName
+    this.attrs = attrs
+    this.children = children
+  }
+
+  render () {
+    let el = document.createElement(this.tag)
+    for (const [attr, val] of Object.entries(this.attrs)) {
+      utils.setAttr(el, attr, val)
     }
 
-    render(){
-        let el = document.createElement(this.tag);
-        for (const [attr,val] of Object.entries(this.attrs)) {
-            utils.setAttr(el,attr,val);
-        }
-
-        this.children.forEach(child => {
-            let son = child instanceof Element?child.render() : document.createTextNode(child)
-            el.appendChild(son);
-        })
-        return el;
-    }
+    this.children.forEach(child => {
+      let son = child instanceof Element ? child.render() : document.createTextNode(child)
+      el.appendChild(son)
+    })
+    return el
+  }
 }
 
-export default function createElement(tag,attrs,children){
-    return new Element(tag,attrs,children);
+export default function createElement (tag, attrs, children) {
+  return new Element(tag, attrs, children)
 }

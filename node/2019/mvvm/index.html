@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+      <span v-bind:class="a">{{a}}</span>
+      <input v-bind:class="nice.box" v-model="b" />
+      <div>
+        <span v-bind:class="b">{{b}}</span>
+      </div>
+      <p>{{nice.box}}</p>
+      {{nice}}
+      <button v-on:click='GoGo'>gogogo</button>
+      <div>{{leego}}</div>
+    </div>
+</body>
+</html>

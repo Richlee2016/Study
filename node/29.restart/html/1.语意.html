@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding:0px;
+        margin: 0px;
+    }
+    .box{
+        padding:0px 20px;
+        border: 1px solid #999;
+        margin-top: 20px;
+    }
+    .title{
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border-bottom:1px solid #999; 
+    }
+</style>
+<body>
+    <div class="box">
+            <h1 class="title">hgroup 与 h1~h6</h1>
+        <h1>JavaScript 对象 </h1>
+        <h2> 我们需要模拟类吗？</h2>
+        <p>balah balah</p>
+    
+        <hgroup>
+            <h1>JavaScript 对象 </h1>
+            <h2> 我们需要模拟类吗？</h2>
+        </hgroup>
+        <p>balah balah</p>
+    </div>
+    <div class="box">
+        <h1 class="title">session 降级 h1~h6</h1>
+        <section>
+            <h1>HTML 语义 </h1>
+            <p>balah balah balah balah</p>
+            <section>
+                <h1> 弱语义 </h1>
+                <p>balah balah</p>
+            </section>
+            <section>
+                <h1> 结构性元素 </h1>
+                <p>balah balah</p> 
+                <section>
+                    <h1>再次降级</h1>
+                    <p>那你岂不是很棒棒</p>
+                </section>
+            </section>
+        </section>
+    </div>
+    <div class="box">
+        <h1 class="title">典型body</h1>
+        <header>
+            <nav>nav</nav>
+        </header>
+        <aside>
+            <nav>nav</nav>
+        </aside>
+        <section>section</section>
+        <section>section</section>
+        <section>section</section>
+        <footer>
+            <address>address</address>
+        </footer>
+    </div>
+    <div class="box ">
+        <h1 class="title">多文章结构</h1>
+        <header>
+            <article>
+                <header>header</header>
+                <section>section</section>
+                <section>section</section>
+                <section>section</section>
+                <section>section</section>
+                <fotter>fotter</fotter>
+            </article>
+        </header>
+        <footer>
+            <address>address</address>
+        </footer>
+    </div>
+</body>
+</html>
