@@ -28,7 +28,7 @@ class RPromise {
       if (this.status == PENDING) {
         this.status = REJECTED
         this.value = value // 2.1.3失败之后 会得到一个值 这个值不能更改
-        this.onRejectedCallbacks.forEach(fn => fn(this.value))
+        this.onRejectedCallbacks.forEach(fn => fn(this.value)s.value))
       }
     }
     // 捕获异常
