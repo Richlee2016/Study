@@ -1,0 +1,31 @@
+:<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <script src="./promise.js"></script>
+</head>
+<body>
+</body>
+</html>
+<script>
+const a = new RPromise((resolve, reject) => {
+  setTimeout(() => {
+    console.log('first')
+    resolve('rich')
+  }, 2000)
+})
+
+const b = a.then(res => {
+  return function () {
+    console.log('function')
+  }
+})
+b.then(res => {
+  console.log(res)
+})
+</script>
