@@ -3,7 +3,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 console.log(31)
 module.exports = {
   // entry: './react/Api/index.js',
-  entry: './react/router/index.js',
+  entry: './react/redux/index.js',
   output: {
     path: path.join(__dirname, 'src/base')
   },
@@ -23,12 +23,12 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       // template: 'react/Api/index.html',
-      template: 'react/router/index.html',
+      template: 'react/redux/index.html',
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
       // template: 'react/Api/index.html',
-      template: 'react/router/index.html',
+      template: 'react/redux/index.html',
       filename: 'index.html',
       // 是否压缩
       minify: {
