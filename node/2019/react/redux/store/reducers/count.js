@@ -6,7 +6,6 @@ export default (state = { num: 0 }, action) => {
       return state
     case types.ADD:
       state = { ...state, num: ++state.num }
-      console.log(state)
       return state
     default:
       return state

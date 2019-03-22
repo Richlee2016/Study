@@ -3,7 +3,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 console.log(31)
 module.exports = {
   // entry: './react/Api/index.js',
-  entry: './react/redux/index.js',
+  entry: './node/reactdiff/index.js',
   output: {
     path: path.join(__dirname, 'src/base')
   },
@@ -15,7 +15,7 @@ module.exports = {
         exclude: path.resolve(__dirname, 'node_modules'),
         query: {
           presets: ['env', 'es2015', 'react'],
-          plugins: ['transform-object-rest-spread']
+          plugins: ['transform-object-rest-spread', 'transform-runtime']
         }
       }
     ]
@@ -23,12 +23,12 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       // template: 'react/Api/index.html',
-      template: 'react/redux/index.html',
+      template: 'react/reactdiff/index.html',
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
       // template: 'react/Api/index.html',
-      template: 'react/redux/index.html',
+      template: 'react/reactdiff/index.html',
       filename: 'index.html',
       // 是否压缩
       minify: {

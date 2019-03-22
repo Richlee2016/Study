@@ -1,5 +1,5 @@
 import React from 'react'
-import { connect } from 'react-redux'
+import { connect } from '../react-redux'
 import * as actions from '../store/actions'
 class Count extends React.Component {
   // constructor (props) {

@@ -21,24 +21,53 @@ const _timer = time => new Promise((resolve, reject) => {
 
 function * go () {
   const a = yield _timer(2000)
-  return 1 + a
+  const b = yield _timer(4000)
+  return 1 + a + b
 }
+
+// function co (gen) {
+//   let it = gen()
+//   return new Promise((resolve, reject) => {
+//     const { value, done } = it.next()
+//     value.then(res => {
+//       //上一个 yield 的返回值为 res
+//       const { value, done } = it.next(res)
+//       if(done){
+//         resolve(res)
+//       }else{
+//         value.then(twoRes => {
+//           const { value, done } = it.next(res)...
+//         },err => reject(err))
+//       }
+//     },err => reject(err))
+//   })
+// }
 
 // let a = go()
 
-const co = (gen) => {
-  let it = gen() // generator 函数
-  // 返回一个 promise  这个 promise  让 it 自动执行
-  //   value 必然是个 promise(co的用处)
+// const co = (gen) => {
+//   let it = gen()
+//   return new Promise((resolve, reject) => {
+//     (function next (lastval) {
+//       // it.next(lastval)  把上一个 promise 的返回值传给 上一个 yield  使其再gen中获取 到promise的返回值
+//       let { value, done } = it.next(lastval)
+//       if (done) {
+//         resolve(lastval)
+//       } else {
+//         value.then(next, err => reject(err))
+//       }
+//     })()
+//   })
+// }
+
+function co (gen) {
+  let it = gen()
   return new Promise((resolve, reject) => {
-    (function next (lastval) {
-      console.log(lastval)
-      let { value, done } = it.next(lastval)
-      console.log(value, done)
+    (function next (lastVal) {
+      const { value, done } = it.next(lastVal)
       if (done) {
-        resolve(lastval)
+        resolve(lastVal)
       } else {
-        // promise 链式调用
         value.then(next, err => reject(err))
       }
     })()
