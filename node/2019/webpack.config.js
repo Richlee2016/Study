@@ -1,47 +1,82 @@
 const path = require('path')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
-console.log(31)
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+// const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+let ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
+let cssExtract = new ExtractTextWebpackPlugin('static/css/main.css')
+let lessExtract = new ExtractTextWebpackPlugin('static/css/less.css')
 module.exports = {
-  // entry: './react/Api/index.js',
-  entry: './node/reactdiff/index.js',
+  entry: {
+    index: './webpack/pack/index.js',
+    main: './webpack/pack/main.js'
+  },
   output: {
-    path: path.join(__dirname, 'src/base')
+    path: path.join(__dirname, 'dist'),
+    filename: 'static/js/[name].js',
+    publicPath: './'
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         loader: 'babel-loader',
+        include: path.join(__dirname, './webpack/pack'),
         exclude: path.resolve(__dirname, 'node_modules'),
         query: {
-          presets: ['env', 'es2015', 'react'],
-          plugins: ['transform-object-rest-spread', 'transform-runtime']
+          presets: ['env', 'es2015']
+        }
+      },
+      {
+        test: /\.css$/,
+        // loader: ['style-loader', 'css-loader', 'postcss-loader']
+        loader: cssExtract.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'postcss-loader']
+        })
+      },
+      {
+        test: /\.less$/,
+        // loader: ['style-loader', 'css-loader', 'less-loader', 'postcss-loader']
+        loader: lessExtract.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'less-loader', 'postcss-loader']
+        })
+      },
+      {
+        test: /\.(png|jpg|gif|svg|bmp)/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 5 * 1024,
+            name: '[name].[ext]',
+            outputPath: 'static/images/',
+            // 背景图片的公共 路径
+            publicPath: '../images'
+          }
         }
       }
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      // template: 'react/Api/index.html',
-      template: 'react/reactdiff/index.html',
-      filename: 'index.html'
-    }),
-    new HtmlWebpackPlugin({
-      // template: 'react/Api/index.html',
-      template: 'react/reactdiff/index.html',
       filename: 'index.html',
-      // 是否压缩
+      template: path.resolve(__dirname, './webpack/pack/index.html'),
+      title: '很好很强大',
+      chunks: ['index', 'main'],
       minify: {
-        // 是否去掉 属性的 引号
         removeAttributeQuotes: true
-      }
-    })
-  ],
-  // 静态服务器
-  devServer: {
-    contentBase: './src',
-    host: 'localhost',
-    port: 8083,
-    compress: true// 启动gzip
-  }
+      },
+      hash: true
+    }),
+    // new CopyWebpackPlugin([
+    //   {
+    //     from: path.resolve(__dirname, './webapck/pack/static'),
+    //     to: 'static',
+    //     ignore: ['.*']
+    //   }
+    // ]),
+    cssExtract,
+    lessExtract
+  ]
 }
