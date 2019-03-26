@@ -96,7 +96,7 @@ class RPromise {
       promise2 = new RPromise((resolve, reject) => {
         try {
           let x = onFulfilled(this.value)
-          resolvePromise(promise2, x, resolve, reject)
+          onRejected(promise2, x, resolve, reject)
         } catch (error) {
           reject(error)
         }

@@ -1,9 +1,8 @@
 const path = require('path')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
-console.log(31)
 module.exports = {
   // entry: './react/Api/index.js',
-  entry: './node/reactdiff/index.js',
+  entry: './test/index.js',
   output: {
     path: path.join(__dirname, 'src/base')
   },
