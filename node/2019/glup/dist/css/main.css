@@ -1,0 +1,12 @@
+.box {
+  color: #03a9dd;
+}
+.good {
+  display: flex;
+}
+.good div {
+  flex: 1;
+  transition: 1s ease;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
