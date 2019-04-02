@@ -21,3 +21,4 @@ function Encrypt (word) {
 }
 console.log(Encrypt(str))
 console.log(Decrypt('BCDC96141942A6F2ED3ED517AD6AA62A09D8D3B9B0AE17830038FD06DD7D26C8'))
+console.log(Decrypt('48A8233198886612967A4DCD06C294CE'))
