@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="Sub">submit</button>
+  </body>
+</html>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"
+></script>
+<script src="./ajax.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-JSONP/2.4.0/jquery.jsonp.js"></script>
+<script>
+  // ajax({
+  //   method: 'GET',
+  //   url: 'http://localhost:7001/book/home',
+  //   success: function (data) {
+  //     console.log(data)
+  //   }
+  // })
+  window.$.ajax({
+    type: 'POST',
+    url: 'http://logv1.mops.fujica.com.cn/api/log/write',
+    // dataType: 'jsonp',
+    // jsonpCallback: 'showData',
+    data: {
+      Type: '1',
+      Level: 'Info',
+      ParkingCode: '前端测试',
+      Message: '前端测试',
+      Class: '321',
+      Action: '321',
+      Project: '321',
+      CreateTime: '321',
+      Device: '321',
+      LineRecordCode: '321'
+    },
+    success: function (msg) {
+      console.log('Data Saved: ' + msg)
+    }
+  })
+  //   $.post('http://logv1.mops.fujica.com.cn/api/log/write',
+  // {
+  //       Type: '1',
+  //       Level: 'Info',
+  //       ParkingCode: '前端测试',
+  //       Message: '前端测试',
+  //       Class: '321',
+  //       Action: '321',
+  //       Project: '321',
+  //       CreateTime: '321',
+  //       Device: '321',
+  //       LineRecordCode: '321'
+  // },
+  // function (data) {
+  //   console.log(data)
+  // })
+</script>

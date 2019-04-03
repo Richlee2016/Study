@@ -26,6 +26,7 @@
     "fundebug-nodejs": "^0.1.0"
   },
   "dependencies": {
+    "assert": "^1.4.1",
     "chalk": "^2.4.1",
     "cheerio": "^1.0.0-rc.2",
     "debug": "^4.1.0",

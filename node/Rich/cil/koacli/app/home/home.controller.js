@@ -1,11 +1,18 @@
 
-import { Controller, Get } from '../assets/decorator'
+import { Controller, Get, Post } from '../assets/decorator'
 import MovieServer from '../movie/movie.service'
 /**
  * 页面渲染
  */
 @Controller('')
 class Home {
+  /** 测试 */
+  @Post('testgo')
+  async testgo (ctx, next) {
+    const data = ctx.request.body
+    console.log(data)
+    ctx.body = data
+  }
   /** 预告页 */
   @Get('')
   async Index (ctx, next) {

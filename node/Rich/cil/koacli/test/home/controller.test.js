@@ -1,9 +1,9 @@
-const assert = require('power-assert')
+const assert = require('assert')
 
 describe('test.js', () => {
   const arr = [1, 2, 3]
 
-  it('power-assert', () => {
-    assert(arr[1] === 9)
+  it('数组的长度是3', () => {
+    assert(arr.length === 3)
   })
 })
