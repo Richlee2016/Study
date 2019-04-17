@@ -5,27 +5,27 @@
  */
 const bubbleSort = arr => {
   let tem = null
-  //   for (let i = arr.length - 1; i > 0; i--) {
-  //     for (let j = 0; j < i; j++) {
-  //       tem = arr[j]
-  //       if (arr[j] > arr[j + 1]) {
-  //         arr[j] = arr[j + 1]
-  //         arr[j + 1] = tem
-  //       }
-  //     }
-  //   }
-  //   console.log(arr)
-  let len = arr.length
-  while (len > 0) {
-    for (let j = 0; j < len; j++) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    for (let j = 0; j < i; j++) {
       tem = arr[j]
       if (arr[j] > arr[j + 1]) {
         arr[j] = arr[j + 1]
         arr[j + 1] = tem
       }
     }
-    len--
   }
+  //   console.log(arr)
+  // let len = arr.length
+  // while (len > 0) {
+  //   for (let j = 0; j < len; j++) {
+  //     tem = arr[j]
+  //     if (arr[j] > arr[j + 1]) {
+  //       arr[j] = arr[j + 1]
+  //       arr[j + 1] = tem
+  //     }
+  //   }
+  //   len--
+  // }
   console.log(arr)
 }
 
