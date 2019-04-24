@@ -1,14 +1,13 @@
 "use strict";
 //接口扩展：接口可以继承接口   
-var Programmer = /** @class */ (function () {
-    function Programmer(name) {
+class Programmer {
+    constructor(name) {
         this.name = name;
     }
-    Programmer.prototype.coding = function (code) {
+    coding(code) {
         console.log(this.name + code);
-    };
-    return Programmer;
-}());
+    }
+}
 // class Web extends Programmer implements Person{
 //     constructor(name:string){
 //        super(name)

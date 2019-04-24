@@ -25,45 +25,42 @@
  * }
  *
  */
-var objany = {
+let objany = {
     a: 1,
     b: 2
 };
 console.log('any obj', objany.a, objany.b);
-var objinter = {
+let objinter = {
     a: 3,
     b: 4,
     c: 'rich'
 };
 console.log('interface obj', objinter.a, objinter.b);
 // 解构
-var sayName = function (_a) {
-    var a = _a[0], b = _a[1];
+let sayName = ([a, b]) => {
     console.log(a, b);
 };
 sayName(['rich', 1]);
-var sayAge = function (_a) {
-    var a = _a.a, b = _a.b;
+let sayAge = ({ a, b }) => {
     console.log(a, b);
 };
 sayAge({ a: 'rich', b: 28 });
 // 解构的默认值
-var goHome = function (_a) {
-    var _b = _a.a, a = _b === void 0 ? 'rich' : _b, _c = _a.b, b = _c === void 0 ? 2 : _c;
+let goHome = ({ a = 'rich', b = 2 }) => {
     console.log(a, b);
 };
 goHome({ a: 'lee' });
-var go1 = {
+let go1 = {
     a: 1,
     // b:'nice',
     gogo: 'nice',
     jiu: 'yo'
 };
-var in2 = [1, 2, 3];
-var in3 = ['rich', 'lee'];
-var in1 = { len: 1, go: 2 };
+let in2 = [1, 2, 3];
+let in3 = ['rich', 'lee'];
+let in1 = { len: 1, go: 2 };
 // 
-var square = {};
+let square = {};
 square.color = "blue";
 square.sideLength = 10;
 square.penWidth = 5.0;

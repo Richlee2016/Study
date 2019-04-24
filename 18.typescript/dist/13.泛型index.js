@@ -76,14 +76,14 @@
 
 */
 //类的泛型
-var MinClas = /** @class */ (function () {
-    function MinClas() {
+class MinClas {
+    constructor() {
         this.list = [];
     }
-    MinClas.prototype.add = function (value) {
+    add(value) {
         this.list.push(value);
-    };
-    MinClas.prototype.min = function () {
+    }
+    min() {
         var minNum = this.list[0];
         for (var i = 0; i < this.list.length; i++) {
             if (minNum > this.list[i]) {
@@ -91,9 +91,8 @@ var MinClas = /** @class */ (function () {
             }
         }
         return minNum;
-    };
-    return MinClas;
-}());
+    }
+}
 var m1 = new MinClas(); /*实例化类 并且制定了类的T代表的类型是number*/
 m1.add(11);
 m1.add(3);
