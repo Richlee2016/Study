@@ -24,6 +24,11 @@ type Fun<T> = {
 // 需要扩展的时候  使用  extends   使用interface
 // 需要用到元组 的时候使用 type
 
+// 元组
+type TupleType = [string,number]
+
+const tupleBox:TupleType = ['rich', 23]
+
 const box: Fun<number> = { age: 1, name: 321, Child: { age: 1, name: 3 } };
 
 /** 字面量  数字字面量*/
@@ -65,9 +70,11 @@ interface Circle {
 }
 
 type Shape1 = Square | Rectangle | Circle;
+
 function assetNever(value: never): never {
   throw new Error("fuck" + value);
 }
+
 function getArea(s: Shape1): number {
   switch (s.kind) {
     case "square":
