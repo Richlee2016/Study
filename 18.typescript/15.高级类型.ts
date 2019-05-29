@@ -368,4 +368,5 @@ type NonNull = NonNullable<string | number | null | undefined>;
 class Aclass{constructor(){}}
 // typeof 把值 转成 type
 type Instance = InstanceType<typeof Aclass>
+const newone:Instance = new Aclass()
 type InstanceAny = InstanceType<any>
