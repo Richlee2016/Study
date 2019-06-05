@@ -15,7 +15,7 @@
  * void
  * null 
  * undefined
- * never
+ * never  报错 或 无线循环这种
  * 断言  
  * {
  * let a:any = 'rich  
