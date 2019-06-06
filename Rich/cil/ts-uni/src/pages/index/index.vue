@@ -16,6 +16,12 @@ export default Vue.extend({
       title: 'Hello',
     };
   },
+  props: {
+    box: {
+      type: String,
+      default: 'abc',
+    },
+  },
   onLoad() {},
   methods: {},
 });
