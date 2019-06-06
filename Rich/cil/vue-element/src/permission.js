@@ -4,6 +4,7 @@ import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 const whiteList = ['/login']
 
+/** 路由拦截 */
 router.beforeEach(async (to, from, next) => {
   NProgress.start()
   const { Token, Info, NavBar } = store.getters
@@ -32,7 +33,7 @@ router.beforeEach(async (to, from, next) => {
   }
 })
 
+/** 完成 */
 router.afterEach(() => {
-  // finish progress bar
   NProgress.done()
 })
