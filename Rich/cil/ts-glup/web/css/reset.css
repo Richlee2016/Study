@@ -1,0 +1,8 @@
+.nice{
+    display: flex;
+}
+.nice span{
+    flex: 1;
+    transition: 1s ease;
+    transform: rotate(270deg);
+}
