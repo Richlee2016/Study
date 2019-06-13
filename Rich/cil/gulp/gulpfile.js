@@ -27,6 +27,6 @@ gulp.task('server', () => {
 
 const style = gulp.parallel('style:css', 'style:less')
 const files = gulp.parallel('files:images', 'files:fonts', 'files:plugin')
-const watchServer = gulp.parallel('watcher', 'server')
+const watchServer = gulp.parallel('watcher')
 
 gulp.task('default', gulp.series('script', style, files, watchServer))
