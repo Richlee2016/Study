@@ -16,9 +16,5 @@
     "experimentalDecorators": true,
     "resolveJsonModule": true
   },
-  "include": [
-    "src",
-    "build",
-    "webpack.config.dev.ts"
-  ]
+  "include": ["src", "build", "webpack.config.dev.ts"]
 }

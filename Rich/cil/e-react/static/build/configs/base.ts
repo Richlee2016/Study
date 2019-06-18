@@ -1,7 +1,7 @@
 /*
  * @Date: 2019-05-27 14:36:06
  * @LastEditors: RichLee
- * @LastEditTime: 2019-06-04 15:39:30
+ * @LastEditTime: 2019-06-18 13:50:18
  */
 
 import webpack from 'webpack';
@@ -11,7 +11,7 @@ const isDev = process.env.NODE_ENV === 'development';
 
 const baseConfig: webpack.Configuration = {
   output: {
-    filename: '[name].js',
+    filename: '../../dist/ssr/[name].js',
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],

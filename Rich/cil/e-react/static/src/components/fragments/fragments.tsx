@@ -1,5 +1,16 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
+require('./text.css');
+let targetWin: any = null;
+if (window) targetWin = window;
+new Proxy(targetWin, {
+  get: function(target: any, key: any, receiver: any) {
+    if (!targetWin) {
+      return Reflect.get({ nothing: function() {} }, 'nothing', receiver);
+    }
+    return Reflect.get(target, key, receiver);
+  },
+});
 type IProps = {};
 
 type IState = {
@@ -61,6 +72,7 @@ export default class Fragments extends React.Component<IProps, IState> {
     const { isShow } = this.state;
     return (
       <>
+        <div className="box">321</div>
         <ul>
           <Frag />
         </ul>

@@ -4,7 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev-static": "cd static && npm run dev-static",
+    "dev-ssr": "cd static && npm run dev-ssr",
+    "dev-server": "cd server && npm run dev",
+    "fix:prettier": "prettier --write \"**/*.{ts,js,json,css,less,yml,yaml,md}\"",
+    "fix:ts": "tslint -p ./tsconfig.json --type-check --fix",
+    "fix:js": "eslint --ext .js ./ --cache --quiet --fix",
+    "fix:style": "stylelint \"src/**/*.less\" --syntax less --fix",
+    "fix": "npm run fix:prettier && npm run fix:ts && npm run fix:js && npm run fix:style || exit 1",
+    "lint:prettier": "prettier --list-different \"**/*.{ts,js,json,css,less,yml,yaml,md}\"",
+    "lint:ts": "tslint -p ./tsconfig.json --type-check",
+    "lint:js": "eslint --ext .js ./ --cache --quiet",
+    "lint:style": "stylelint \"src/**/*.less\" --syntax less",
+    "lint": "npm run lint:prettier && npm run lint:ts && npm run lint:js && npm run lint:style || exit 1"
   },
   "keywords": [],
   "author": "",
