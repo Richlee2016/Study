@@ -1,36 +1,7 @@
 extends ./layout/layout.pug
 
 block content
-  -
-    let box = [1, 2, 3]
-  div 32121
-    p 321
-  each item,index in box
-    .box 321
-  - for (let i=0; i<3; i++)
-    span #{i}
-  p!= '这是代码<div>nice</div>sfd>了'
-  - let a = 1
-  case a
-    when 0
-      p 这是a 0
-    when 1
-      p 这是a 1
-  - let b = 2
-  if b > 1
-    h2 b大于1
-  else
-    h3 b小于1
-  .nice(data-id="123")
-    p.sp 321 3212
-    | 这还是字符串
-  .rich
-    .gg
-    .gogo
-  .test
-    each item,idx in boxs
-      span #{item}
-  .aa
-    p 321321
+  button#testPost 获取post
+
 block script
   script(src="/public/js/index.js")
