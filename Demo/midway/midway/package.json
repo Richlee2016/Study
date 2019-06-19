@@ -1,0 +1,27 @@
+{
+  "name": "demo-view-nunjucks",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@types/mongoose": "^5.5.6",
+    "egg-mongoose": "^3.2.0",
+    "egg-view-nunjucks": "^2.2.0",
+    "midway": "^1.0.0",
+    "mongoose": "^5.6.0"
+  },
+  "devDependencies": {
+    "midway-bin": "1",
+    "midway-demo-lib": "1"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "dev": "midway-bin dev --ts",
+    "debug": "NODE_ENV=local midway-bin debug --ts",
+    "test": "midway-bin test --ts",
+    "cov": "midway-bin cov --ts",
+    "ci": "midway-bin cov --ts",
+    "build": "midway-bin build -c"
+  }
+}
