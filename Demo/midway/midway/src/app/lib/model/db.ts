@@ -1,11 +1,9 @@
-import { scope, ScopeEnum, provide, async, init } from "midway";
+import { scope, ScopeEnum, provide } from "midway";
 import * as Mongoose from "mongoose";
 @scope(ScopeEnum.Singleton)
-@async()
 @provide("DB")
-export default class DB {
-  @init()
-  connect() {
+export class DB {
+  public static async initDB() {
     const db = Mongoose.connection;
     db.on("error", console.error.bind(console, "connection error:"));
     db.once("open", () => {

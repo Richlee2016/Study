@@ -4,9 +4,13 @@ import { MovieModelType } from "../model/movie";
 export class MovieService {
   @inject("movieModel")
   model: MovieModelType;
-
-  async go() {
-    const res = await this.model.find({ id: 3 }).exec();
-    return res;
+  /** 获取单个电影 */
+  public async getMovie(id: string | number) {
+    try {
+      const movie = await this.model.findOne({ id }).exec();
+      return movie;
+    } catch (error) {
+      console.log(error);
+    }
   }
 }

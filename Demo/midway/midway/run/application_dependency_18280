@@ -1,0 +1,18 @@
+digraph G {
+  "apiMiddleware" [ label = "apiMiddleware(ApiMiddleware)
+scope:Request", fontsize = 10 ];
+  "homeController" [ label = "homeController(HomeController)
+scope:Request", fontsize = 10 ];
+  "DB" [ label = "DB(DB)
+scope:Singleton", fontsize = 10 ];
+  "indexController" [ label = "indexController(IndexController)
+scope:Request", fontsize = 10 ];
+  "movieService" [ label = "movieService(MovieService)
+scope:Request", fontsize = 10 ];
+  "movieModel" [ label = "movieModel(setUpModel)
+scope:undefined", fontsize = 10 ];
+  "homeController" -> "DB" [ label = "properties", fontsize = 8 ];
+  "indexController" -> "DB" [ label = "properties", fontsize = 8 ];
+  "indexController" -> "movieService" [ label = "properties", fontsize = 8 ];
+  "movieService" -> "movieModel" [ label = "properties", fontsize = 8 ];
+}

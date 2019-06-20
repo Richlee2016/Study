@@ -86,28 +86,28 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
+      "templatePath": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-onerror\\lib\\onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
       "dirs": [
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-session\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-jsonp\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-onerror\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-i18n\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-watcher\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-schedule\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-multipart\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-development\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-logrotator\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-static\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-view\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\midway-schedule\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-view-nunjucks\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\midway-web\\config\\locales",
-        "E:\\rich2019\\DEMO\\midway\\midway\\src\\config\\locales"
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-session\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-jsonp\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-onerror\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-i18n\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-watcher\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-schedule\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-multipart\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-development\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-logrotator\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-static\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-view\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\midway-schedule\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-view-nunjucks\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\midway-web\\config\\locales",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\src\\config\\locales"
       ],
       "queryField": "locale",
       "cookieField": "locale",
@@ -118,8 +118,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-watcher\\lib\\event-sources\\default",
-        "development": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-watcher\\lib\\event-sources\\development"
+        "default": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-watcher\\lib\\event-sources\\default",
+        "development": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-watcher\\lib\\event-sources\\development"
       }
     },
     "customLogger": {
@@ -165,7 +165,7 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "E:\\rich2019\\DEMO\\midway\\midway\\src\\app\\public",
+      "dir": "E:\\rich2019\\Study\\Demo\\midway\\midway\\src\\app\\public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
@@ -173,7 +173,7 @@
     },
     "view": {
       "root": [
-        "E:\\rich2019\\DEMO\\midway\\midway\\src\\app\\view"
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\src\\app\\view"
       ],
       "cache": false,
       "defaultExtension": ".nj",
@@ -222,9 +222,9 @@
         "build": "midway-bin build -c"
       }
     },
-    "baseDir": "E:\\rich2019\\DEMO\\midway\\midway\\src",
+    "baseDir": "E:\\rich2019\\Study\\Demo\\midway\\midway\\src",
     "HOME": "C:\\Users\\EDZ",
-    "rundir": "E:\\rich2019\\DEMO\\midway\\midway\\run",
+    "rundir": "E:\\rich2019\\Study\\Demo\\midway\\midway\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -255,7 +255,7 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "E:\\rich2019\\DEMO\\midway\\midway\\logs\\demo-view-nunjucks",
+      "dir": "E:\\rich2019\\Study\\Demo\\midway\\midway\\logs\\demo-view-nunjucks",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -334,19 +334,21 @@
         "**/views/**",
         "**/config/**"
       ],
-      "baseDir": "E:\\rich2019\\DEMO\\midway\\midway\\src"
+      "baseDir": "E:\\rich2019\\Study\\Demo\\midway\\midway\\src"
     },
     "alinode": {
       "logdir": "C:\\Users\\EDZ\\AppData\\Local\\Temp",
       "error_log": [
-        "E:\\rich2019\\DEMO\\midway\\midway\\logs\\demo-view-nunjucks\\common-error.log",
-        "E:\\rich2019\\DEMO\\midway\\midway\\logs\\stderr.log"
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\logs\\demo-view-nunjucks\\common-error.log",
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\logs\\stderr.log"
       ],
       "packages": [
-        "E:\\rich2019\\DEMO\\midway\\midway\\package.json"
+        "E:\\rich2019\\Study\\Demo\\midway\\midway\\package.json"
       ]
     },
-    "middleware": [],
+    "middleware": [
+      "db"
+    ],
     "mongoose": {
       "url": "mongodb://120.79.228.82:27017/wechat",
       "options": {}
@@ -375,8 +377,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-session",
+      "from": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -388,8 +390,8 @@
         "session"
       ],
       "env": [],
-      "from": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security",
+      "from": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security",
       "version": "2.5.0"
     },
     "jsonp": {
@@ -401,8 +403,8 @@
         "security"
       ],
       "env": [],
-      "from": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-jsonp",
+      "from": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -414,8 +416,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-onerror",
+      "from": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -425,8 +427,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-i18n",
+      "from": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -436,8 +438,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-watcher",
+      "from": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -447,8 +449,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-schedule",
+      "from": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -460,8 +462,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-multipart",
+      "from": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-multipart",
       "version": "2.7.1"
     },
     "development": {
@@ -475,8 +477,8 @@
       "env": [
         "local"
       ],
-      "from": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-development",
+      "from": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-development",
       "version": "2.4.3"
     },
     "logrotator": {
@@ -488,8 +490,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-logrotator",
+      "from": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -499,8 +501,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-static",
+      "from": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -510,8 +512,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-view",
+      "from": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\plugin.js",
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-view",
       "version": "2.1.2"
     },
     "schedulePlus": {
@@ -523,8 +525,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\midway-web\\config\\plugin.js",
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\midway-schedule",
+      "from": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\midway-web\\config\\plugin.js",
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\midway-schedule",
       "version": "1.5.6"
     },
     "nunjucks": {
@@ -541,8 +543,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "E:\\rich2019\\DEMO\\midway\\midway\\src\\config\\plugin.ts",
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-view-nunjucks",
+      "from": "E:\\rich2019\\Study\\Demo\\midway\\midway\\src\\config\\plugin.ts",
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-view-nunjucks",
       "version": "2.2.0"
     }
   }

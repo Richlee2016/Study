@@ -1,17 +1,14 @@
 import { controller, get, provide, Context, inject } from "midway";
-import { MovieService } from "../lib/interface/movie.interface";
+import { MovieService } from "../lib/service/movie";
 @provide()
 @controller("/index")
 export class IndexController {
-  @inject("DB")
-  serverDb;
-
   @inject("movieService")
-  service: MovieService;
+  server: InstanceType<typeof MovieService>;
 
   @get("/")
   async index(ctx: Context) {
-    const res = await this.service.go();
+    const res = await this.server.getMovie(3);
     ctx.body = res;
   }
 }

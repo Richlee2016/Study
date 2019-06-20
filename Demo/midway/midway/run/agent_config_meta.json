@@ -1,286 +1,288 @@
 {
-  "keys": "E:\\rich2019\\DEMO\\midway\\midway\\src\\config\\config.default.ts",
-  "middleware": "E:\\rich2019\\DEMO\\midway\\midway\\src\\config\\config.default.ts",
+  "keys": "E:\\rich2019\\Study\\Demo\\midway\\midway\\src\\config\\config.default.ts",
+  "middleware": "E:\\rich2019\\Study\\Demo\\midway\\midway\\src\\config\\config.default.ts",
   "view": {
-    "defaultViewEngine": "E:\\rich2019\\DEMO\\midway\\midway\\src\\config\\config.default.ts",
-    "defaultExtension": "E:\\rich2019\\DEMO\\midway\\midway\\src\\config\\config.default.ts",
-    "root": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-view\\config\\config.default.js",
-    "cache": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-view\\config\\config.local.js",
-    "mapping": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-view\\config\\config.default.js"
+    "defaultViewEngine": "E:\\rich2019\\Study\\Demo\\midway\\midway\\src\\config\\config.default.ts",
+    "defaultExtension": "E:\\rich2019\\Study\\Demo\\midway\\midway\\src\\config\\config.default.ts",
+    "root": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-view\\config\\config.default.js",
+    "cache": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-view\\config\\config.local.js",
+    "mapping": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-view\\config\\config.default.js"
   },
   "mongoose": {
-    "url": "E:\\rich2019\\DEMO\\midway\\midway\\src\\config\\config.default.ts",
-    "options": "E:\\rich2019\\DEMO\\midway\\midway\\src\\config\\config.default.ts"
+    "url": "E:\\rich2019\\Study\\Demo\\midway\\midway\\src\\config\\config.default.ts",
+    "options": "E:\\rich2019\\Study\\Demo\\midway\\midway\\src\\config\\config.default.ts"
   },
   "session": {
-    "maxAge": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-session\\config\\config.default.js",
-    "key": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-session\\config\\config.default.js",
-    "httpOnly": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-session\\config\\config.default.js",
-    "encrypt": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-session\\config\\config.default.js"
+    "maxAge": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-session\\config\\config.default.js"
   },
   "security": {
-    "domainWhiteList": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
-    "protocolWhiteList": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
-    "defaultMiddleware": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+    "domainWhiteList": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+    "protocolWhiteList": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
     "csrf": {
-      "enable": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
-      "useSession": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
-      "ignoreJSON": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\midway-web\\config\\config.local.js",
-      "cookieName": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
-      "sessionName": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
-      "headerName": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
-      "bodyName": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
-      "queryName": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\midway-web\\config\\config.local.js",
+      "cookieName": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
     },
     "xframe": {
-      "enable": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
     },
     "hsts": {
-      "enable": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.local.js",
-      "maxAge": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
-      "includeSubdomains": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
     },
     "dta": {
-      "enable": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
     },
     "methodnoallow": {
-      "enable": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
     },
     "noopen": {
-      "enable": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
     },
     "nosniff": {
-      "enable": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
     },
     "referrerPolicy": {
-      "enable": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
     },
     "xssProtection": {
-      "enable": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
-      "value": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
     },
     "csp": {
-      "enable": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
-      "policy": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
+      "enable": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
-      "checkAddress": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
+      "ipBlackList": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
     }
   },
   "helper": {
-    "shtml": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
+    "shtml": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-security\\config\\config.default.js"
   },
   "jsonp": {
-    "limit": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "callback": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-jsonp\\config\\config.default.js",
-    "csrf": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-jsonp\\config\\config.default.js"
+    "limit": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-jsonp\\config\\config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-onerror\\config\\config.default.js",
-    "appErrorFilter": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-onerror\\config\\config.default.js",
-    "templatePath": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-onerror\\config\\config.default.js"
+    "errorPageUrl": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-onerror\\config\\config.default.js",
+    "templatePath": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-onerror\\config\\config.default.js"
   },
   "i18n": {
-    "defaultLocale": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-i18n\\config\\config.default.js",
-    "dirs": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-i18n\\config\\config.default.js",
-    "queryField": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieField": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieDomain": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-i18n\\config\\config.default.js",
-    "cookieMaxAge": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-i18n\\config\\config.default.js"
+    "defaultLocale": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieDomain": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-i18n\\config\\config.default.js"
   },
   "watcher": {
-    "type": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-watcher\\config\\config.local.js",
+    "type": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-watcher\\config\\config.local.js",
     "eventSources": {
-      "default": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-watcher\\config\\config.default.js",
-      "development": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-watcher\\config\\config.default.js"
+      "default": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-watcher\\config\\config.default.js"
     }
   },
   "customLogger": {
     "scheduleLogger": {
-      "consoleLevel": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-schedule\\config\\config.default.js",
-      "file": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-schedule\\config\\config.default.js"
+      "consoleLevel": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-schedule\\config\\config.default.js"
     }
   },
   "schedule": {
-    "directory": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-schedule\\config\\config.default.js"
+    "directory": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-schedule\\config\\config.default.js"
   },
   "multipart": {
-    "mode": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
-    "autoFields": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
-    "defaultCharset": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldNameSize": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fieldSize": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fields": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileSize": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
-    "files": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
-    "fileExtensions": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
-    "whitelist": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
-    "tmpdir": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
+    "mode": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
+    "autoFields": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
+    "tmpdir": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js",
     "cleanSchedule": {
-      "cron": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js"
+      "cron": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-multipart\\config\\config.default.js"
     }
   },
   "development": {
-    "watchDirs": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-development\\config\\config.default.js",
-    "ignoreDirs": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-development\\config\\config.default.js",
-    "fastReady": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-development\\config\\config.default.js",
-    "reloadOnDebug": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-development\\config\\config.default.js",
-    "overrideDefault": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-development\\config\\config.default.js"
+    "watchDirs": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-development\\config\\config.default.js",
+    "ignoreDirs": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-development\\config\\config.default.js",
+    "fastReady": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-development\\config\\config.default.js"
   },
   "logrotator": {
-    "filesRotateByHour": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "hourDelimiter": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "filesRotateBySize": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFileSize": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxFiles": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "rotateDuration": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-logrotator\\config\\config.default.js",
-    "maxDays": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-logrotator\\config\\config.default.js"
+    "filesRotateByHour": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-logrotator\\config\\config.default.js"
   },
   "static": {
-    "prefix": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-static\\config\\config.default.js",
-    "dir": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-static\\config\\config.default.js",
-    "dynamic": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-static\\config\\config.default.js",
-    "preload": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-static\\config\\config.default.js",
-    "buffer": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-static\\config\\config.default.js",
-    "maxFiles": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-static\\config\\config.default.js"
+    "prefix": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-static\\config\\config.default.js",
+    "dir": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-static\\config\\config.default.js",
+    "dynamic": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-static\\config\\config.default.js"
   },
   "nunjucks": {
-    "autoescape": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
-    "throwOnUndefined": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
-    "trimBlocks": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
-    "lstripBlocks": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
-    "cache": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg-view-nunjucks\\config\\config.local.js"
+    "autoescape": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "throwOnUndefined": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "trimBlocks": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "lstripBlocks": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-view-nunjucks\\config\\config.default.js",
+    "cache": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg-view-nunjucks\\config\\config.local.js"
   },
-  "env": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-  "name": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-  "proxy": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-  "maxProxyCount": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-  "protocolHeaders": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-  "ipHeaders": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-  "hostHeaders": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+  "env": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+  "name": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+  "maxProxyCount": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
   "pkg": {
-    "name": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "version": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "private": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "name": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "version": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "private": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
     "dependencies": {
-      "egg-mongoose": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "egg-view-nunjucks": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "midway": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+      "@types/mongoose": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "egg-mongoose": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "egg-view-nunjucks": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "midway": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "mongoose": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
-      "midway-bin": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "midway-demo-lib": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+      "midway-bin": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "midway-demo-lib": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
     },
     "engines": {
-      "node": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+      "node": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
     },
     "scripts": {
-      "dev": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "debug": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "test": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "cov": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "ci": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "build": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+      "dev": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "debug": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "test": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "cov": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "ci": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "build": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
     }
   },
-  "baseDir": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-  "HOME": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-  "rundir": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js",
+  "baseDir": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js",
   "dump": {
-    "ignore": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+    "ignore": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
   },
   "confusedConfigurations": {
-    "bodyparser": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "notFound": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "sitefile": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "middlewares": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "httpClient": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+    "bodyparser": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
   },
   "notfound": {
-    "pageUrl": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+    "pageUrl": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+    "/favicon.ico": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
   },
   "bodyParser": {
-    "enable": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "formLimit": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "jsonLimit": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "strict": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "enable": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "strict": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
     "queryString": {
-      "arrayLimit": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "depth": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "parameterLimit": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+      "arrayLimit": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "depth": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
     }
   },
   "logger": {
-    "dir": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "encoding": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "env": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "level": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "consoleLevel": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "disableConsoleAfterReady": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "outputJSON": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "buffer": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "appLogName": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js",
-    "coreLogName": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js",
-    "agentLogName": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js",
-    "errorLogName": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "dir": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "env": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "level": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "consoleLevel": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js",
+    "coreLogName": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js",
+    "agentLogName": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js",
+    "errorLogName": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
     "coreLogger": {
-      "consoleLevel": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.local.js"
+      "consoleLevel": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.local.js"
     },
-    "allowDebugAtProd": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+    "allowDebugAtProd": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheLookupInterval": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "dnsCacheMaxLength": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "enableDNSCache": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheLookupInterval": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
     "request": {
-      "timeout": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+      "timeout": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "freeSocketTimeout": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "maxSockets": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "maxFreeSockets": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+      "keepAlive": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketTimeout": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
     }
   },
   "meta": {
-    "enable": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "logging": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+    "enable": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "logging": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
   },
-  "coreMiddleware": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-  "workerStartTimeout": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-  "serverTimeout": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+  "coreMiddleware": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+  "serverTimeout": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
   "cluster": {
     "listen": {
-      "path": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "port": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "hostname": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+      "path": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "port": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-    "responseTimeout": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+    "maxWaitTime": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+    "responseTimeout": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
   },
-  "onClientError": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-  "pluginOverwrite": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js",
+  "onClientError": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+  "pluginOverwrite": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js",
   "container": {
-    "ignore": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js"
+    "ignore": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js"
   },
   "alinode": {
-    "logdir": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js",
-    "error_log": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js",
-    "packages": "E:\\rich2019\\DEMO\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js"
+    "logdir": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js",
+    "error_log": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js",
+    "packages": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\midway-web\\config\\config.default.js"
   }
 }

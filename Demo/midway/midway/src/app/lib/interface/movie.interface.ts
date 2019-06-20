@@ -1,4 +1,3 @@
-import { IMovieModel } from "../model/movie";
 export interface IMovie {
   name: string;
   score: number;
@@ -19,8 +18,4 @@ export interface IMovie {
     createAt: number;
     updateAt: number;
   };
-}
-
-export interface MovieService {
-  go(): Promise<Promise<IMovieModel[]>>;
 }
