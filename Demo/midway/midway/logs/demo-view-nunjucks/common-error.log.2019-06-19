@@ -1,0 +1,46 @@
+2019-06-19 18:14:09,631 ERROR 32100 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 32100
+hostname: DESKTOP-O2OE0LP
+
+2019-06-19 18:14:16,181 ERROR 32100 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 32100
+hostname: DESKTOP-O2OE0LP
+
+2019-06-19 18:14:25,723 ERROR 32100 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 32100
+hostname: DESKTOP-O2OE0LP
+
+2019-06-19 18:14:29,268 ERROR 32100 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 32100
+hostname: DESKTOP-O2OE0LP
+
+2019-06-20 09:04:09,818 ERROR 32100 nodejs.ClusterClientNoResponseError: client no response in 51162443ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (E:\rich2019\DEMO\midway\midway\node_modules\cluster-client\lib\leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 32100
+hostname: DESKTOP-O2OE0LP
+

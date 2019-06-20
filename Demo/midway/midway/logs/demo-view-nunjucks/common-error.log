@@ -1,36 +1,24 @@
-2019-06-19 18:14:09,631 ERROR 32100 nodejs.unhandledExceptionError: read ECONNRESET
-    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
-errno: "ECONNRESET"
-code: "ECONNRESET"
-syscall: "read"
-name: "unhandledExceptionError"
-pid: 32100
+2019-06-20 09:21:11,355 ERROR 33636 [-/127.0.0.1/-/2ms GET /index] nodejs.OverwriteModelError: Cannot overwrite `t_movie_home` model once compiled.
+    at new OverwriteModelError (E:\rich2019\DEMO\midway\midway\node_modules\mongoose\lib\error\overwriteModel.js:20:11)
+    at Mongoose.model (E:\rich2019\DEMO\midway\midway\node_modules\mongoose\lib\index.js:472:13)
+    at setUpModel (E:\rich2019\DEMO\midway\midway\src\app\lib\model\movie.ts:42:10)
+    at FunctionWrapperCreator.doConstructAsync (E:\rich2019\DEMO\midway\midway\node_modules\injection\src\base\functionDefinition.ts:40:14)
+    at ManagedResolverFactory.createAsync (E:\rich2019\DEMO\midway\midway\node_modules\injection\src\factory\common\managedResolverFactory.ts:477:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "Cannot overwrite `t_movie_home` model once compiled."
+name: "OverwriteModelError"
+pid: 33636
 hostname: DESKTOP-O2OE0LP
 
-2019-06-19 18:14:16,181 ERROR 32100 nodejs.unhandledExceptionError: read ECONNRESET
-    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
-errno: "ECONNRESET"
-code: "ECONNRESET"
-syscall: "read"
-name: "unhandledExceptionError"
-pid: 32100
-hostname: DESKTOP-O2OE0LP
-
-2019-06-19 18:14:25,723 ERROR 32100 nodejs.unhandledExceptionError: read ECONNRESET
-    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
-errno: "ECONNRESET"
-code: "ECONNRESET"
-syscall: "read"
-name: "unhandledExceptionError"
-pid: 32100
-hostname: DESKTOP-O2OE0LP
-
-2019-06-19 18:14:29,268 ERROR 32100 nodejs.unhandledExceptionError: read ECONNRESET
-    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
-errno: "ECONNRESET"
-code: "ECONNRESET"
-syscall: "read"
-name: "unhandledExceptionError"
-pid: 32100
+2019-06-20 09:22:32,306 ERROR 35976 [-/127.0.0.1/-/2ms GET /index] nodejs.OverwriteModelError: Cannot overwrite `t_movie_home` model once compiled.
+    at new OverwriteModelError (E:\rich2019\DEMO\midway\midway\node_modules\mongoose\lib\error\overwriteModel.js:20:11)
+    at Mongoose.model (E:\rich2019\DEMO\midway\midway\node_modules\mongoose\lib\index.js:472:13)
+    at setUpModel (E:\rich2019\DEMO\midway\midway\src\app\lib\model\movie.ts:42:10)
+    at FunctionWrapperCreator.doConstructAsync (E:\rich2019\DEMO\midway\midway\node_modules\injection\src\base\functionDefinition.ts:40:14)
+    at ManagedResolverFactory.createAsync (E:\rich2019\DEMO\midway\midway\node_modules\injection\src\factory\common\managedResolverFactory.ts:477:43)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+message: "Cannot overwrite `t_movie_home` model once compiled."
+name: "OverwriteModelError"
+pid: 35976
 hostname: DESKTOP-O2OE0LP
 

@@ -9,8 +9,7 @@ export default class DB {
     const db = Mongoose.connection;
     db.on("error", console.error.bind(console, "connection error:"));
     db.once("open", () => {
-      require("./movie");
-      console.log("server is connecting");
+      console.log("your DB is open");
     });
     Mongoose.connect("mongodb://120.79.228.82:27017/wechat");
   }
