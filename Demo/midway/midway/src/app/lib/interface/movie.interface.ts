@@ -1,3 +1,4 @@
+/** modle type */
 export interface IMovie {
   name: string;
   score: number;
@@ -18,4 +19,14 @@ export interface IMovie {
     createAt: number;
     updateAt: number;
   };
+}
+/** search type */
+export interface SearchMovie {
+  page?: number;
+  size?: number;
+  year?: number;
+  director?: string;
+  actor?: string;
+  classify?: string;
+  catalog?: string;
 }

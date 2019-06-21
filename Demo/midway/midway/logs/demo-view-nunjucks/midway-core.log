@@ -769,3 +769,59 @@
 2019-06-20 14:08:45,316 INFO 16208 [egg:core] dump config after load, 9ms
 2019-06-20 14:08:45,344 INFO 16208 [egg-watcher:application] watcher start success
 2019-06-20 14:08:45,353 INFO 16208 [egg:core] dump config after ready, 8ms
+2019-06-21 09:57:56,616 INFO 15260 [egg:logger] init all loggers with options: {"dir":"E:\\rich2019\\Study\\Demo\\midway\\midway\\logs\\demo-view-nunjucks","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-06-21 09:57:56,637 INFO 15260 [egg-multipart] stream mode enable
+2019-06-21 09:57:56,680 INFO 15260 [egg-static] starting static serve /public/ -> E:\rich2019\Study\Demo\midway\midway\src\app\public
+2019-06-21 09:57:56,682 INFO 15260 [egg-security] use csrf middleware
+2019-06-21 09:57:56,683 INFO 15260 [egg-security] use methodnoallow middleware
+2019-06-21 09:57:56,684 INFO 15260 [egg-security] use noopen middleware
+2019-06-21 09:57:56,684 INFO 15260 [egg-security] use nosniff middleware
+2019-06-21 09:57:56,685 INFO 15260 [egg-security] use xssProtection middleware
+2019-06-21 09:57:56,685 INFO 15260 [egg-security] use xframe middleware
+2019-06-21 09:57:56,685 INFO 15260 [egg-security] use dta middleware
+2019-06-21 09:57:56,685 INFO 15260 [egg-security] compose 7 middlewares into one security middleware
+2019-06-21 09:57:56,695 INFO 15260 [egg:core] dump config after load, 8ms
+2019-06-21 09:57:56,744 INFO 15260 [egg-watcher:application] watcher start success
+2019-06-21 09:57:56,753 INFO 15260 [egg:core] dump config after ready, 7ms
+2019-06-21 09:59:56,489 INFO 1604 [egg:logger] init all loggers with options: {"dir":"E:\\rich2019\\Study\\Demo\\midway\\midway\\logs\\demo-view-nunjucks","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-06-21 09:59:56,507 INFO 1604 [egg-multipart] stream mode enable
+2019-06-21 09:59:56,551 INFO 1604 [egg-static] starting static serve /public/ -> E:\rich2019\Study\Demo\midway\midway\src\app\public
+2019-06-21 09:59:56,554 INFO 1604 [egg-security] use csrf middleware
+2019-06-21 09:59:56,555 INFO 1604 [egg-security] use methodnoallow middleware
+2019-06-21 09:59:56,555 INFO 1604 [egg-security] use noopen middleware
+2019-06-21 09:59:56,556 INFO 1604 [egg-security] use nosniff middleware
+2019-06-21 09:59:56,556 INFO 1604 [egg-security] use xssProtection middleware
+2019-06-21 09:59:56,557 INFO 1604 [egg-security] use xframe middleware
+2019-06-21 09:59:56,557 INFO 1604 [egg-security] use dta middleware
+2019-06-21 09:59:56,557 INFO 1604 [egg-security] compose 7 middlewares into one security middleware
+2019-06-21 09:59:56,567 INFO 1604 [egg:core] dump config after load, 8ms
+2019-06-21 09:59:56,597 INFO 1604 [egg-watcher:application] watcher start success
+2019-06-21 09:59:56,607 INFO 1604 [egg:core] dump config after ready, 8ms
+2019-06-21 10:17:09,491 INFO 10500 [egg:logger] init all loggers with options: {"dir":"E:\\rich2019\\Study\\Demo\\midway\\midway\\logs\\demo-view-nunjucks","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-06-21 10:17:09,512 INFO 10500 [egg-multipart] stream mode enable
+2019-06-21 10:17:09,556 INFO 10500 [egg-static] starting static serve /public/ -> E:\rich2019\Study\Demo\midway\midway\src\app\public
+2019-06-21 10:17:09,559 INFO 10500 [egg-security] use csrf middleware
+2019-06-21 10:17:09,560 INFO 10500 [egg-security] use methodnoallow middleware
+2019-06-21 10:17:09,560 INFO 10500 [egg-security] use noopen middleware
+2019-06-21 10:17:09,561 INFO 10500 [egg-security] use nosniff middleware
+2019-06-21 10:17:09,561 INFO 10500 [egg-security] use xssProtection middleware
+2019-06-21 10:17:09,562 INFO 10500 [egg-security] use xframe middleware
+2019-06-21 10:17:09,562 INFO 10500 [egg-security] use dta middleware
+2019-06-21 10:17:09,562 INFO 10500 [egg-security] compose 7 middlewares into one security middleware
+2019-06-21 10:17:09,573 INFO 10500 [egg:core] dump config after load, 10ms
+2019-06-21 10:17:09,604 INFO 10500 [egg-watcher:application] watcher start success
+2019-06-21 10:17:09,614 INFO 10500 [egg:core] dump config after ready, 9ms
+2019-06-21 10:30:30,306 INFO 16472 [egg:logger] init all loggers with options: {"dir":"E:\\rich2019\\Study\\Demo\\midway\\midway\\logs\\demo-view-nunjucks","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"midway-web.log","coreLogName":"midway-core.log","agentLogName":"midway-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-06-21 10:30:30,328 INFO 16472 [egg-multipart] stream mode enable
+2019-06-21 10:30:30,386 INFO 16472 [egg-static] starting static serve /public/ -> E:\rich2019\Study\Demo\midway\midway\src\app\public
+2019-06-21 10:30:30,388 INFO 16472 [egg-security] use csrf middleware
+2019-06-21 10:30:30,389 INFO 16472 [egg-security] use methodnoallow middleware
+2019-06-21 10:30:30,390 INFO 16472 [egg-security] use noopen middleware
+2019-06-21 10:30:30,390 INFO 16472 [egg-security] use nosniff middleware
+2019-06-21 10:30:30,391 INFO 16472 [egg-security] use xssProtection middleware
+2019-06-21 10:30:30,391 INFO 16472 [egg-security] use xframe middleware
+2019-06-21 10:30:30,392 INFO 16472 [egg-security] use dta middleware
+2019-06-21 10:30:30,392 INFO 16472 [egg-security] compose 7 middlewares into one security middleware
+2019-06-21 10:30:30,402 INFO 16472 [egg:core] dump config after load, 9ms
+2019-06-21 10:30:30,433 INFO 16472 [egg-watcher:application] watcher start success
+2019-06-21 10:30:30,442 INFO 16472 [egg:core] dump config after ready, 7ms

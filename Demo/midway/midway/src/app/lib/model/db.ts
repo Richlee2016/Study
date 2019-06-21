@@ -1,6 +1,5 @@
-import { scope, ScopeEnum, provide } from "midway";
+import { provide } from "midway";
 import * as Mongoose from "mongoose";
-@scope(ScopeEnum.Singleton)
 @provide("DB")
 export class DB {
   public static async initDB() {

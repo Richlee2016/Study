@@ -166,3 +166,24 @@
 2019-06-20 14:08:45,256 INFO 16208 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
 2019-06-20 14:08:45,256 INFO 16208 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\clean_log.js
 2019-06-20 14:08:45,256 INFO 16208 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-06-21 09:57:56,771 INFO 15156 [Timer] E:\rich2019\Study\Demo\midway\midway\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 66723233ms at 2019-06-22 04:30:00.004
+2019-06-21 09:57:56,771 INFO 15156 [Timer] E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 50523229ms at 2019-06-22 00:00:00.000
+2019-06-21 09:57:56,771 INFO 15156 [Timer] E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 50524229ms at 2019-06-22 00:00:01.000
+2019-06-21 09:57:56,636 INFO 15260 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-06-21 09:57:56,636 INFO 15260 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-06-21 09:57:56,636 INFO 15260 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-06-21 09:59:56,618 INFO 15032 [Timer] E:\rich2019\Study\Demo\midway\midway\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 66603386ms at 2019-06-22 04:30:00.004
+2019-06-21 09:59:56,618 INFO 15032 [Timer] E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 50403382ms at 2019-06-22 00:00:00.000
+2019-06-21 09:59:56,619 INFO 15032 [Timer] E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 50404382ms at 2019-06-22 00:00:01.001
+2019-06-21 09:59:56,506 INFO 1604 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-06-21 09:59:56,506 INFO 1604 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-06-21 09:59:56,506 INFO 1604 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-06-21 10:17:09,620 INFO 14488 [Timer] E:\rich2019\Study\Demo\midway\midway\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 65570383ms at 2019-06-22 04:30:00.003
+2019-06-21 10:17:09,621 INFO 14488 [Timer] E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 49370380ms at 2019-06-22 00:00:00.001
+2019-06-21 10:17:09,621 INFO 14488 [Timer] E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 49371379ms at 2019-06-22 00:00:01.000
+2019-06-21 10:17:09,511 INFO 10500 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-06-21 10:17:09,511 INFO 10500 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-06-21 10:17:09,511 INFO 10500 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-06-21 10:30:30,328 INFO 16472 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2019-06-21 10:30:30,328 INFO 16472 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-06-21 10:30:30,328 INFO 16472 [egg-schedule]: register schedule E:\rich2019\Study\Demo\midway\midway\node_modules\egg-logrotator\app\schedule\rotate_by_file.js

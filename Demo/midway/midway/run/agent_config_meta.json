@@ -167,6 +167,7 @@
     "private": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
     "dependencies": {
       "@types/mongoose": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "@zerollup/ts-transform-paths": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
       "egg-mongoose": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
       "egg-view-nunjucks": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
       "midway": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
@@ -185,7 +186,8 @@
       "test": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
       "cov": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
       "ci": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "build": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+      "build": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "compile": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
     }
   },
   "baseDir": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",

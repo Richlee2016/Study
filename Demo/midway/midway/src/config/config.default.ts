@@ -5,7 +5,7 @@ module.exports = (appInfo: any) => {
   config.keys = appInfo.name + "_1539671912752_2826";
 
   // add your config here
-  config.middleware = ["db"];
+  config.middleware = ["errorHandler"];
 
   config.view = {
     defaultViewEngine: "nunjucks",
