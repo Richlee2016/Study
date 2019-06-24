@@ -200,12 +200,16 @@
       "version": "1.0.0",
       "private": true,
       "dependencies": {
+        "@types/cheerio": "^0.22.11",
         "@types/mongoose": "^5.5.6",
+        "@types/puppeteer": "^1.12.4",
         "@zerollup/ts-transform-paths": "^1.7.3",
+        "cheerio": "^1.0.0-rc.3",
         "egg-mongoose": "^3.2.0",
         "egg-view-nunjucks": "^2.2.0",
         "midway": "^1.0.0",
-        "mongoose": "^5.6.0"
+        "mongoose": "^5.6.0",
+        "puppeteer": "^1.18.0"
       },
       "devDependencies": {
         "midway-bin": "1",

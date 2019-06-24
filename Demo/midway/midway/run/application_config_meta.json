@@ -166,12 +166,16 @@
     "version": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
     "private": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
     "dependencies": {
+      "@types/cheerio": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
       "@types/mongoose": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "@types/puppeteer": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
       "@zerollup/ts-transform-paths": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "cheerio": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
       "egg-mongoose": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
       "egg-view-nunjucks": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
       "midway": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
-      "mongoose": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
+      "mongoose": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",
+      "puppeteer": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js"
     },
     "devDependencies": {
       "midway-bin": "E:\\rich2019\\Study\\Demo\\midway\\midway\\node_modules\\egg\\config\\config.default.js",

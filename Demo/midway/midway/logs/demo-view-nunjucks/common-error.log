@@ -22,3 +22,23 @@ name: "OverwriteModelError"
 pid: 35976
 hostname: DESKTOP-O2OE0LP
 
+2019-06-24 10:10:30,057 ERROR 17180 nodejs.unhandledExceptionError: read ECONNRESET
+    at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+errno: "ECONNRESET"
+code: "ECONNRESET"
+syscall: "read"
+name: "unhandledExceptionError"
+pid: 17180
+hostname: DESKTOP-O2OE0LP
+
+2019-06-24 10:40:05,592 ERROR 17180 nodejs.EPERMError: EPERM: operation not permitted, watch
+    at FSEvent.FSWatcher._handle.onchange (internal/fs/watchers.js:123:28)
+errno: -4048
+syscall: "watch"
+code: "EPERM"
+filename: null
+dir: "E:\\rich2019\\Study\\Demo\\midway\\midway\\src\\app\\declare\\crawler"
+name: "EPERMError"
+pid: 17180
+hostname: DESKTOP-O2OE0LP
+

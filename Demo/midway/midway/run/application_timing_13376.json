@@ -1,0 +1,594 @@
+[
+  {
+    "name": "Application Start",
+    "start": 1561341830652,
+    "end": 1561341833907,
+    "duration": 3255,
+    "pid": 13376,
+    "index": 0
+  },
+  {
+    "name": "Load Plugin",
+    "start": 1561341830660,
+    "end": 1561341832536,
+    "duration": 1876,
+    "pid": 13376,
+    "index": 1
+  },
+  {
+    "name": "Load Config",
+    "start": 1561341832536,
+    "end": 1561341832583,
+    "duration": 47,
+    "pid": 13376,
+    "index": 2
+  },
+  {
+    "name": "Require(0) config/config.default.ts",
+    "start": 1561341832537,
+    "end": 1561341832562,
+    "duration": 25,
+    "pid": 13376,
+    "index": 3
+  },
+  {
+    "name": "Require(1) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-session/config/config.default.js",
+    "start": 1561341832563,
+    "end": 1561341832564,
+    "duration": 1,
+    "pid": 13376,
+    "index": 4
+  },
+  {
+    "name": "Require(2) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-security/config/config.default.js",
+    "start": 1561341832564,
+    "end": 1561341832564,
+    "duration": 0,
+    "pid": 13376,
+    "index": 5
+  },
+  {
+    "name": "Require(3) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-jsonp/config/config.default.js",
+    "start": 1561341832565,
+    "end": 1561341832565,
+    "duration": 0,
+    "pid": 13376,
+    "index": 6
+  },
+  {
+    "name": "Require(4) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-onerror/config/config.default.js",
+    "start": 1561341832566,
+    "end": 1561341832566,
+    "duration": 0,
+    "pid": 13376,
+    "index": 7
+  },
+  {
+    "name": "Require(5) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-i18n/config/config.default.js",
+    "start": 1561341832566,
+    "end": 1561341832567,
+    "duration": 1,
+    "pid": 13376,
+    "index": 8
+  },
+  {
+    "name": "Require(6) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-watcher/config/config.default.js",
+    "start": 1561341832567,
+    "end": 1561341832567,
+    "duration": 0,
+    "pid": 13376,
+    "index": 9
+  },
+  {
+    "name": "Require(7) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-schedule/config/config.default.js",
+    "start": 1561341832568,
+    "end": 1561341832568,
+    "duration": 0,
+    "pid": 13376,
+    "index": 10
+  },
+  {
+    "name": "Require(8) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-multipart/config/config.default.js",
+    "start": 1561341832568,
+    "end": 1561341832569,
+    "duration": 1,
+    "pid": 13376,
+    "index": 11
+  },
+  {
+    "name": "Require(9) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-development/config/config.default.js",
+    "start": 1561341832569,
+    "end": 1561341832569,
+    "duration": 0,
+    "pid": 13376,
+    "index": 12
+  },
+  {
+    "name": "Require(10) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-logrotator/config/config.default.js",
+    "start": 1561341832570,
+    "end": 1561341832570,
+    "duration": 0,
+    "pid": 13376,
+    "index": 13
+  },
+  {
+    "name": "Require(11) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-static/config/config.default.js",
+    "start": 1561341832570,
+    "end": 1561341832571,
+    "duration": 1,
+    "pid": 13376,
+    "index": 14
+  },
+  {
+    "name": "Require(12) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-view/config/config.default.js",
+    "start": 1561341832571,
+    "end": 1561341832572,
+    "duration": 1,
+    "pid": 13376,
+    "index": 15
+  },
+  {
+    "name": "Require(13) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-view-nunjucks/config/config.default.js",
+    "start": 1561341832572,
+    "end": 1561341832573,
+    "duration": 1,
+    "pid": 13376,
+    "index": 16
+  },
+  {
+    "name": "Require(14) E:/rich2019/Study/Demo/midway/midway/node_modules/egg/config/config.default.js",
+    "start": 1561341832573,
+    "end": 1561341832574,
+    "duration": 1,
+    "pid": 13376,
+    "index": 17
+  },
+  {
+    "name": "Require(15) E:/rich2019/Study/Demo/midway/midway/node_modules/midway-web/config/config.default.js",
+    "start": 1561341832575,
+    "end": 1561341832576,
+    "duration": 1,
+    "pid": 13376,
+    "index": 18
+  },
+  {
+    "name": "Require(16) config/config.default.ts",
+    "start": 1561341832578,
+    "end": 1561341832578,
+    "duration": 0,
+    "pid": 13376,
+    "index": 19
+  },
+  {
+    "name": "Require(17) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-security/config/config.local.js",
+    "start": 1561341832578,
+    "end": 1561341832578,
+    "duration": 0,
+    "pid": 13376,
+    "index": 20
+  },
+  {
+    "name": "Require(18) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-watcher/config/config.local.js",
+    "start": 1561341832580,
+    "end": 1561341832580,
+    "duration": 0,
+    "pid": 13376,
+    "index": 21
+  },
+  {
+    "name": "Require(19) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-view/config/config.local.js",
+    "start": 1561341832581,
+    "end": 1561341832581,
+    "duration": 0,
+    "pid": 13376,
+    "index": 22
+  },
+  {
+    "name": "Require(20) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-view-nunjucks/config/config.local.js",
+    "start": 1561341832582,
+    "end": 1561341832582,
+    "duration": 0,
+    "pid": 13376,
+    "index": 23
+  },
+  {
+    "name": "Require(21) E:/rich2019/Study/Demo/midway/midway/node_modules/egg/config/config.local.js",
+    "start": 1561341832582,
+    "end": 1561341832583,
+    "duration": 1,
+    "pid": 13376,
+    "index": 24
+  },
+  {
+    "name": "Require(22) E:/rich2019/Study/Demo/midway/midway/node_modules/midway-web/config/config.local.js",
+    "start": 1561341832583,
+    "end": 1561341832583,
+    "duration": 0,
+    "pid": 13376,
+    "index": 25
+  },
+  {
+    "name": "Load extend/application.js",
+    "start": 1561341832585,
+    "end": 1561341832657,
+    "duration": 72,
+    "pid": 13376,
+    "index": 26
+  },
+  {
+    "name": "Require(23) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-session/app/extend/application.js",
+    "start": 1561341832585,
+    "end": 1561341832586,
+    "duration": 1,
+    "pid": 13376,
+    "index": 27
+  },
+  {
+    "name": "Require(24) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-security/app/extend/application.js",
+    "start": 1561341832586,
+    "end": 1561341832587,
+    "duration": 1,
+    "pid": 13376,
+    "index": 28
+  },
+  {
+    "name": "Require(25) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-jsonp/app/extend/application.js",
+    "start": 1561341832587,
+    "end": 1561341832589,
+    "duration": 2,
+    "pid": 13376,
+    "index": 29
+  },
+  {
+    "name": "Require(26) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-logrotator/app/extend/application.js",
+    "start": 1561341832590,
+    "end": 1561341832598,
+    "duration": 8,
+    "pid": 13376,
+    "index": 30
+  },
+  {
+    "name": "Require(27) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-view/app/extend/application.js",
+    "start": 1561341832599,
+    "end": 1561341832600,
+    "duration": 1,
+    "pid": 13376,
+    "index": 31
+  },
+  {
+    "name": "Require(28) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-view-nunjucks/app/extend/application.js",
+    "start": 1561341832601,
+    "end": 1561341832655,
+    "duration": 54,
+    "pid": 13376,
+    "index": 32
+  },
+  {
+    "name": "Load extend/request.js",
+    "start": 1561341832657,
+    "end": 1561341832662,
+    "duration": 5,
+    "pid": 13376,
+    "index": 33
+  },
+  {
+    "name": "Require(29) E:/rich2019/Study/Demo/midway/midway/node_modules/egg/app/extend/request.js",
+    "start": 1561341832659,
+    "end": 1561341832660,
+    "duration": 1,
+    "pid": 13376,
+    "index": 34
+  },
+  {
+    "name": "Load extend/response.js",
+    "start": 1561341832662,
+    "end": 1561341832667,
+    "duration": 5,
+    "pid": 13376,
+    "index": 35
+  },
+  {
+    "name": "Require(30) E:/rich2019/Study/Demo/midway/midway/node_modules/egg/app/extend/response.js",
+    "start": 1561341832664,
+    "end": 1561341832665,
+    "duration": 1,
+    "pid": 13376,
+    "index": 36
+  },
+  {
+    "name": "Load extend/context.js",
+    "start": 1561341832667,
+    "end": 1561341832757,
+    "duration": 90,
+    "pid": 13376,
+    "index": 37
+  },
+  {
+    "name": "Require(31) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-security/app/extend/context.js",
+    "start": 1561341832667,
+    "end": 1561341832679,
+    "duration": 12,
+    "pid": 13376,
+    "index": 38
+  },
+  {
+    "name": "Require(32) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-jsonp/app/extend/context.js",
+    "start": 1561341832679,
+    "end": 1561341832680,
+    "duration": 1,
+    "pid": 13376,
+    "index": 39
+  },
+  {
+    "name": "Require(33) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-i18n/app/extend/context.js",
+    "start": 1561341832680,
+    "end": 1561341832681,
+    "duration": 1,
+    "pid": 13376,
+    "index": 40
+  },
+  {
+    "name": "Require(34) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-multipart/app/extend/context.js",
+    "start": 1561341832682,
+    "end": 1561341832740,
+    "duration": 58,
+    "pid": 13376,
+    "index": 41
+  },
+  {
+    "name": "Require(35) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-view/app/extend/context.js",
+    "start": 1561341832742,
+    "end": 1561341832743,
+    "duration": 1,
+    "pid": 13376,
+    "index": 42
+  },
+  {
+    "name": "Require(36) E:/rich2019/Study/Demo/midway/midway/node_modules/egg/app/extend/context.js",
+    "start": 1561341832744,
+    "end": 1561341832749,
+    "duration": 5,
+    "pid": 13376,
+    "index": 43
+  },
+  {
+    "name": "Require(37) E:/rich2019/Study/Demo/midway/midway/node_modules/midway-web/app/extend/context.js",
+    "start": 1561341832749,
+    "end": 1561341832749,
+    "duration": 0,
+    "pid": 13376,
+    "index": 44
+  },
+  {
+    "name": "Load extend/helper.js",
+    "start": 1561341832757,
+    "end": 1561341832775,
+    "duration": 18,
+    "pid": 13376,
+    "index": 45
+  },
+  {
+    "name": "Require(38) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-security/app/extend/helper.js",
+    "start": 1561341832758,
+    "end": 1561341832769,
+    "duration": 11,
+    "pid": 13376,
+    "index": 46
+  },
+  {
+    "name": "Require(39) E:/rich2019/Study/Demo/midway/midway/node_modules/egg/app/extend/helper.js",
+    "start": 1561341832770,
+    "end": 1561341832771,
+    "duration": 1,
+    "pid": 13376,
+    "index": 47
+  },
+  {
+    "name": "Require(40) app/extend/helper.ts",
+    "start": 1561341832771,
+    "end": 1561341832774,
+    "duration": 3,
+    "pid": 13376,
+    "index": 48
+  },
+  {
+    "name": "Load app.js",
+    "start": 1561341833539,
+    "end": 1561341833567,
+    "duration": 28,
+    "pid": 13376,
+    "index": 49
+  },
+  {
+    "name": "Require(41) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-session/app.js",
+    "start": 1561341833540,
+    "end": 1561341833540,
+    "duration": 0,
+    "pid": 13376,
+    "index": 50
+  },
+  {
+    "name": "Require(42) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-security/app.js",
+    "start": 1561341833540,
+    "end": 1561341833541,
+    "duration": 1,
+    "pid": 13376,
+    "index": 51
+  },
+  {
+    "name": "Require(43) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-onerror/app.js",
+    "start": 1561341833542,
+    "end": 1561341833549,
+    "duration": 7,
+    "pid": 13376,
+    "index": 52
+  },
+  {
+    "name": "Require(44) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-i18n/app.js",
+    "start": 1561341833549,
+    "end": 1561341833557,
+    "duration": 8,
+    "pid": 13376,
+    "index": 53
+  },
+  {
+    "name": "Require(45) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-watcher/app.js",
+    "start": 1561341833557,
+    "end": 1561341833559,
+    "duration": 2,
+    "pid": 13376,
+    "index": 54
+  },
+  {
+    "name": "Require(46) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-schedule/app.js",
+    "start": 1561341833560,
+    "end": 1561341833561,
+    "duration": 1,
+    "pid": 13376,
+    "index": 55
+  },
+  {
+    "name": "Require(47) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-multipart/app.js",
+    "start": 1561341833561,
+    "end": 1561341833563,
+    "duration": 2,
+    "pid": 13376,
+    "index": 56
+  },
+  {
+    "name": "Require(48) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-development/app.js",
+    "start": 1561341833563,
+    "end": 1561341833564,
+    "duration": 1,
+    "pid": 13376,
+    "index": 57
+  },
+  {
+    "name": "Require(49) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-logrotator/app.js",
+    "start": 1561341833564,
+    "end": 1561341833564,
+    "duration": 0,
+    "pid": 13376,
+    "index": 58
+  },
+  {
+    "name": "Require(50) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-static/app.js",
+    "start": 1561341833564,
+    "end": 1561341833564,
+    "duration": 0,
+    "pid": 13376,
+    "index": 59
+  },
+  {
+    "name": "Require(51) E:/rich2019/Study/Demo/midway/midway/node_modules/midway-schedule/app.js",
+    "start": 1561341833565,
+    "end": 1561341833566,
+    "duration": 1,
+    "pid": 13376,
+    "index": 60
+  },
+  {
+    "name": "Require(52) E:/rich2019/Study/Demo/midway/midway/node_modules/egg-view-nunjucks/app.js",
+    "start": 1561341833566,
+    "end": 1561341833566,
+    "duration": 0,
+    "pid": 13376,
+    "index": 61
+  },
+  {
+    "name": "Require(53) app.ts",
+    "start": 1561341833567,
+    "end": 1561341833567,
+    "duration": 0,
+    "pid": 13376,
+    "index": 62
+  },
+  {
+    "name": "Before Start in E:/rich2019/Study/Demo/midway/midway/node_modules/egg-watcher/lib/init.js:15:14",
+    "start": 1561341833581,
+    "end": 1561341833907,
+    "duration": 326,
+    "pid": 13376,
+    "index": 63
+  },
+  {
+    "name": "Before Start in app.ts:6:9",
+    "start": 1561341833599,
+    "end": 1561341833889,
+    "duration": 290,
+    "pid": 13376,
+    "index": 64
+  },
+  {
+    "name": "Load Service",
+    "start": 1561341833599,
+    "end": 1561341833602,
+    "duration": 3,
+    "pid": 13376,
+    "index": 65
+  },
+  {
+    "name": "Load \"service\" to Context",
+    "start": 1561341833599,
+    "end": 1561341833602,
+    "duration": 3,
+    "pid": 13376,
+    "index": 66
+  },
+  {
+    "name": "Load Middleware",
+    "start": 1561341833602,
+    "end": 1561341833654,
+    "duration": 52,
+    "pid": 13376,
+    "index": 67
+  },
+  {
+    "name": "Load \"middlewares\" to Application",
+    "start": 1561341833602,
+    "end": 1561341833646,
+    "duration": 44,
+    "pid": 13376,
+    "index": 68
+  },
+  {
+    "name": "Load Controller",
+    "start": 1561341833654,
+    "end": 1561341833655,
+    "duration": 1,
+    "pid": 13376,
+    "index": 69
+  },
+  {
+    "name": "Load \"controller\" to Application",
+    "start": 1561341833654,
+    "end": 1561341833655,
+    "duration": 1,
+    "pid": 13376,
+    "index": 70
+  },
+  {
+    "name": "Load Router",
+    "start": 1561341833655,
+    "end": 1561341833655,
+    "duration": 0,
+    "pid": 13376,
+    "index": 71
+  },
+  {
+    "name": "Before Start in E:/rich2019/Study/Demo/midway/midway/node_modules/midway-web/dist/loader/loader.js:28:18",
+    "start": 1561341833655,
+    "end": 1561341833891,
+    "duration": 236,
+    "pid": 13376,
+    "index": 72
+  },
+  {
+    "name": "Before Start in E:/rich2019/Study/Demo/midway/midway/node_modules/egg-core/lib/egg.js:303:10",
+    "start": 1561341833661,
+    "end": 1561341833888,
+    "duration": 227,
+    "pid": 13376,
+    "index": 73
+  }
+]
