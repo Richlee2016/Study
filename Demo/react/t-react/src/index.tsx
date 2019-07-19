@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import App from './app';
+import App from './App';
 import TestContext from './components/context';
 import Fragment from './components/fragments';
 import RefsBody from './components/refs';
@@ -9,9 +9,11 @@ import WorkVipList from './components/work-space/vip-list';
 import CardComp from './components/work-space/card-comp';
 import MyHooks from './components/hooks';
 import AntdTable from './components/antd/table';
-import AntdForm from './components/antd/form';
+// import AntdForm from './components/antd/form';
+import CreateTask from './components/work-space/create-task';
 import { createHashHistory } from 'history';
 import { Router, Switch, Route, Redirect, Link } from 'react-router-dom';
+import * as serviceWorker from './serviceWorker';
 import './index.css';
 import 'antd/dist/antd.css';
 const history = createHashHistory();
@@ -64,10 +66,15 @@ const Routes: routeType[] = [
     component: AntdTable,
   },
   {
-    path: '/antd-form',
-    name: 'antd表单',
-    component: AntdForm,
+    path: '/create-task',
+    name: '工作Demo-创建、编辑任务',
+    component: CreateTask,
   },
+  //   {
+  //     path: "/antd-form",
+  //     name: "antd表单",
+  //     component: AntdForm
+  //   }
 ];
 
 const mapRoutes = Routes.map(r => (
@@ -92,3 +99,8 @@ ReactDom.render(
   </Router>,
   document.querySelector('#root')
 );
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
