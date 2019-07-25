@@ -11,6 +11,7 @@ import MyHooks from './components/hooks';
 import AntdTable from './components/antd/table';
 import AntdForm from './components/antd/form';
 import PageHooks from './components/page-hooks';
+import PageRedux from './components/page-redux';
 import { createHashHistory } from 'history';
 import { Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 import './index.css';
@@ -73,6 +74,11 @@ const Routes: routeType[] = [
     path: '/page-hooks',
     name: '单页构建render hooks',
     component: PageHooks,
+  },
+  {
+    path: '/page-redux',
+    name: '单页构建 redux',
+    component: PageRedux,
   },
 ];
 
