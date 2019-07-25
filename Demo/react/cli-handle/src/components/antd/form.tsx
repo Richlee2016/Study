@@ -5,6 +5,7 @@ import { FormState } from './types';
 import { FormComponentProps } from 'antd/lib/form';
 import FormPropData from './components/form-prop';
 import FormButton from './components/form-button';
+import FormSelectAll from './components/form-select-all';
 import { makeName, groupDistribut } from './utils/utils';
 import './zstyle.less';
 
@@ -20,6 +21,7 @@ class MyForm extends React.Component<FormProps, FormState> {
       <Context.Provider value={{ Store: this.state, form: this.props.form }}>
         <Form>
           <FormPropData />
+          <FormSelectAll />
           <Button
             onClick={() => {
               this.props.form.setFieldsValue({

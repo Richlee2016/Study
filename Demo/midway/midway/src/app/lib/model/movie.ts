@@ -57,9 +57,30 @@ export default function setUpModel() {
     next();
   });
 
+  MovieSchema.static({
+    movieSave: async movie => {
+      const isExist = await this.findOne({ id: movie.id }).exec();
+      let _movie;
+      if (isExist) {
+        console.log(`${movie.id}已经存在`);
+        return isExist;
+      } else {
+        _movie = new Movie(Object.assign(movie, { _id: movie.id }));
+      }
+      try {
+        await _movie.save();
+        console.log(`${movie.id}储存成功`);
+        return _movie;
+      } catch (e) {
+        console.log(`${movie.id}储存失败`);
+        console.log(e);
+      }
+    }
+  });
+
   MovieSchema.methods.fullName = function() {
     return 321;
   };
-
-  return model("t_movie_home", MovieSchema) as MovieModelType;
+  const Movie = model("t_movie_home", MovieSchema) as MovieModelType;
+  return Movie;
 }
