@@ -10,6 +10,7 @@ import CardComp from './components/work-space/card-comp';
 import MyHooks from './components/hooks';
 import AntdTable from './components/antd/table';
 import AntdForm from './components/antd/form';
+import PageHooks from './components/page-hooks';
 import { createHashHistory } from 'history';
 import { Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 import './index.css';
@@ -68,6 +69,11 @@ const Routes: routeType[] = [
     name: 'antd表单',
     component: AntdForm,
   },
+  {
+    path: '/page-hooks',
+    name: '单页构建render hooks',
+    component: PageHooks,
+  },
 ];
 
 const mapRoutes = Routes.map(r => (
@@ -90,5 +96,5 @@ ReactDom.render(
       <Redirect to="/" />
     </Switch>
   </Router>,
-  document.querySelector('#root')
+  document.querySelector('#app')
 );
