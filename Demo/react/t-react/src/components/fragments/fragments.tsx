@@ -1,5 +1,5 @@
-import React, { Fragment, ErrorInfo } from "react";
-import ReactDOM from "react-dom";
+import React, { Fragment } from 'react';
+import ReactDOM from 'react-dom';
 type IProps = {};
 
 type IState = {
@@ -15,7 +15,7 @@ const Frag = () => (
 );
 
 class Portal extends React.Component {
-  public el: HTMLDivElement = document.createElement("div");
+  public el: HTMLDivElement = document.createElement('div');
   componentWillMount() {
     document.body.appendChild(this.el);
   }
@@ -30,15 +30,15 @@ class Portal extends React.Component {
 class ErrorBoundary extends React.Component {
   state: { hasError: boolean; errorMsg: string } = {
     hasError: false,
-    errorMsg: ""
+    errorMsg: '',
   };
-  componentDidCatch(err: Error, info: ErrorInfo) {
-    console.error(err);
-    this.setState({
-      hasError: true,
-      errorMsg: info
-    });
-  }
+  // componentDidCatch(err, info) {
+  //   console.error(err);
+  //   this.setState({
+  //     hasError: true,
+  //     errorMsg: info,
+  //   });
+  // }
   render() {
     return this.state.hasError ? (
       <div>something worry</div>
@@ -50,11 +50,11 @@ class ErrorBoundary extends React.Component {
 
 export default class Fragments extends React.Component<IProps, IState> {
   state: IState = {
-    isShow: false
+    isShow: false,
   };
   handleMoadl() {
     this.setState({
-      isShow: !this.state.isShow
+      isShow: !this.state.isShow,
     });
   }
   render() {

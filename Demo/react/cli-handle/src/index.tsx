@@ -12,6 +12,7 @@ import AntdTable from './components/antd/table';
 import AntdForm from './components/antd/form';
 import PageHooks from './components/page-hooks';
 import PageRedux from './components/page-redux';
+import EventBug from './components/eventbus';
 import { createHashHistory } from 'history';
 import { Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 import './index.css';
@@ -79,6 +80,11 @@ const Routes: routeType[] = [
     path: '/page-redux',
     name: '单页构建 redux',
     component: PageRedux,
+  },
+  {
+    path: '/event-bug',
+    name: '简单事件系统',
+    component: EventBug,
   },
 ];
 

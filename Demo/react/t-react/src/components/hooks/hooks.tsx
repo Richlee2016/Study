@@ -1,12 +1,27 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useCount } from './count-hook';
-import { CountStore } from './count-reducer';
+// import { createCount } from './count-hook';
+// import { CountStore } from './count-reducer';
 type IProps = {};
 
 const MyHooks: React.SFC<IProps> = () => {
-  const { count, add, minus, name, addName } = useCount();
-  // mount();
-  // letMount();
+  const [count, setCount] = useState(0);
+  const [name, setName] = useState('');
+  const createCount = {
+    addName: () => setName(name + 1),
+    add: () => setCount(count + 1),
+    minus: () => setCount(count - 1),
+  };
+  const { add, minus, addName } = createCount;
+  useEffect(() => {
+    console.log('mount', 'update');
+    setCount(321);
+    return () => {
+      console.log('unMount');
+    };
+  }, [count]);
+  useEffect(() => {
+    console.log('第二次嗲用 effect');
+  }, [name]);
   return (
     <div>
       <h3>useEffect 生命周期</h3>
@@ -24,20 +39,20 @@ const MyHooks: React.SFC<IProps> = () => {
 };
 
 const TwoHooks: React.SFC<IProps> = () => {
-  const { count, add, minus } = CountStore();
+  // const { count, add, minus } = CountStore();
   return (
     <div>
       <h3>这里是useReducer</h3>
-      <div>
+      {/* <div>
         <span>{count}</span>
         <button onClick={add}>add</button>
         <button onClick={minus}>minus</button>
-      </div>
+      </div> */}
     </div>
   );
 };
 
-const useShareNum = (num: number) => {
+const useShareNum = (num: number, onChange: () => void) => {
   const [count, setCount] = useState('这是最开始的');
   useEffect(() => {
     if (num === 5 || num === 1005) {
@@ -50,7 +65,7 @@ const useShareNum = (num: number) => {
 
 const ShareHook: React.SFC<{ box: number; onChange: () => void }> = props => {
   const [num, setNum] = useState(1);
-  const count = useShareNum(props.box);
+  const count = useShareNum(props.box, props.onChange);
 
   return (
     <>
@@ -96,7 +111,7 @@ export default function TestHooks() {
         <TwoHooks />
       </div>
       <div>
-        <ShareHook box={num} onChange={onChange} />
+        <ShareHook box={num} onChange={onChange}></ShareHook>
         <button
           onClick={() => {
             setNum(num + 1);

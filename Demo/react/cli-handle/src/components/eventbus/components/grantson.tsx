@@ -6,6 +6,11 @@ type IState = {};
 
 export default class App extends React.Component<IProps, IState> {
   render() {
-    return <div>{this.props.children}</div>;
+    return (
+      <div>
+        <h3>grantson</h3>
+        <div>gogogo</div>
+      </div>
+    );
   }
 }

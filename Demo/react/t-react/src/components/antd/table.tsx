@@ -24,12 +24,12 @@ const renderTable = (setShow: React.Dispatch<boolean>) => {
       key: 'age',
       render: () => {
         return (
-          <span
+          <button
             onClick={() => {
               setShow(true);
             }}>
             删除
-          </span>
+          </button>
         );
       },
     },

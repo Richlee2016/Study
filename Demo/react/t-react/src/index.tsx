@@ -9,8 +9,10 @@ import WorkVipList from './components/work-space/vip-list';
 import CardComp from './components/work-space/card-comp';
 import MyHooks from './components/hooks';
 import AntdTable from './components/antd/table';
-// import AntdForm from './components/antd/form';
-import CreateTask from './components/work-space/create-task';
+import AntdForm from './components/antd/form';
+import PageHooks from './components/page-hooks';
+import PageRedux from './components/page-redux';
+import EventBug from './components/eventbus';
 import { createHashHistory } from 'history';
 import { Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
@@ -66,15 +68,25 @@ const Routes: routeType[] = [
     component: AntdTable,
   },
   {
-    path: '/create-task',
-    name: '工作Demo-创建、编辑任务',
-    component: CreateTask,
+    path: '/antd-form',
+    name: 'antd表单',
+    component: AntdForm,
   },
-  //   {
-  //     path: "/antd-form",
-  //     name: "antd表单",
-  //     component: AntdForm
-  //   }
+  {
+    path: '/page-hooks',
+    name: '单页构建render hooks',
+    component: PageHooks,
+  },
+  {
+    path: '/page-redux',
+    name: '单页构建 redux',
+    component: PageRedux,
+  },
+  {
+    path: '/event-bug',
+    name: '简单事件系统',
+    component: EventBug,
+  },
 ];
 
 const mapRoutes = Routes.map(r => (
