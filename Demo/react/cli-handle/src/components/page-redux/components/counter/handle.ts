@@ -1,15 +1,16 @@
-import React from 'react';
-
-export interface Actions {
+/*
+ * @Date: 2019-07-25 18:04:42
+ * @LastEditors: RichLee
+ * @LastEditTime: 2019-08-19 10:32:58
+ */
+import { Dispatch } from 'redux';
+export interface ActionsLoad {
   type: string;
   payload?: any;
 }
 
 export const ActionTypes = {
   ADD: 'ADD', //添加
-  MINUS: 'MINUS', //减少
-  ADD_NAME: 'ADD_NAME',
-  MINUS_NAME: 'MINUS_NAME',
 };
 
 export interface IState {
@@ -24,21 +25,10 @@ const initState = {
   total: [0, 0],
 };
 
-export function Reducer(state: IState = initState, action: Actions) {
-  console.log(action);
+export function Reducer(state: IState = initState, action: ActionsLoad) {
   switch (action.type) {
     case ActionTypes.ADD:
       return { ...state, num: state.num + 1 };
-    case ActionTypes.MINUS:
-      return { ...state, num: state.num - 1 };
-    case ActionTypes.ADD_NAME:
-      state.total[0] = state.total[0] + 1;
-      return {
-        ...state,
-        num: state.num + action.payload,
-        title: `您增加了${state.total[0]}ci`,
-        total: state.total,
-      };
     default:
       return state;
   }
@@ -47,37 +37,18 @@ export function Reducer(state: IState = initState, action: Actions) {
 const _delay = (time: number) =>
   new Promise(resolve => setTimeout(resolve, time));
 
-export function Actions(dispatch: React.Dispatch<Actions>) {
-  const mutations = {
-    add: () => {
-      console.log('添加');
-      dispatch({ type: ActionTypes.ADD });
-    },
-    minus: () => {
-      console.log('减少');
-      dispatch({ type: ActionTypes.MINUS });
-    },
-    addName: (num?: number) => {
-      dispatch({ type: ActionTypes.ADD_NAME, payload: num || 1 });
-    },
-  };
+export const mutations = {
+  add: () => ({ type: ActionTypes.ADD }),
+};
 
-  const actions = {
-    addAsync: async () => {
-      console.log('异步添加');
-      await _delay(600);
-      mutations.add();
-    },
-    minusAddAsync: async () => {
-      console.log('异步先加后减');
-      await actions.addAsync();
-      await _delay(600);
-      mutations.minus();
-    },
-  };
+export const acions = {
+  addAsync: () => async (dispatch: Dispatch<ActionsLoad>) => {
+    await _delay(1000);
+    dispatch(mutations.add());
+  },
+};
 
-  return {
-    ...mutations,
-    ...actions,
-  };
-}
+export const counterActions = {
+  ...mutations,
+  ...acions,
+};

@@ -1,16 +1,13 @@
 import React from 'react';
-import { Context, Actions } from '../store';
-
+import { Context } from '../store';
+import { bindActionCreators } from 'redux';
 interface WrapperProps {
   [IProps: string]: any;
 }
 
 export default function connectContext(
-  stateWrapper?: (state: Record<string, any>) => Record<string, any>,
-  actionWrapper?: (
-    dispatch: React.Dispatch<Actions>,
-    state?: Record<string, any>
-  ) => Record<string, any>
+  mapStateToProps?: (state: Record<string, any>) => Record<string, any>,
+  mapDispatchToProps?: Record<string, any>
 ) {
   return function componentWrapper(WrappedComponent: React.ComponentType<any>) {
     return class WrapperComponent extends React.Component<
@@ -21,16 +18,19 @@ export default function connectContext(
         return (
           <Context.Consumer>
             {value => {
-              console.log(value);
               let { state, dispatch } = value as Record<string, any>;
-              const stateWrapperProps = stateWrapper && stateWrapper(state);
-              const actionWrapperProps =
-                actionWrapper && actionWrapper(dispatch, state);
+              const mystate = mapStateToProps && mapStateToProps(state);
+              let actions: Record<string, any> = {};
+              if (typeof mapDispatchToProps === 'function') {
+                actions = mapDispatchToProps(dispatch);
+              } else if (typeof mapDispatchToProps === 'object') {
+                actions = bindActionCreators(mapDispatchToProps, dispatch);
+              }
               return (
                 <WrappedComponent
                   innerProp={this.props}
-                  {...stateWrapperProps}
-                  {...actionWrapperProps}
+                  {...mystate}
+                  {...actions}
                 />
               );
             }}

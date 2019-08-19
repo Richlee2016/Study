@@ -8,6 +8,8 @@ interface IState {}
 class PageRedux extends React.Component<IProps, IState> {
   public unSubscribe: any;
 
+  public state: IState = Store.getState();
+
   componentDidMount() {
     const { getState, subscribe } = Store;
     this.unSubscribe = subscribe(() => {
@@ -24,7 +26,7 @@ class PageRedux extends React.Component<IProps, IState> {
       <Context.Provider value={{ state: this.state, dispatch: Store.dispatch }}>
         <div>
           <div>555</div>
-          <Counter />
+          <Counter title="nice" />
         </div>
       </Context.Provider>
     );
