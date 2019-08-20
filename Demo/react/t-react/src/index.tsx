@@ -5,14 +5,13 @@ import TestContext from './components/context';
 import Fragment from './components/fragments';
 import RefsBody from './components/refs';
 import LifeCircle from './components/life-circle';
-import WorkVipList from './components/work-space/vip-list';
-import CardComp from './components/work-space/card-comp';
 import MyHooks from './components/hooks';
 import AntdTable from './components/antd/table';
 import AntdForm from './components/antd/form';
 import PageHooks from './components/page-hooks';
 import PageRedux from './components/page-redux';
 import EventBug from './components/eventbus';
+import WorkSpace from './components/work-space';
 import { createHashHistory } from 'history';
 import { Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
@@ -53,16 +52,6 @@ const Routes: routeType[] = [
     component: MyHooks,
   },
   {
-    path: '/work-vip-list',
-    name: '付费会员官网',
-    component: WorkVipList,
-  },
-  {
-    path: '/work-card-comp',
-    name: '擦片组件',
-    component: CardComp,
-  },
-  {
     path: '/antd-table',
     name: 'antd表格',
     component: AntdTable,
@@ -86,6 +75,11 @@ const Routes: routeType[] = [
     path: '/event-bug',
     name: '简单事件系统',
     component: EventBug,
+  },
+  {
+    path: '/work-space',
+    name: '工作空间',
+    component: WorkSpace,
   },
 ];
 
