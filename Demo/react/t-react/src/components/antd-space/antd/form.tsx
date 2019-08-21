@@ -1,13 +1,13 @@
 import React from 'react';
 import { Form, Button } from 'antd';
-import { FormState } from './types';
+import { FormState } from '../types';
 // import { formItemLayout } from './config';
 import { FormComponentProps } from 'antd/lib/form';
-import FormPropData from './components/form-prop';
-import FormButton from './components/form-button';
-import FormSelectAll from './components/form-select-all';
-import { makeName, groupDistribut } from './utils/utils';
-import './zstyle.less';
+import FormPropData from '../components/form-prop';
+import FormButton from '../components/form-button';
+import FormSelectAll from '../components/form-select-all';
+import { makeName, groupDistribut } from '../utils/utils';
+import '../zstyle.less';
 
 export interface FormProps extends FormComponentProps {}
 

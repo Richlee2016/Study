@@ -1,5 +1,5 @@
 import React from 'react';
-import { Context } from '../form';
+import { Context } from '../antd/form';
 
 interface WrapperProps {
   [IProps: string]: any;

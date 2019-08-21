@@ -1,17 +1,12 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import App from './App';
-import TestContext from './components/context';
-import Fragment from './components/fragments';
-import RefsBody from './components/refs';
-import LifeCircle from './components/life-circle';
-import MyHooks from './components/hooks';
-import AntdTable from './components/antd/table';
-import AntdForm from './components/antd/form';
-import PageHooks from './components/page-hooks';
-import PageRedux from './components/page-redux';
-import EventBug from './components/eventbus';
+import HooksSpace from './components/hooks-space';
+import StoreSpace from './components/store-space';
 import WorkSpace from './components/work-space';
+import AntdSpace from './components/antd-space';
+import BaseSpace from './components/base-space';
+import CompSpace from './components/comp-space';
 import { createHashHistory } from 'history';
 import { Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
@@ -27,59 +22,34 @@ type routeType = {
 
 const Routes: routeType[] = [
   {
-    path: '/context',
-    name: '上下文context、组件懒加载lazy',
-    component: TestContext,
+    path: '/base-space',
+    name: 'react基础',
+    component: BaseSpace,
   },
   {
-    path: '/fragment',
-    name: '片段、插槽、错误边界',
-    component: Fragment,
+    path: '/hooks-space',
+    name: 'hooks',
+    component: HooksSpace,
   },
   {
-    path: '/refs',
-    name: 'ref',
-    component: RefsBody,
+    path: '/antd-space',
+    name: 'antd组件',
+    component: AntdSpace,
   },
   {
-    path: '/circle',
-    name: '生命周期演示',
-    component: LifeCircle,
-  },
-  {
-    path: '/hooks',
-    name: 'hooks演示',
-    component: MyHooks,
-  },
-  {
-    path: '/antd-table',
-    name: 'antd表格',
-    component: AntdTable,
-  },
-  {
-    path: '/antd-form',
-    name: 'antd表单',
-    component: AntdForm,
-  },
-  {
-    path: '/page-hooks',
-    name: '单页构建render hooks',
-    component: PageHooks,
-  },
-  {
-    path: '/page-redux',
-    name: '单页构建 redux',
-    component: PageRedux,
-  },
-  {
-    path: '/event-bug',
-    name: '简单事件系统',
-    component: EventBug,
+    path: '/comp-space',
+    name: '常用组件',
+    component: CompSpace,
   },
   {
     path: '/work-space',
     name: '工作空间',
     component: WorkSpace,
+  },
+  {
+    path: '/store-space',
+    name: '数据管理',
+    component: StoreSpace,
   },
 ];
 

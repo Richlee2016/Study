@@ -1,32 +1,24 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
 import Drag from './drag';
+import BaseDrag from './base-drag';
+import SubRouter from '../utils/sub-router';
 type IProps = {};
 
 type IState = {};
 
-export default class WorkSpace extends React.Component<IProps, IState> {
-  public workPath = [
-    {
-      path: '/work-space/drag',
-      name: 'H5拖拽',
-      components: Drag,
-    },
-  ];
-  render() {
-    const linkMap = this.workPath.map(o => (
-      <Link key={o.path} to={o.path}>
-        {o.name}
-      </Link>
-    ));
-    const workMap = this.workPath.map(o => (
-      <Route key={o.path} path={o.path} exact render={() => <o.components />} />
-    ));
-    return (
-      <div>
-        {window.location.hash === '#/work-space' && <div>{linkMap}</div>}
-        {workMap}
-      </div>
-    );
-  }
+const workPath = [
+  {
+    path: '/work-space/drag',
+    name: 'H5拖拽',
+    component: Drag,
+  },
+  {
+    path: '/work-space/base-drag',
+    name: '原生拖拽',
+    component: BaseDrag,
+  },
+];
+
+export default function(props: IProps) {
+  return <SubRouter group={workPath} pathUrl="work-space"></SubRouter>;
 }

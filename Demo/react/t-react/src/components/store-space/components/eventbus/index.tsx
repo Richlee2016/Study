@@ -45,7 +45,7 @@ export default class App extends React.Component<IProps, IState> {
   }
   // 销毁事件
   componentWillUnmount() {
-    eventBus.typeOff('index');
+    eventBus.offAll();
   }
 
   sendSonMsg = () => {

@@ -20,7 +20,9 @@ export default class Refs extends React.Component<IProps, IState> {
 
   handleDiv(el: HTMLElement) {
     console.log(el);
-    el.innerHTML = '这是 refs';
+    if (el) {
+      el.innerHTML = '这是 refs';
+    }
   }
   handleOther(el: BoxType) {
     console.log(el);
