@@ -14,6 +14,11 @@ export interface FormProps extends FormComponentProps {}
 // 创建表单  上下文
 export const Context = React.createContext({ Store: {}, form: {} });
 
+interface LoopForm {
+  radio: string;
+  yes: string;
+}
+
 class MyForm extends React.Component<FormProps, FormState> {
   public state: FormState = {};
   render() {
@@ -35,7 +40,10 @@ class MyForm extends React.Component<FormProps, FormState> {
               this.props.form.validateFields((err, value) => {
                 if (!err) {
                   console.log(value);
-                  const group = groupDistribut(value, ['radio', 'yes']);
+                  const group = groupDistribut<LoopForm>(value, [
+                    'radio',
+                    'yes',
+                  ]);
                   console.log(group);
                 }
               });
