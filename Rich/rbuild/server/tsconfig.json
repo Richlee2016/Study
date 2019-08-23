@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "esnext",
+    "outDir": "dist",
+    "strict": true,
+    "pretty": true,
+    "sourceMap": true,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "lib": ["es2017", "dom"]
+  },
+  "include": ["src", "index.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

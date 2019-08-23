@@ -1,0 +1,16 @@
+{
+  "verbose": true,
+  "ext": "ts js",
+  "watch": ["server/src", "server/index.ts"],
+  "ignore": ["node_modules", "dist"],
+  "exec": "node -r ts-node/register server/index.ts",
+  "env": {
+    "PORT": 3086,
+    "NODE_ENV": "development",
+    "RUNTIME_ENV": "dev",
+    "TS_NODE_CACHE": false,
+    "TS_NODE_TYPE_CHECK": true,
+    "TS_NODE_FILES": true,
+    "TS_NODE_PROJECT": "server/tsconfig.json"
+  }
+}
