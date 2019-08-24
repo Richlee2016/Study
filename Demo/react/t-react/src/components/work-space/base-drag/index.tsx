@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import BaseDrag from './drag';
+import BaseDrag from './transform-drag';
 import { Button } from 'antd';
 import './index.less';
 type IProps = {};
