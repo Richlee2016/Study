@@ -1,5 +1,19 @@
-console.log(a => a + 1)
+import "../plugin/test";
+import "../plugin/reveal";
+// Reveal.initialize({
+//   controls: false
+//   // progress: true,
+//   // center: true,
+//   // hash: true,
+//   // transition: "slide",
+//   // dependencies: []
+// });
 
-const box = async () => {
-  return 1 + 2 + 3 + 4 + 5
-}
+// const barline = document.querySelector("#LineBar");
+
+// barline.onclick = () => {
+//   console.log(Reveal);
+//   const myGet = Reveal.getSlidesAttributes();
+//   const getDom = Reveal.getSlides();
+//   console.log(myGet, getDom);
+// };

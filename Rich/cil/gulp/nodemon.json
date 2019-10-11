@@ -1,0 +1,12 @@
+{
+  "verbose": true,
+  "ext": "js",
+  "watch": ["server/app.js"],
+  "ignore": ["node_modules", "dist"],
+  "exec": "node server/app.js",
+  "env": {
+    "PORT": 7001,
+    "NODE_ENV": "development",
+    "RUNTIME_ENV": "dev"
+  }
+}

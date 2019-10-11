@@ -3,9 +3,9 @@
  * @LastEditors: RichLee
  * @LastEditTime: 2019-08-22 17:23:11
  */
-import { Controller, Get, Post } from '../decorator/router';
+import { Controller, Get, Post } from 'decorator/router';
 import { Request, Response } from 'express';
-import server from '../servers/home';
+import server from 'servers/home';
 
 @Controller('/')
 class Home {
