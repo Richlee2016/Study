@@ -15,7 +15,7 @@ const Frag = () => (
 );
 
 class Portal extends React.Component {
-  public el: HTMLDivElement = document.createElement('div');
+  public el = document.createElement('div');
   componentWillMount() {
     document.body.appendChild(this.el);
   }

@@ -137,7 +137,7 @@ export default class App extends React.Component<IProps, IState> {
     text: string,
     cb: (atag: HTMLAnchorElement) => void
   ) {
-    const tag = document.createElement('a');
+    const tag = document.createElement('a') as any;
     tag.id = id;
     tag.innerHTML = text;
     cb(tag);
