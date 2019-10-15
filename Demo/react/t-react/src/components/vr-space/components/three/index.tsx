@@ -1,5 +1,5 @@
 import React from 'react';
-import Three from 'three';
+import * as Three from 'three';
 type IProps = {};
 
 type IState = {};

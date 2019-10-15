@@ -8,6 +8,7 @@ import AntdSpace from './components/antd-space';
 import BaseSpace from './components/base-space';
 import CompSpace from './components/comp-space';
 import VrSpace from './components/vr-space';
+import EditorSpace from './components/editor-space';
 import { createHashHistory } from 'history';
 import { Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
@@ -56,6 +57,11 @@ const Routes: routeType[] = [
     path: '/vr-space',
     name: '三维图形与VR',
     component: VrSpace,
+  },
+  {
+    path: '/editor-space',
+    name: '编辑器',
+    component: EditorSpace,
   },
 ];
 
