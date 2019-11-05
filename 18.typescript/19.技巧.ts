@@ -56,10 +56,16 @@ const enum STATUS {
   DOING = "DOING"
 }
 
-function todos(status: STATUS) {}
+const STATUSB ={
+  TODO : "TODO",
+  DONE : "DONE",
+  DOING : "DOING"
+}
+
+function todos(status: any) {}
 
 todos(STATUS.TODO);
-
+todos(STATUSB.TODO);
 // Partial & Pick
 type MyPartial<T> = {
   [P in keyof T]?: T[P];
