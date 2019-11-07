@@ -9,6 +9,7 @@ import BaseSpace from './components/base-space';
 import CompSpace from './components/comp-space';
 import VrSpace from './components/vr-space';
 import EditorSpace from './components/editor-space';
+import TooleSpace from './components/tool-space'
 import { createHashHistory } from 'history';
 import { Router, Switch, Route, Redirect, Link } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
@@ -63,6 +64,11 @@ const Routes: routeType[] = [
     name: '编辑器',
     component: EditorSpace,
   },
+  {
+    path:'/tool-space',
+    name:'工具库',
+    component:TooleSpace
+  }
 ];
 
 const mapRoutes = Routes.map(r => (

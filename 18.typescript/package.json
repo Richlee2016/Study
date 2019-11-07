@@ -1,0 +1,10 @@
+{
+  "name": "18.typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "rich",
+  "license": "MIT",
+  "devDependencies": {
+    "immutable": "^4.0.0-rc.12"
+  }
+}
