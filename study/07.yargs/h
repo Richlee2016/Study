@@ -1,0 +1,4 @@
+#! /user/bin/env node
+
+//可执行文件  告诉系统用什么来执行这个脚本(node)
+//复制2.hello.js 中的文件

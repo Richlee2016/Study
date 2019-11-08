@@ -1,0 +1,11 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background: red;
+    display: flex;
+}
+.bd{
+    width: 100px;
+    height: 100px;
+    background: url("../images/8.png") no-repeat center;
+}

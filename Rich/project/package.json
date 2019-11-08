@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "electron-forge": "^5.2.3",
-    "global": "^4.3.2"
-  }
-}
