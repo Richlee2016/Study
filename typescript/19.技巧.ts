@@ -48,6 +48,8 @@ type TTuple = [string, number];
 
 type ToUnion = ElementOf<TTuple>; // string | number
 
+type ToUnionNum = TTuple[number] //简易解法
+
 // 常用技巧
 // 使用 const enum 维护常量列表
 const enum STATUS {
