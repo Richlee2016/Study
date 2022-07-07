@@ -75,7 +75,7 @@
     "less-loader": "^5.0.0",
     "lint-staged": "^8.1.6",
     "mini-css-extract-plugin": "^0.6.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "normalize.css": "^8.0.1",
     "postcss-cssnext": "^3.1.0",
     "postcss-each": "^0.10.0",
